@@ -1,0 +1,15 @@
+2022-05-07 11:46:35,058 - INFO - black Pawn moved from (1, 5)to (3, 5)
+2022-05-07 11:46:35,059 - INFO - No enemy pieces to attack
+2022-05-07 11:46:35,059 - INFO - No enemy pieces to attack
+2022-05-07 11:46:35,059 - INFO - black Pawn moved from (3, 5)to (4, 5)
+2022-05-07 11:46:35,059 - INFO - No enemy pieces to attack
+2022-05-07 11:46:35,059 - INFO - No enemy pieces to attack
+2022-05-07 11:46:35,059 - INFO - black Pawn moved from (4, 5)to (5, 5)
+2022-05-07 11:46:35,059 - INFO - black Pawn went from (5, 5) and took Pawn at (6, 4)
+2022-05-07 11:46:35,059 - INFO - ('white', 'King') moved from (7, 3) and attacked Pawn at (6, 4)
+2022-05-07 11:46:35,059 - INFO - ('black', 'Queen') moved from (0, 4) to (1, 5)
+2022-05-07 11:46:35,059 - INFO - Enemy piece in the way at (6, 5)
+2022-05-07 11:46:35,059 - INFO - Friendly piece in the way at (1, 4, <__main__.Pawn object at 0x00000243229A7F10>)
+2022-05-07 11:46:35,059 - INFO - Friendly piece in the way at (1, 6, <__main__.Pawn object at 0x00000243229A7FD0>)
+2022-05-07 11:46:35,059 - INFO - Friendly piece in the way at (0, 5, <__main__.Bishop object at 0x00000243229B8280>)
+2022-05-07 11:46:35,059 - INFO - Enemy piece in the way at (6, 0)
