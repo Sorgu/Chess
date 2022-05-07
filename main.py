@@ -232,6 +232,7 @@ class Queen(Piece):
             directions = ["n", "w", "e", "s", "nw", "ne", "sw", "se"]
             for each in directions:
                 if self.move(7, each, check_if_check=True):
+                    logging.info(f"{self.color} has put enemy in check")
                     break
         x, y = self.position
         flag_attack = False
@@ -259,22 +260,28 @@ class Queen(Piece):
                 logging.info("invalid input on rook move")
                 return False
             z, w = new_position
-            if grid[z][w].check_for_piece():
-                if grid[z][w].piece.color == self.color:
-                    logging.info(f"Friendly piece in the way at {z, w, grid[z][w].piece}")
-                    return False
-                else:
-                    if each == steps:
-                        flag_attack = True
-                    else:
-                        logging.info(f"Enemy piece in the way at {z, w}")
+            try:
+                if grid[z][w].check_for_piece():
+                    if grid[z][w].piece.color == self.color:
+                        logging.info(f"Friendly piece in the way at {z, w, grid[z][w].piece}")
                         return False
-            else:
-                continue
-        if check_if_check:
-            if grid[z][w].piece.__class__.__name__ == "King":
-                logging.info(f"{self.color} has checked their opponent with their {self.__class__.__name__}")
-                return True
+                    else:
+                        if each == steps:
+                            flag_attack = True
+                        else:
+                            if check_if_check:
+                                if grid[z][w].piece.__class__.__name__ == "King":
+                                    return True
+                                else:
+                                    return False
+
+                            logging.info(f"Enemy piece in the way at {z, w}")
+                            return False
+                else:
+                    continue
+            except IndexError:
+                return False
+
         if flag_attack:
             attacked_piece = grid[z][w].piece.__class__.__name__
             grid[x][y].set_piece(None)
@@ -387,7 +394,8 @@ grid[4][5].piece.move(1)
 grid[5][5].piece.attack("w")
 grid[7][3].piece.move("se")
 grid[0][4].piece.move(1, "ne")
-#grid[1][5].piece.move(5, "n")
+grid[1][5].piece.move(1, "nw")
+grid[2][4].piece.move(4, "n")
 for each in grid:
     for every in each:
         print(every)
