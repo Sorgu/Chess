@@ -1,14 +1,2 @@
-2022-05-08 16:56:00,914 - INFO - black Pawn moved from (1, 5)to (3, 5)
-2022-05-08 16:56:00,914 - INFO - No enemy pieces to attack
-2022-05-08 16:56:00,914 - INFO - No enemy pieces to attack
-2022-05-08 16:56:00,915 - INFO - black Pawn moved from (3, 5)to (4, 5)
-2022-05-08 16:56:00,915 - INFO - No enemy pieces to attack
-2022-05-08 16:56:00,915 - INFO - No enemy pieces to attack
-2022-05-08 16:56:00,915 - INFO - black Pawn moved from (4, 5)to (5, 5)
-2022-05-08 16:56:00,915 - INFO - black Pawn went from (5, 5) and took Pawn at (6, 4)
-2022-05-08 16:56:00,915 - INFO - ('white', 'King') moved from (7, 3) and attacked Pawn at (6, 4)
-2022-05-08 16:56:00,915 - INFO - ('black', 'Queen') moved from (0, 4) to (1, 5)
-2022-05-08 16:56:00,915 - INFO - ('black', 'Queen') moved from (1, 5) to (2, 4)
-2022-05-08 16:56:00,915 - INFO - ('black', 'Queen') moved from (2, 4) and attacked King at (6, 4)
-2022-05-08 16:56:00,915 - INFO - ('black', 'Queen') moved from (6, 4) to (5, 4)
-2022-05-08 16:56:00,915 - INFO - Queen tried going off the board
+2022-05-08 18:45:45,024 - INFO - ('white', 'Pawn') moved from (6, 3) to (4, 3)
+2022-05-08 18:45:45,024 - INFO - ('black', 'Knight') moved from (0, 6) to (2, 5)
