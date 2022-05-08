@@ -1,19 +1,13 @@
-2022-05-07 17:11:06,152 - INFO - black Pawn moved from (1, 5)to (3, 5)
-2022-05-07 17:11:06,153 - INFO - No enemy pieces to attack
-2022-05-07 17:11:06,153 - INFO - No enemy pieces to attack
-2022-05-07 17:11:06,153 - INFO - black Pawn moved from (3, 5)to (4, 5)
-2022-05-07 17:11:06,153 - INFO - No enemy pieces to attack
-2022-05-07 17:11:06,153 - INFO - No enemy pieces to attack
-2022-05-07 17:11:06,153 - INFO - black Pawn moved from (4, 5)to (5, 5)
-2022-05-07 17:11:06,153 - INFO - black Pawn went from (5, 5) and took Pawn at (6, 4)
-2022-05-07 17:11:06,153 - INFO - ('white', 'King') moved from (7, 3) and attacked Pawn at (6, 4)
-2022-05-07 17:11:06,153 - INFO - ('black', 'Queen') moved from (0, 4) to (1, 5)
-2022-05-07 17:11:06,153 - INFO - Friendly piece in the way at (1, 4, <__main__.Pawn object at 0x000001F3A0C4B460>)
-2022-05-07 17:11:06,153 - INFO - Friendly piece in the way at (1, 6, <__main__.Pawn object at 0x000001F3A0C4B520>)
-2022-05-07 17:11:06,153 - INFO - Friendly piece in the way at (0, 5, <__main__.Bishop object at 0x000001F3A0C4B790>)
-2022-05-07 17:11:06,153 - INFO - Friendly piece in the way at (0, 6, <__main__.Knight object at 0x000001F3A0C4B6D0>)
-2022-05-07 17:11:06,153 - INFO - ('black', 'Queen') moved from (1, 5) to (2, 4)
-2022-05-07 17:11:06,153 - INFO - black has put enemy in check
-2022-05-07 17:11:06,153 - INFO - ('black', 'Queen') moved from (2, 4) and attacked King at (6, 4)
-2022-05-07 17:11:06,153 - INFO - Friendly piece in the way at (1, 4, <__main__.Pawn object at 0x000001F3A0C4B460>)
-2022-05-07 17:11:06,154 - INFO - Friendly piece in the way at (1, -1, <__main__.Pawn object at 0x000001F3A0C4B580>)
+2022-05-08 14:26:03,107 - INFO - black Pawn moved from (1, 5)to (3, 5)
+2022-05-08 14:26:03,107 - INFO - No enemy pieces to attack
+2022-05-08 14:26:03,107 - INFO - No enemy pieces to attack
+2022-05-08 14:26:03,107 - INFO - black Pawn moved from (3, 5)to (4, 5)
+2022-05-08 14:26:03,107 - INFO - No enemy pieces to attack
+2022-05-08 14:26:03,107 - INFO - No enemy pieces to attack
+2022-05-08 14:26:03,107 - INFO - black Pawn moved from (4, 5)to (5, 5)
+2022-05-08 14:26:03,108 - INFO - black Pawn went from (5, 5) and took Pawn at (6, 4)
+2022-05-08 14:26:03,108 - INFO - ('white', 'King') moved from (7, 3) and attacked Pawn at (6, 4)
+2022-05-08 14:26:03,108 - INFO - ('black', 'Queen') moved from (0, 4) to (1, 5)
+2022-05-08 14:26:03,108 - INFO - ('black', 'Queen') moved from (1, 5) to (2, 4)
+2022-05-08 14:26:03,108 - INFO - ('black', 'Queen') moved from (2, 4) and attacked King at (6, 4)
+2022-05-08 14:26:03,108 - INFO - ('black', 'Queen') moved from (6, 4) to (4, 2)
