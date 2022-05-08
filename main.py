@@ -55,6 +55,7 @@ class Piece:
                 else:
                     return "Empty"
         except IndexError:
+            logging.info(f"{self.__class__.__name__} tried going off the board")
             return False
 
     def attack(self, x, y, z, w):
@@ -70,6 +71,31 @@ class Piece:
         grid[z][w].set_piece(self)
         self.position = (z, w)
         logging.info(f"{self.color, self.__class__.__name__} moved from {x, y} to {z, w}")
+
+    def do_move_do(self, targetx, targety, chosen_direction, check_if_check):
+        z, w = self.position
+        x, y = self.position
+        maxx_minx = max(x, targetx) - min(x,targetx)
+        if maxx_minx == 0:
+            steps = max(y, targety) - min(y, targety)
+        else:
+            steps = maxx_minx
+
+        for each in range(steps):
+            each += 1
+            new_position = chosen_direction(z, w)
+            z, w = new_position
+            command = self.check_for_pieces(z, w, each, steps, check_if_check)
+            if command == "Empty":
+                continue
+            elif command == "Attack":
+                self.attack(x, y, z, w)
+            elif command == "Move":
+                self.do_move(x, y, z, w)
+            elif not command:
+                return False
+            else:
+                raise Exception(logging.critical("Not supposed to happen"))
 
 
 class Pawn(Piece):
@@ -276,7 +302,13 @@ class Knight(Piece):
 
 class Queen(Piece):
     def move(self, targetx, targety, check_if_check=False):
-
+        if self.position[0] == targetx or self.position[1] == targety:
+            pass
+        elif targetx - self.position[0] == targety - self.position[1] or self.position[0] - targetx == targety - self.position[1]:
+            pass
+        else:
+            logging.warning(f"{self.__class__.__name__} can not move there")
+            return False
         def direction(z, w, x, y):
             if z > x:
                 if w > y:
@@ -307,30 +339,9 @@ class Queen(Piece):
                 elif w < y:
                     new_position = lambda x,y:[x - 1, y - 1]
                     return new_position
-        z, w = self.position
-        x, y = self.position
-        maxx_minx = max(x, targetx) - min(x,targetx)
-        if maxx_minx == 0:
-            steps = max(y, targety) - min(y, targety)
-        else:
-            steps = maxx_minx
-        chosen_direction = direction(targetx, targety, x, y)
 
-        for each in range(steps):
-            each += 1
-            new_position = chosen_direction(z, w)
-            z, w = new_position
-            command = self.check_for_pieces(z, w, each, steps, check_if_check)
-            if command == "Empty":
-                continue
-            elif command == "Attack":
-                self.attack(x, y, z, w)
-            elif command == "Move":
-                self.do_move(x, y, z, w)
-            elif not command:
-                return False
-            else:
-                raise Exception(logging.critical("Not supposed to happen"))
+        chosen_direction = direction(targetx, targety, self.position[0], self.position[1])
+        self.do_move_do(targetx, targety, chosen_direction, check_if_check)
 
 class King(Piece):
     def move(self, direction_input):
@@ -429,8 +440,13 @@ grid[7][3].piece.move("se")
 grid[0][4].piece.move(1, 5)
 grid[1][5].piece.move(2, 4)
 grid[2][4].piece.move(6, 4)
-grid[6][4].piece.move(4,3)
+grid[6][4].piece.move(5, 4)
+grid[5][4].piece.move(5, 8)
 for each in grid:
     for every in each:
         print(every)
         pass
+import gc
+for obj in gc.get_objects():
+    if isinstance(obj, Piece):
+        print(obj)
