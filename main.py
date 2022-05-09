@@ -366,24 +366,19 @@ grid[7][5].set_piece(Bishop("white", (7, 5)))
 grid[7][3].set_piece(King("white", (7, 4)))
 grid[7][4].set_piece(Queen("white", (7, 3)))
 
-def thing(x,y,z,w):
-    grid[x][y].piece.move(z,w)
-alist = [(6,3,4,3, ), (0, 6, 2, 5)]
-for each in alist:
-    x, y, w, z = each
-    thing(x,y,w,z)
-while True:
-    a = int(input("Enter piece position 1: "))
-    b = int(input("Enter piece position 2: "))
-    c = int(input("Enter where to move it 1: "))
-    d = int(input("Enter where to move it 2: "))
+def update_board():
+    board_state = [[] for _ in range(8)]
+    for i, row in enumerate(grid):
+        for j, value in enumerate(row):
+            piece = grid[i][j].piece.__class__.__name__
+            board_state[i].append(piece)
+    return board_state
 
-    grid[a][b].piece.move(c, d)
-for each in grid:
-    for every in each:
-        print(every)
-        pass
-import gc
-for obj in gc.get_objects():
-    if isinstance(obj, Piece):
-        print(obj)
+def move_piece(stored_commands):
+    x1, y1, x2, y2 = stored_commands
+    grid[x1][y1].piece.move(x2, y2)
+
+#import gc
+#for obj in gc.get_objects():
+#    if isinstance(obj, Piece):
+#        print(obj)

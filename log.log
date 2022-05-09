@@ -1,2 +1,5 @@
-2022-05-08 18:45:45,024 - INFO - ('white', 'Pawn') moved from (6, 3) to (4, 3)
-2022-05-08 18:45:45,024 - INFO - ('black', 'Knight') moved from (0, 6) to (2, 5)
+2022-05-09 13:56:29,418 - INFO - ('white', 'Pawn') moved from (6, 4) to (4, 4)
+2022-05-09 13:56:33,787 - INFO - ('white', 'Pawn') moved from (4, 4) to (3, 4)
+2022-05-09 13:56:35,881 - INFO - ('white', 'Pawn') moved from (3, 4) to (2, 4)
+2022-05-09 13:56:37,192 - INFO - ('white', 'Pawn') moved from (2, 4) and attacked Pawn at (1, 4)
+2022-05-09 13:56:39,410 - INFO - ('black', 'Pawn') moved from (1, 3) to (2, 3)
