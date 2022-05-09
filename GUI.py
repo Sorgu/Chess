@@ -1,5 +1,12 @@
 import pygame
 import main as chess
+
+class Game_Piece:
+    def __init__(self, iamge, position):
+        self.image = image
+        self.pos = image.get_rect().move(0, height)
+        self.position = position
+
 pygame.init()
 WIDTH, HEIGHT = 600, 600
 win = pygame.display.set_mode((WIDTH, HEIGHT))
@@ -52,8 +59,10 @@ def main():
                     win.blit(pawn_pic, (j * SIZE + 12, i * SIZE + 12))
 
         pygame.display.update()
+
+    update_board_state()
     while run:
-        update_board_state()
+
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 run = False
@@ -65,9 +74,11 @@ def main():
                 if len(stored_commands) == 2:
                     stored_commands.append(row)
                     stored_commands.append(col)
-                    chess.move_piece(stored_commands)
+                    if chess.move_piece(stored_commands) == "check":
+                        print("CHECK")
                     print(chess.update_board())
                     stored_commands = []
+                    update_board_state()
                 elif len(stored_commands) == 0:
                     stored_commands.append(row)
                     stored_commands.append(col)

@@ -1,6 +1,7 @@
 import itertools
 import logging
 from pprint import *
+import gc
 
 logging.basicConfig(level=logging.INFO, filename="log.log", filemode="w",
                     format="%(asctime)s - %(levelname)s - %(message)s")
@@ -43,7 +44,7 @@ class Piece:
                         if check_if_check:
                             if grid[z][w].piece.__class__.__name__ == "King":
                                 logging.info(f"{self.color} has put enemy in check")
-
+                                return "Check"
                             return False
                         return "Attack"
                     else:
@@ -51,7 +52,8 @@ class Piece:
                         return False
             else:
                 if current_step == total_steps:
-                    return "Move"
+                    if not check_if_check:
+                        return "Move"
                 else:
                     return "Empty"
         except IndexError:
@@ -94,17 +96,20 @@ class Piece:
                 self.attack(x, y, z, w)
             elif command == "Move":
                 self.do_move(x, y, z, w)
+            elif command == "Check":
+                return "Check"
             elif not command:
                 return False
             else:
                 raise Exception(logging.critical("Not supposed to happen"))
+        return True
 
 
 class Pawn(Piece):
     def move(self, targetx, targety, check_if_check=False):
 
         if self.color == "black":
-            if targetx - self.position[0] <= 1:
+            if targetx - self.position[0] == 1:
                 pass
             elif self.position[0] == 1 and targetx - self.position[0] == 2:
                 pass
@@ -118,9 +123,9 @@ class Pawn(Piece):
                     logging.warning(f"{self.__class__.__name__} can not move there")
                     return False
         elif self.color == "white":
-            if targety - self.position[1] <= 1:
+            if self.position[0] - targetx <= 1:
                 pass
-            elif self.position[1] == 6 and targety - self.position[1] == 2:
+            elif self.position[0] == 6 and self.position[0] - targetx == 2:
                 pass
             else:
                 logging.warning(f"{self.__class__.__name__} can not move there")
@@ -138,14 +143,32 @@ class Pawn(Piece):
 
         def direction(z, w, x, y):
             if self.color == "black":
-                new_position = lambda x, y: [x + 1, y]
-                return new_position
+                if y == w:
+                    new_position = lambda x, y: [x + 1, y]
+                    return new_position
+                elif y + 1 == w:
+                    new_position = lambda x, y: [x + 1, y + 1]
+                    return new_position
+                elif y - 1 == w:
+                    new_position = lambda x, y: [x + 1, y - 1]
+                    return new_position
             elif self.color == "white":
-                new_position = lambda x, y: [x - 1, y]
-                return new_position
+                if y == w:
+                    new_position = lambda x, y: [x - 1, y]
+                    return new_position
+                elif y + 1 == w:
+                    new_position = lambda x, y: [x - 1, y + 1]
+                    return new_position
+                elif y - 1 == w:
+                    new_position = lambda x, y: [x - 1, y - 1]
+                    return new_position
 
         chosen_direction = direction(targetx, targety, self.position[0], self.position[1])
-        self.do_move_do(targetx, targety, chosen_direction, check_if_check)
+        a = self.do_move_do(targetx, targety, chosen_direction, check_if_check)
+        if a:
+            if a == "Check":
+                return "check"
+            return True
 
 
 class Rook(Piece):
@@ -174,7 +197,8 @@ class Rook(Piece):
 
 
         chosen_direction = direction(targetx, targety, self.position[0], self.position[1])
-        self.do_move_do(targetx, targety, chosen_direction, check_if_check)
+        if self.do_move_do(targetx, targety, chosen_direction, check_if_check):
+            return True
 
 
 class Bishop(Piece):
@@ -206,7 +230,8 @@ class Bishop(Piece):
                 return new_position
 
         chosen_direction = direction(targetx, targety, self.position[0], self.position[1])
-        self.do_move_do(targetx, targety, chosen_direction, check_if_check)
+        if self.do_move_do(targetx, targety, chosen_direction, check_if_check):
+            return True
 
 
 class Knight(Piece):
@@ -246,7 +271,12 @@ class Knight(Piece):
                 return False
 
         chosen_direction = direction(targetx, targety, self.position[0], self.position[1])
-        self.do_move_do(targetx, targety, chosen_direction, check_if_check, knight=True)
+        if chosen_direction:
+            if self.do_move_do(targetx, targety, chosen_direction, check_if_check, knight=True):
+                return True
+        else:
+            return False
+
 
 
 class Queen(Piece):
@@ -290,7 +320,8 @@ class Queen(Piece):
                     return new_position
 
         chosen_direction = direction(targetx, targety, self.position[0], self.position[1])
-        self.do_move_do(targetx, targety, chosen_direction, check_if_check)
+        if self.do_move_do(targetx, targety, chosen_direction, check_if_check):
+            return True
 
 class King(Piece):
     def move(self, targetx, targety, check_if_check=False):
@@ -330,7 +361,8 @@ class King(Piece):
                     return new_position
 
         chosen_direction = direction(targetx, targety, self.position[0], self.position[1])
-        self.do_move_do(targetx, targety, chosen_direction, check_if_check)
+        if self.do_move_do(targetx, targety, chosen_direction, check_if_check):
+            return True
 
 def initialize_grid():
     grid = []
@@ -341,6 +373,52 @@ def initialize_grid():
         grid.append(grid_row)
     return grid
 
+def update_board():
+    board_state = [[] for _ in range(8)]
+    for i, row in enumerate(grid):
+        for j, value in enumerate(row):
+            piece = grid[i][j].piece.__class__.__name__
+            board_state[i].append(piece)
+    return board_state
+def check_mate():
+    return False
+def move_piece(stored_commands):
+    x1, y1, x2, y2 = stored_commands
+    check_amount = 0
+    color = grid[x1][y1].piece.color
+    if grid[x1][y1].piece.move(x2, y2):
+
+        king_pos, black_list_of_pieces, white_list_of_pieces = get_king_position(color)
+        logging.info(f"{king_pos} {color}")
+        if color == "black":
+            for each in black_list_of_pieces:
+                if each.move(king_pos[0], king_pos[1], check_if_check=True):
+                    check_amount += 1
+        elif color == "white":
+            for each in white_list_of_pieces:
+                if each.move(king_pos[0], king_pos[1], check_if_check=True):
+                    check_amount += 1
+    if check_amount:
+        if check_mate():
+            pass
+        return "check"
+
+def get_king_position(color):
+    black_list_of_pieces = []
+    white_list_of_pieces = []
+
+    for obj in gc.get_objects():
+        if isinstance(obj, King):
+            if obj.color == "black" and color == "white":
+                king = obj.position
+            elif obj.color == "white" and color == "black":
+                king = obj.position
+        if isinstance(obj, Piece):
+            if obj.color == "black":
+                black_list_of_pieces.append(obj)
+            elif obj.color == "white":
+                white_list_of_pieces.append(obj)
+    return king, black_list_of_pieces, white_list_of_pieces
 
 grid = initialize_grid()
 
@@ -352,8 +430,8 @@ grid[0][1].set_piece(Knight("black", (0, 1)))
 grid[0][6].set_piece(Knight("black", (0, 6)))
 grid[0][2].set_piece(Bishop("black", (0, 2)))
 grid[0][5].set_piece(Bishop("black", (0, 5)))
-grid[0][3].set_piece(King("black", (0, 4)))
-grid[0][4].set_piece(Queen("black", (0, 3)))
+grid[0][3].set_piece(King("black", (0, 3)))
+grid[0][4].set_piece(Queen("black", (0, 4)))
 
 for i, each in enumerate(grid[6]):
     each.set_piece(Pawn("white", (6, i)))
@@ -363,22 +441,8 @@ grid[7][1].set_piece(Knight("white", (7, 1)))
 grid[7][6].set_piece(Knight("white", (7, 6)))
 grid[7][2].set_piece(Bishop("white", (7, 2)))
 grid[7][5].set_piece(Bishop("white", (7, 5)))
-grid[7][3].set_piece(King("white", (7, 4)))
-grid[7][4].set_piece(Queen("white", (7, 3)))
+grid[7][3].set_piece(King("white", (7, 3)))
+grid[7][4].set_piece(Queen("white", (7, 4)))
 
-def update_board():
-    board_state = [[] for _ in range(8)]
-    for i, row in enumerate(grid):
-        for j, value in enumerate(row):
-            piece = grid[i][j].piece.__class__.__name__
-            board_state[i].append(piece)
-    return board_state
 
-def move_piece(stored_commands):
-    x1, y1, x2, y2 = stored_commands
-    grid[x1][y1].piece.move(x2, y2)
 
-#import gc
-#for obj in gc.get_objects():
-#    if isinstance(obj, Piece):
-#        print(obj)

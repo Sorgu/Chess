@@ -1,5 +1,85 @@
-2022-05-09 13:56:29,418 - INFO - ('white', 'Pawn') moved from (6, 4) to (4, 4)
-2022-05-09 13:56:33,787 - INFO - ('white', 'Pawn') moved from (4, 4) to (3, 4)
-2022-05-09 13:56:35,881 - INFO - ('white', 'Pawn') moved from (3, 4) to (2, 4)
-2022-05-09 13:56:37,192 - INFO - ('white', 'Pawn') moved from (2, 4) and attacked Pawn at (1, 4)
-2022-05-09 13:56:39,410 - INFO - ('black', 'Pawn') moved from (1, 3) to (2, 3)
+2022-05-09 18:46:23,716 - INFO - ('white', 'Pawn') moved from (6, 3) to (4, 3)
+2022-05-09 18:46:23,721 - INFO - (0, 3) white
+2022-05-09 18:46:23,722 - WARNING - Pawn can not move there
+2022-05-09 18:46:23,722 - WARNING - Pawn can not move there
+2022-05-09 18:46:23,722 - WARNING - Pawn can not move there
+2022-05-09 18:46:23,722 - WARNING - Pawn can not move there
+2022-05-09 18:46:23,722 - WARNING - Pawn can not move there
+2022-05-09 18:46:23,722 - WARNING - Pawn can not move there
+2022-05-09 18:46:23,722 - WARNING - Pawn can not move there
+2022-05-09 18:46:23,722 - WARNING - Pawn can not move there
+2022-05-09 18:46:23,722 - WARNING - Rook can not move there
+2022-05-09 18:46:23,722 - WARNING - Rook can not move there
+2022-05-09 18:46:23,722 - INFO - Knight can not move there
+2022-05-09 18:46:23,722 - WARNING - Bishop can not move there
+2022-05-09 18:46:23,722 - WARNING - Bishop can not move there
+2022-05-09 18:46:23,722 - INFO - King can not move there
+2022-05-09 18:46:23,722 - WARNING - Queen can not move there
+2022-05-09 18:46:36,687 - INFO - ('white', 'Pawn') moved from (4, 3) to (3, 3)
+2022-05-09 18:46:36,693 - INFO - (0, 3) white
+2022-05-09 18:46:36,693 - WARNING - Pawn can not move there
+2022-05-09 18:46:36,693 - WARNING - Pawn can not move there
+2022-05-09 18:46:36,693 - WARNING - Pawn can not move there
+2022-05-09 18:46:36,693 - WARNING - Pawn can not move there
+2022-05-09 18:46:36,693 - WARNING - Pawn can not move there
+2022-05-09 18:46:36,693 - WARNING - Pawn can not move there
+2022-05-09 18:46:36,693 - WARNING - Pawn can not move there
+2022-05-09 18:46:36,693 - WARNING - Pawn can not move there
+2022-05-09 18:46:36,693 - WARNING - Rook can not move there
+2022-05-09 18:46:36,693 - WARNING - Rook can not move there
+2022-05-09 18:46:36,693 - INFO - Knight can not move there
+2022-05-09 18:46:36,693 - WARNING - Bishop can not move there
+2022-05-09 18:46:36,693 - WARNING - Bishop can not move there
+2022-05-09 18:46:36,693 - INFO - King can not move there
+2022-05-09 18:46:36,693 - WARNING - Queen can not move there
+2022-05-09 18:46:43,183 - INFO - ('white', 'Pawn') moved from (3, 3) to (2, 3)
+2022-05-09 18:46:43,188 - INFO - (0, 3) white
+2022-05-09 18:46:43,189 - WARNING - Pawn can not move there
+2022-05-09 18:46:43,189 - WARNING - Pawn can not move there
+2022-05-09 18:46:43,189 - WARNING - Pawn can not move there
+2022-05-09 18:46:43,189 - WARNING - Pawn can not move there
+2022-05-09 18:46:43,189 - WARNING - Pawn can not move there
+2022-05-09 18:46:43,189 - WARNING - Pawn can not move there
+2022-05-09 18:46:43,189 - WARNING - Pawn can not move there
+2022-05-09 18:46:43,189 - WARNING - Pawn can not move there
+2022-05-09 18:46:43,189 - WARNING - Rook can not move there
+2022-05-09 18:46:43,189 - WARNING - Rook can not move there
+2022-05-09 18:46:43,189 - INFO - Knight can not move there
+2022-05-09 18:46:43,189 - WARNING - Bishop can not move there
+2022-05-09 18:46:43,190 - WARNING - Bishop can not move there
+2022-05-09 18:46:43,190 - INFO - King can not move there
+2022-05-09 18:46:43,190 - WARNING - Queen can not move there
+2022-05-09 18:46:47,581 - INFO - ('white', 'Pawn') moved from (2, 3) and attacked Pawn at (1, 4)
+2022-05-09 18:46:47,587 - INFO - (0, 3) white
+2022-05-09 18:46:47,587 - WARNING - Pawn can not move there
+2022-05-09 18:46:47,587 - WARNING - Pawn can not move there
+2022-05-09 18:46:47,587 - WARNING - Pawn can not move there
+2022-05-09 18:46:47,587 - INFO - white has put enemy in check
+2022-05-09 18:46:47,587 - WARNING - Pawn can not move there
+2022-05-09 18:46:47,587 - WARNING - Pawn can not move there
+2022-05-09 18:46:47,587 - WARNING - Pawn can not move there
+2022-05-09 18:46:47,587 - WARNING - Pawn can not move there
+2022-05-09 18:46:47,587 - WARNING - Rook can not move there
+2022-05-09 18:46:47,587 - WARNING - Rook can not move there
+2022-05-09 18:46:47,587 - INFO - Knight can not move there
+2022-05-09 18:46:47,587 - WARNING - Bishop can not move there
+2022-05-09 18:46:47,587 - WARNING - Bishop can not move there
+2022-05-09 18:46:47,587 - INFO - King can not move there
+2022-05-09 18:46:47,587 - WARNING - Queen can not move there
+2022-05-09 18:47:12,034 - INFO - ('white', 'Pawn') moved from (1, 4) and attacked Queen at (0, 4)
+2022-05-09 18:47:12,039 - INFO - (0, 3) white
+2022-05-09 18:47:12,039 - WARNING - Pawn can not move there
+2022-05-09 18:47:12,039 - WARNING - Pawn can not move there
+2022-05-09 18:47:12,039 - WARNING - Pawn can not move there
+2022-05-09 18:47:12,039 - WARNING - Pawn can not move there
+2022-05-09 18:47:12,039 - WARNING - Pawn can not move there
+2022-05-09 18:47:12,039 - WARNING - Pawn can not move there
+2022-05-09 18:47:12,040 - WARNING - Pawn can not move there
+2022-05-09 18:47:12,040 - WARNING - Pawn can not move there
+2022-05-09 18:47:12,040 - WARNING - Rook can not move there
+2022-05-09 18:47:12,040 - WARNING - Rook can not move there
+2022-05-09 18:47:12,040 - INFO - Knight can not move there
+2022-05-09 18:47:12,040 - WARNING - Bishop can not move there
+2022-05-09 18:47:12,040 - WARNING - Bishop can not move there
+2022-05-09 18:47:12,040 - INFO - King can not move there
+2022-05-09 18:47:12,040 - WARNING - Queen can not move there
