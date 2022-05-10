@@ -3,6 +3,7 @@ import logging
 from pprint import *
 import gc
 
+
 logging.basicConfig(level=logging.INFO, filename="log.log", filemode="w",
                     format="%(asctime)s - %(levelname)s - %(message)s")
 
@@ -42,8 +43,10 @@ class Piece:
                 else:
                     if current_step == total_steps:
                         if check_if_check:
+                            if self.__class__.__name__ == "Queen":
+                                logging.info("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA")
                             if grid[z][w].piece.__class__.__name__ == "King":
-                                logging.info(f"{self.color} has put enemy in check")
+                                logging.info(f"{self.color} {self.__class__.__name__} at {self.position} has put enemy in check ")
                                 return "Check"
                             return False
                         return "Attack"
@@ -54,7 +57,11 @@ class Piece:
                 if current_step == total_steps:
                     if not check_if_check:
                         return "Move"
+                    elif check_if_check:
+                        logging.info(f"{self.__class__.__name__} Check")
+                        return "Check"
                 else:
+                    logging.info(f"{self.__class__.__name__} empty")
                     return "Empty"
         except IndexError:
             logging.info(f"{self.__class__.__name__} tried going off the board")
@@ -109,6 +116,14 @@ class Pawn(Piece):
     def move(self, targetx, targety, check_if_check=False):
 
         if self.color == "black":
+            if self.position[1] != targety:
+                if self.position[1] + 1 == targety or self.position[1] - 1 == targety and self.position[0] + 1 == targetx:
+                    pass
+                else:
+                    logging.warning(f"{self.__class__.__name__} can not move there")
+                    return False
+            elif grid[targetx][targety].piece:
+                return False
             if targetx - self.position[0] == 1:
                 pass
             elif self.position[0] == 1 and targetx - self.position[0] == 2:
@@ -116,13 +131,16 @@ class Pawn(Piece):
             else:
                 logging.warning(f"{self.__class__.__name__} can not move there")
                 return False
+
+        elif self.color == "white":
             if self.position[1] != targety:
-                if self.position[1] + 1 == targety or self.position[1] - 1 == targety and self.position[0] + 1 == targetx:
+                if self.position[1] + 1 == targety or self.position[1] - 1 == targety and self.position[0] - 1 == targetx:
                     pass
                 else:
                     logging.warning(f"{self.__class__.__name__} can not move there")
                     return False
-        elif self.color == "white":
+            elif grid[targetx][targety].piece:
+                return False
             if self.position[0] - targetx <= 1:
                 pass
             elif self.position[0] == 6 and self.position[0] - targetx == 2:
@@ -130,12 +148,7 @@ class Pawn(Piece):
             else:
                 logging.warning(f"{self.__class__.__name__} can not move there")
                 return False
-            if self.position[1] != targety:
-                if self.position[1] + 1 == targety or self.position[1] - 1 == targety and self.position[0] - 1 == targetx:
-                    pass
-                else:
-                    logging.warning(f"{self.__class__.__name__} can not move there")
-                    return False
+
         else:
             logging.warning(f"{self.__class__.__name__} can not move there")
             return False
@@ -278,7 +291,6 @@ class Knight(Piece):
             return False
 
 
-
 class Queen(Piece):
     def move(self, targetx, targety, check_if_check=False):
         if self.position[0] == targetx or self.position[1] == targety:
@@ -323,6 +335,7 @@ class Queen(Piece):
         if self.do_move_do(targetx, targety, chosen_direction, check_if_check):
             return True
 
+
 class King(Piece):
     def move(self, targetx, targety, check_if_check=False):
         if self.position[0] - targetx > 1 or self.position[1] - targety > 1:
@@ -364,6 +377,7 @@ class King(Piece):
         if self.do_move_do(targetx, targety, chosen_direction, check_if_check):
             return True
 
+
 def initialize_grid():
     grid = []
     for every in range(8):
@@ -380,27 +394,70 @@ def update_board():
             piece = grid[i][j].piece.__class__.__name__
             board_state[i].append(piece)
     return board_state
-def check_mate():
+
+# checker is the color of the piece putting the enemy in check, check_amount is the amount of pieces putting enemy in check
+def check_mate(checker, check_amount):
+    checkered = "black" if checker == "white" else "white"
+    def move_king():
+        for obj in gc.get_objects():
+            if isinstance(obj, King) and obj.color == checkered:
+                checked_king = obj
+        checked_king_pos = checked_king.position
+        for each in itertools.product((-1, 0, 1), repeat=2):
+            logging.info(f"{list(itertools.product((-1, 0, 1), repeat=2))}, {each} HERE")
+            x = checked_king_pos[0] - each[0]
+            y = checked_king_pos[1] - each[1]
+            if x > 7 or x < 0 or y > 7 or y < 0:
+                continue
+            logging.info(grid[x][y])
+            if grid[x][y].check_for_piece():
+                if grid[x][y].piece.color == checkered:
+                    logging.info("CONTINUE")
+                    continue
+            logging.info("IS CHECK")
+            if not is_check(0, checker, king_position=(x,y)):
+                logging.info("RETURN FALSE")
+                return False
+            continue
+        logging.info("RETURN TRUE")
+        return True
+    if check_amount > 1:
+        if move_king():
+            return True
+        else:
+            return False
+    elif check_amount == 1:
+        if move_king():
+            return True
+        else:
+            return False
+
     return False
+def is_check(check_amount, color, king_position=None):
+    king_pos, black_list_of_pieces, white_list_of_pieces = get_king_position(color)
+    if king_position:
+        logging.info(f"HHEEEEEEEEEEEEEEEEEEEEEEEEEEEEERE{king_position} {king_pos}")
+        king_pos = king_position
+    logging.info(f"{king_pos} {color}")
+    color_list_of_pieces = black_list_of_pieces if color == "black" else white_list_of_pieces
+    for each in color_list_of_pieces:
+        logging.info(f"HEREEEEEEEEEEEEEEE {color_list_of_pieces}")
+        if each.move(king_pos[0], king_pos[1], check_if_check=True):
+            check_amount += 1
+    logging.info(f"check amount: {check_amount} ")
+    return check_amount
 def move_piece(stored_commands):
     x1, y1, x2, y2 = stored_commands
     check_amount = 0
+    if not grid[x1][y1].check_for_piece():
+        return False
     color = grid[x1][y1].piece.color
     if grid[x1][y1].piece.move(x2, y2):
+        check_amount = is_check(check_amount, color)
 
-        king_pos, black_list_of_pieces, white_list_of_pieces = get_king_position(color)
-        logging.info(f"{king_pos} {color}")
-        if color == "black":
-            for each in black_list_of_pieces:
-                if each.move(king_pos[0], king_pos[1], check_if_check=True):
-                    check_amount += 1
-        elif color == "white":
-            for each in white_list_of_pieces:
-                if each.move(king_pos[0], king_pos[1], check_if_check=True):
-                    check_amount += 1
     if check_amount:
-        if check_mate():
-            pass
+        if check_mate(color, check_amount):
+            return "check mate"
         return "check"
 
 def get_king_position(color):

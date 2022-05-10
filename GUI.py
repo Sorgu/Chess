@@ -1,11 +1,11 @@
 import pygame
 import main as chess
 
-class Game_Piece:
-    def __init__(self, iamge, position):
-        self.image = image
-        self.pos = image.get_rect().move(0, height)
-        self.position = position
+#class Game_Piece:
+#    def __init__(self, image, position):
+#        self.image = image
+#        self.pos = image.get_rect().move(0, height)
+#        self.position = position
 
 pygame.init()
 WIDTH, HEIGHT = 600, 600
@@ -74,8 +74,11 @@ def main():
                 if len(stored_commands) == 2:
                     stored_commands.append(row)
                     stored_commands.append(col)
-                    if chess.move_piece(stored_commands) == "check":
+                    result = chess.move_piece(stored_commands)
+                    if result == "check":
                         print("CHECK")
+                    elif result == "check mate":
+                        print("MATE")
                     print(chess.update_board())
                     stored_commands = []
                     update_board_state()
