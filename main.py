@@ -127,59 +127,44 @@ class Pawn(Piece):
     def move(self, targetx, targety, check_if_check=False):
         if grid[targetx][targety].check_for_piece():
             print("HAAHHAHAHHA" and self.position)
-        if self.color == "black":
-            if self.position[1] != targety:
-                if (self.position[1] + 1 == targety or self.position[1] - 1 == targety) and self.position[0] + 1 == targetx and grid[targetx][targety].check_for_piece():
-                    logging.info(f"pawn info {self.position, targetx, targety}")
-                    pass
-                elif grid[targetx-1][targety].check_for_piece():
-                    if grid[targetx-1][targety].piece.en_passant == True and self.position[0] == targetx-1 and (self.position[1] + 1 == targety or self.position[1] - 1 == targety):
-                        self.do_en_passant = False
-                        logging.info("EN PASSANT")
-                    else:
-                        logging.warning(f"{self.__class__.__name__} can not move there")
-                        return False
+        self.attacking = False
+        en_passant = False
+        one = +1 if self.color == "black" else -1
+        if self.position[1] != targety:
+            self.attacking = True
+            if (self.position[1] + 1 == targety or self.position[1] - 1 == targety) and self.position[0] + one == targetx and grid[targetx][targety].check_for_piece():
+                logging.info(f"pawn info {self.position, targetx, targety}")
+                pass
+            elif grid[targetx - one][targety].check_for_piece():
+                if grid[targetx - one][targety].piece.en_passant == True and self.position[0] == targetx - one and (self.position[1] + 1 == targety or self.position[1] - 1 == targety):
+                    self.do_en_passant = True
+                    logging.info("EN PASSANT")
                 else:
                     logging.warning(f"{self.__class__.__name__} can not move there")
                     return False
-            elif grid[targetx][targety].piece:
-                return False
-            if targetx - self.position[0] == 1:
-                pass
-            elif self.position[0] == 1 and targetx - self.position[0] == 2:
-                self.en_passant = True
-                pass
             else:
                 logging.warning(f"{self.__class__.__name__} can not move there")
+                return False
+        elif grid[targetx][targety].piece:
+            return False
+        if max(targetx, self.position[0]) - min(targetx, self.position[0]) == 1:
+            pass
+        elif self.color == "black":
+            if self.position[0] == 1 and targetx - self.position[0] == 2:
+                en_passant = True
+                pass
+            else:
                 return False
         elif self.color == "white":
-            if self.position[1] != targety:
-                if (self.position[1] + 1 == targety or self.position[1] - 1 == targety) and self.position[0] - 1 == targetx and grid[targetx][targety].check_for_piece():
-                    pass
-                elif grid[targetx + 1][targety].check_for_piece():
-                    if grid[targetx + 1][targety].piece.en_passant == True and self.position[0] == targetx + 1 and (
-                        self.position[1] + 1 == targety or self.position[1] - 1 == targety):
-                        self.do_en_passant = False
-                    else:
-                        logging.warning(f"{self.__class__.__name__} can not move there")
-                        return False
-
-                else:
-                    logging.warning(f"{self.__class__.__name__} can not move there")
-                    return False
-            elif grid[targetx][targety].piece:
-                return False
-            if self.position[0] - targetx <= 1:
-                pass
-            elif self.position[0] == 6 and self.position[0] - targetx == 2:
-                self.en_passant = True
+            if self.position[0] == 6 and self.position[0] - targetx == 2:
+                en_passant = True
                 pass
             else:
-                logging.warning(f"{self.__class__.__name__} can not move there")
                 return False
         else:
             logging.warning(f"{self.__class__.__name__} can not move there")
             return False
+
 
 
         def direction(z, w, x, y):
@@ -208,6 +193,10 @@ class Pawn(Piece):
                 f"{self.color, self.__class__.__name__} moved from {x, y} and attacked {attacked_piece} at {targetx, targety}")
         chosen_direction = direction(targetx, targety, self.position[0], self.position[1])
         a = self.do_move_do(targetx, targety, chosen_direction, check_if_check)
+        if en_passant:
+            self.en_passant = True
+        else:
+            self.en_passant = False
         if a:
             if a == "Check":
                 return "check"
