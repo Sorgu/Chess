@@ -7,7 +7,7 @@ import gc
 logging.basicConfig(level=logging.INFO, filename="log.log", filemode="w",
                     format="%(asctime)s - %(levelname)s - %(message)s")
 
-
+# class for the chess tiles that will contain chess pieces
 class Tile:
     def __init__(self):
         self.piece = None
@@ -28,12 +28,13 @@ class Tile:
         else:
             return False
 
-
+# parent class for all pieces
 class Piece:
     def __init__(self, color, position):
         self.color = color
         self.position = position
-
+        self.en_passant = False
+    # checks if there is a piece in the coordinates provided and returns the appropriate command
     def check_for_pieces(self, z, w, current_step, total_steps, check_if_check):
         try:
             if grid[z][w].check_for_piece():
@@ -48,6 +49,11 @@ class Piece:
                             #    return "Check"
                             logging.info(f"{self.color} {self.__class__.__name__} at {self.position} has put enemy in check ")
                             return "Check"
+                        elif self.__class__.__name__ == "Pawn":
+                            if self.attacking:
+                                pass
+                            else:
+                                return False
                         return "Attack"
                     else:
                         logging.info(f"Enemy piece in the way at {z, w}")
@@ -66,6 +72,7 @@ class Piece:
             logging.info(f"{self.__class__.__name__} tried going off the board")
             return False
 
+    # replaces the piece at (z, w) with the piece at (x, y)
     def attack(self, x, y, z, w):
         attacked_piece = grid[z][w].piece.__class__.__name__
         grid[x][y].set_piece(None)
@@ -74,12 +81,14 @@ class Piece:
         logging.info(
             f"{self.color, self.__class__.__name__} moved from {x, y} and attacked {attacked_piece} at {z, w}")
 
+    # moves the piece at (x, y) to (z, w)
     def do_move(self, x, y, z, w):
         grid[x][y].set_piece(None)
         grid[z][w].set_piece(self)
         self.position = (z, w)
         logging.info(f"{self.color, self.__class__.__name__} moved from {x, y} to {z, w}")
 
+    # calculates the tiles a piece needs to traverse and handles commands from check_for_pieces()
     def do_move_do(self, targetx, targety, chosen_direction, check_if_check, knight=False):
         z, w = self.position
         x, y = self.position
@@ -110,14 +119,26 @@ class Piece:
                 raise Exception(logging.critical("Not supposed to happen"))
         return True
 
-
+# class for the pawn piece with rules on how it can move and which direction to move
 class Pawn(Piece):
+    def __init__(self, color, position):
+        self.do_en_passant = False
+        super(Pawn, self).__init__(color, position)
     def move(self, targetx, targety, check_if_check=False):
+        if grid[targetx][targety].check_for_piece():
+            print("HAAHHAHAHHA" and self.position)
         if self.color == "black":
             if self.position[1] != targety:
-                if (self.position[1] + 1 == targety or self.position[1] - 1 == targety) and self.position[0] + 1 == targetx:
+                if (self.position[1] + 1 == targety or self.position[1] - 1 == targety) and self.position[0] + 1 == targetx and grid[targetx][targety].check_for_piece():
                     logging.info(f"pawn info {self.position, targetx, targety}")
                     pass
+                elif grid[targetx-1][targety].check_for_piece():
+                    if grid[targetx-1][targety].piece.en_passant == True and self.position[0] == targetx-1 and (self.position[1] + 1 == targety or self.position[1] - 1 == targety):
+                        self.do_en_passant = False
+                        logging.info("EN PASSANT")
+                    else:
+                        logging.warning(f"{self.__class__.__name__} can not move there")
+                        return False
                 else:
                     logging.warning(f"{self.__class__.__name__} can not move there")
                     return False
@@ -126,14 +147,23 @@ class Pawn(Piece):
             if targetx - self.position[0] == 1:
                 pass
             elif self.position[0] == 1 and targetx - self.position[0] == 2:
+                self.en_passant = True
                 pass
             else:
                 logging.warning(f"{self.__class__.__name__} can not move there")
                 return False
         elif self.color == "white":
             if self.position[1] != targety:
-                if (self.position[1] + 1 == targety or self.position[1] - 1 == targety) and self.position[0] - 1 == targetx:
+                if (self.position[1] + 1 == targety or self.position[1] - 1 == targety) and self.position[0] - 1 == targetx and grid[targetx][targety].check_for_piece():
                     pass
+                elif grid[targetx + 1][targety].check_for_piece():
+                    if grid[targetx + 1][targety].piece.en_passant == True and self.position[0] == targetx + 1 and (
+                        self.position[1] + 1 == targety or self.position[1] - 1 == targety):
+                        self.do_en_passant = False
+                    else:
+                        logging.warning(f"{self.__class__.__name__} can not move there")
+                        return False
+
                 else:
                     logging.warning(f"{self.__class__.__name__} can not move there")
                     return False
@@ -142,6 +172,7 @@ class Pawn(Piece):
             if self.position[0] - targetx <= 1:
                 pass
             elif self.position[0] == 6 and self.position[0] - targetx == 2:
+                self.en_passant = True
                 pass
             else:
                 logging.warning(f"{self.__class__.__name__} can not move there")
@@ -152,27 +183,29 @@ class Pawn(Piece):
 
 
         def direction(z, w, x, y):
-            if self.color == "black":
-                if y == w:
-                    new_position = lambda x, y: [x + 1, y]
-                    return new_position
-                elif y + 1 == w:
-                    new_position = lambda x, y: [x + 1, y + 1]
-                    return new_position
-                elif y - 1 == w:
-                    new_position = lambda x, y: [x + 1, y - 1]
-                    return new_position
-            elif self.color == "white":
-                if y == w:
-                    new_position = lambda x, y: [x - 1, y]
-                    return new_position
-                elif y + 1 == w:
-                    new_position = lambda x, y: [x - 1, y + 1]
-                    return new_position
-                elif y - 1 == w:
-                    new_position = lambda x, y: [x - 1, y - 1]
-                    return new_position
+            one = + 1 if self.color == "black" else - 1
+            if y == w:
+                new_position = lambda x, y: [x + one, y]
+                return new_position
+            elif y + 1 == w:
+                new_position = lambda x, y: [x + one, y + 1]
+                return new_position
+            elif y - 1 == w:
+                new_position = lambda x, y: [x + one, y - 1]
+                return new_position
 
+        if self.do_en_passant:
+            if check_if_check:
+                return "check"
+            x, y = self.position
+            one = +1 if self.color == "white" else -1
+            attacked_piece = grid[targetx + one][targety].piece.__class__.__name__
+            grid[x][y].set_piece(None)
+            grid[targetx][targety].set_piece(self)
+            grid[targetx + one][targety].set_piece(None)
+            self.position = (targetx, targety)
+            logging.info(
+                f"{self.color, self.__class__.__name__} moved from {x, y} and attacked {attacked_piece} at {targetx, targety}")
         chosen_direction = direction(targetx, targety, self.position[0], self.position[1])
         a = self.do_move_do(targetx, targety, chosen_direction, check_if_check)
         if a:
@@ -180,7 +213,7 @@ class Pawn(Piece):
                 return "check"
             return True
 
-
+# class for the rook piece with rules on how it can move and which direction to move
 class Rook(Piece):
     def move(self, targetx, targety, check_if_check=False):
         if self.position[0] == targetx or self.position[1] == targety:
@@ -210,7 +243,7 @@ class Rook(Piece):
         if self.do_move_do(targetx, targety, chosen_direction, check_if_check):
             return True
 
-
+# class for the bishop piece with rules on how it can move and which direction to move
 class Bishop(Piece):
     def move(self, targetx, targety, check_if_check=False):
         if targetx - self.position[0] == targety - self.position[1] or self.position[0] - targetx == targety - \
@@ -243,7 +276,7 @@ class Bishop(Piece):
         if self.do_move_do(targetx, targety, chosen_direction, check_if_check):
             return True
 
-
+# class for the knight piece with rules on how it can move and which direction to move
 class Knight(Piece):
     def move(self, targetx, targety, check_if_check=False):
 
@@ -287,7 +320,7 @@ class Knight(Piece):
         else:
             return False
 
-
+# class for the queen piece with rules on how it can move and which direction to move
 class Queen(Piece):
     def move(self, targetx, targety, check_if_check=False):
         if self.position[0] == targetx or self.position[1] == targety:
@@ -332,10 +365,9 @@ class Queen(Piece):
         if self.do_move_do(targetx, targety, chosen_direction, check_if_check):
             return True
 
-
+# class for the king piece with rules on how it can move and which direction to move
 class King(Piece):
     def move(self, targetx, targety, check_if_check=False):
-        # 0 3  3 3
         if max(targetx, self.position[0]) - min(targetx, self.position[0]) > 1 or max(targety, self.position[1]) - min(targety, self.position[1]) > 1:
             logging.info(f"{self.__class__.__name__} can not move there, {self.position, self.position[0] - targetx, self.position[1] - targety}")
             return False
@@ -375,7 +407,7 @@ class King(Piece):
         if self.do_move_do(targetx, targety, chosen_direction, check_if_check):
             return True
 
-
+# creates an 8x8 matrix containing tiles
 def initialize_grid():
     grid = []
     for every in range(8):
@@ -385,6 +417,7 @@ def initialize_grid():
         grid.append(grid_row)
     return grid
 
+# returns a list of pieces present on the board
 def update_board():
     board_state = [[] for _ in range(8)]
     for i, row in enumerate(grid):
@@ -393,6 +426,9 @@ def update_board():
             board_state[i].append(piece)
     return board_state
 
+
+# takes two coordinates from GUI.py and if it is a piece, it is moved from (x1, y1) to (x2, y2). After moving, it checks
+# if the enemy has been put in check or checkmate
 def move_piece(stored_commands):
     x1, y1, x2, y2 = stored_commands
     check_amount = 0
@@ -400,17 +436,22 @@ def move_piece(stored_commands):
         return False
     color = grid[x1][y1].piece.color
     if grid[x1][y1].piece.move(x2, y2):
-        check_amount = is_check(check_amount, color)
-    if check_amount == 0:
+        check_amount = is_check(color)
+    else:
+        return False
+    if check_amount[0] == 0:
         return False
     elif check_amount[0]:
         if not check_mate(color, *check_amount):
             return "check mate"
         return "check"
 
-def is_check(check_amount, color, king_position=None):
+
+#
+def is_check(color, king_position=None):
     king_pos, black_list_of_pieces, white_list_of_pieces = get_king_position(color)
     attacker = []
+    check_amount = 0
     if king_position:
 
         king_pos = king_position
@@ -444,7 +485,7 @@ def check_mate(checker, check_amount, attacker):
             if grid[x][y].check_for_piece():
                 if grid[x][y].piece.color == checkered:
                     continue
-            if not is_check(0, checkered, king_position=(x,y))[0]:
+            if not is_check(checkered, king_position=(x,y))[0]:
                 return True
             continue
         return False
@@ -484,13 +525,13 @@ def check_mate(checker, check_amount, attacker):
                     tile_list.append([maxx - each, maxy + each])
         logging.info(tile_list)
         for each in tile_list:
-            if not is_check(0, checkered, king_position=each):
+            if not is_check(checkered, king_position=each):
                 return True
         return False
 
     def attack_attacker():
         logging.info("attack_attacker")
-        a = is_check(0, checkered, king_position=attacker.position)[0]
+        a = is_check(checkered, king_position=attacker.position)[0]
         if a:
             return True
         else:
