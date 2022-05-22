@@ -1,137 +1,469 @@
-2022-05-14 21:27:32,954 - INFO - Pawn empty
-2022-05-14 21:27:32,954 - INFO - ('black', 'Pawn') moved from (1, 3) to (3, 3)
-2022-05-14 21:27:32,958 - INFO - (7, 3) black
-2022-05-14 21:27:32,958 - INFO - is_check (<main.Pawn object at 0x000001874A01B8E0>, 'black')
-2022-05-14 21:27:32,958 - WARNING - Pawn can not move there
-2022-05-14 21:27:32,958 - INFO - is_check (<main.Pawn object at 0x000001874A01B700>, 'black')
-2022-05-14 21:27:32,958 - WARNING - Pawn can not move there
-2022-05-14 21:27:32,958 - INFO - is_check (<main.Pawn object at 0x000001874A01B6A0>, 'black')
-2022-05-14 21:27:32,958 - WARNING - Pawn can not move there
-2022-05-14 21:27:32,958 - INFO - is_check (<main.Pawn object at 0x000001874A01B640>, 'black')
-2022-05-14 21:27:32,958 - INFO - is_check (<main.Pawn object at 0x000001874A01B5E0>, 'black')
-2022-05-14 21:27:32,958 - WARNING - Pawn can not move there
-2022-05-14 21:27:32,958 - INFO - is_check (<main.Pawn object at 0x000001874A01B580>, 'black')
-2022-05-14 21:27:32,958 - WARNING - Pawn can not move there
-2022-05-14 21:27:32,958 - INFO - is_check (<main.Pawn object at 0x000001874A01B520>, 'black')
-2022-05-14 21:27:32,958 - WARNING - Pawn can not move there
-2022-05-14 21:27:32,958 - INFO - is_check (<main.Pawn object at 0x000001874A01B4C0>, 'black')
-2022-05-14 21:27:32,958 - WARNING - Pawn can not move there
-2022-05-14 21:27:32,958 - INFO - is_check (<main.Rook object at 0x000001874A01B910>, 'black')
-2022-05-14 21:27:32,958 - WARNING - Rook can not move there
-2022-05-14 21:27:32,958 - INFO - is_check (<main.Rook object at 0x000001874A01B370>, 'black')
-2022-05-14 21:27:32,958 - WARNING - Rook can not move there
-2022-05-14 21:27:32,958 - INFO - is_check (<main.Knight object at 0x000001874A01B310>, 'black')
-2022-05-14 21:27:32,958 - INFO - is_check (<main.Knight object at 0x000001874A01B2B0>, 'black')
-2022-05-14 21:27:32,958 - INFO - Knight can not move there
-2022-05-14 21:27:32,959 - INFO - is_check (<main.Bishop object at 0x000001874A01B250>, 'black')
-2022-05-14 21:27:32,959 - WARNING - Bishop can not move there
-2022-05-14 21:27:32,959 - INFO - is_check (<main.Bishop object at 0x000001874A01B160>, 'black')
-2022-05-14 21:27:32,959 - WARNING - Bishop can not move there
-2022-05-14 21:27:32,959 - INFO - is_check (<main.King object at 0x000001874A01B100>, 'black')
-2022-05-14 21:27:32,959 - INFO - King can not move there, ((0, 3), -7, 0)
-2022-05-14 21:27:32,959 - INFO - is_check (<main.Queen object at 0x000001874A01B070>, 'black')
-2022-05-14 21:27:32,959 - WARNING - Queen can not move there
-2022-05-14 21:27:32,959 - INFO - check amount: 0, attacker: [] 
-2022-05-14 21:27:34,717 - INFO - Pawn empty
-2022-05-14 21:27:34,717 - INFO - ('white', 'Pawn') moved from (6, 4) to (4, 4)
-2022-05-14 21:27:34,721 - INFO - (0, 3) white
-2022-05-14 21:27:34,721 - INFO - is_check (<main.Pawn object at 0x000001874A01AF80>, 'white')
-2022-05-14 21:27:34,721 - WARNING - Pawn can not move there
-2022-05-14 21:27:34,721 - INFO - is_check (<main.Pawn object at 0x000001874BC90070>, 'white')
-2022-05-14 21:27:34,721 - WARNING - Pawn can not move there
-2022-05-14 21:27:34,721 - INFO - is_check (<main.Pawn object at 0x000001874BC900D0>, 'white')
-2022-05-14 21:27:34,721 - WARNING - Pawn can not move there
-2022-05-14 21:27:34,721 - INFO - is_check (<main.Pawn object at 0x000001874BC90130>, 'white')
-2022-05-14 21:27:34,721 - INFO - is_check (<main.Pawn object at 0x000001874BC90190>, 'white')
-2022-05-14 21:27:34,721 - WARNING - Pawn can not move there
-2022-05-14 21:27:34,721 - INFO - is_check (<main.Pawn object at 0x000001874BC901F0>, 'white')
-2022-05-14 21:27:34,721 - WARNING - Pawn can not move there
-2022-05-14 21:27:34,721 - INFO - is_check (<main.Pawn object at 0x000001874BC90250>, 'white')
-2022-05-14 21:27:34,721 - WARNING - Pawn can not move there
-2022-05-14 21:27:34,721 - INFO - is_check (<main.Pawn object at 0x000001874BC902B0>, 'white')
-2022-05-14 21:27:34,722 - WARNING - Pawn can not move there
-2022-05-14 21:27:34,722 - INFO - is_check (<main.Rook object at 0x000001874A01AFE0>, 'white')
-2022-05-14 21:27:34,722 - WARNING - Rook can not move there
-2022-05-14 21:27:34,722 - INFO - is_check (<main.Rook object at 0x000001874BC90340>, 'white')
-2022-05-14 21:27:34,722 - WARNING - Rook can not move there
-2022-05-14 21:27:34,722 - INFO - is_check (<main.Knight object at 0x000001874BC903A0>, 'white')
-2022-05-14 21:27:34,722 - INFO - is_check (<main.Knight object at 0x000001874BC90400>, 'white')
-2022-05-14 21:27:34,722 - INFO - Knight can not move there
-2022-05-14 21:27:34,722 - INFO - is_check (<main.Bishop object at 0x000001874BC90460>, 'white')
-2022-05-14 21:27:34,722 - WARNING - Bishop can not move there
-2022-05-14 21:27:34,722 - INFO - is_check (<main.Bishop object at 0x000001874BC904C0>, 'white')
-2022-05-14 21:27:34,722 - WARNING - Bishop can not move there
-2022-05-14 21:27:34,722 - INFO - is_check (<main.King object at 0x000001874BC90520>, 'white')
-2022-05-14 21:27:34,722 - INFO - King can not move there, ((7, 3), 7, 0)
-2022-05-14 21:27:34,722 - INFO - is_check (<main.Queen object at 0x000001874BC90580>, 'white')
-2022-05-14 21:27:34,722 - WARNING - Queen can not move there
-2022-05-14 21:27:34,722 - INFO - check amount: 0, attacker: [] 
-2022-05-14 21:27:37,491 - INFO - ('black', 'Pawn') moved from (3, 3) to (4, 3)
-2022-05-14 21:27:37,495 - INFO - (7, 3) black
-2022-05-14 21:27:37,495 - INFO - is_check (<main.Pawn object at 0x000001874A01B8E0>, 'black')
-2022-05-14 21:27:37,495 - WARNING - Pawn can not move there
-2022-05-14 21:27:37,495 - INFO - is_check (<main.Pawn object at 0x000001874A01B700>, 'black')
-2022-05-14 21:27:37,495 - WARNING - Pawn can not move there
-2022-05-14 21:27:37,495 - INFO - is_check (<main.Pawn object at 0x000001874A01B6A0>, 'black')
-2022-05-14 21:27:37,495 - WARNING - Pawn can not move there
-2022-05-14 21:27:37,495 - INFO - is_check (<main.Pawn object at 0x000001874A01B640>, 'black')
-2022-05-14 21:27:37,495 - INFO - is_check (<main.Pawn object at 0x000001874A01B5E0>, 'black')
-2022-05-14 21:27:37,495 - WARNING - Pawn can not move there
-2022-05-14 21:27:37,495 - INFO - is_check (<main.Pawn object at 0x000001874A01B580>, 'black')
-2022-05-14 21:27:37,495 - WARNING - Pawn can not move there
-2022-05-14 21:27:37,495 - INFO - is_check (<main.Pawn object at 0x000001874A01B520>, 'black')
-2022-05-14 21:27:37,495 - WARNING - Pawn can not move there
-2022-05-14 21:27:37,495 - INFO - is_check (<main.Pawn object at 0x000001874A01B4C0>, 'black')
-2022-05-14 21:27:37,495 - WARNING - Pawn can not move there
-2022-05-14 21:27:37,495 - INFO - is_check (<main.Rook object at 0x000001874A01B910>, 'black')
-2022-05-14 21:27:37,495 - WARNING - Rook can not move there
-2022-05-14 21:27:37,495 - INFO - is_check (<main.Rook object at 0x000001874A01B370>, 'black')
-2022-05-14 21:27:37,495 - WARNING - Rook can not move there
-2022-05-14 21:27:37,495 - INFO - is_check (<main.Knight object at 0x000001874A01B310>, 'black')
-2022-05-14 21:27:37,495 - INFO - is_check (<main.Knight object at 0x000001874A01B2B0>, 'black')
-2022-05-14 21:27:37,496 - INFO - Knight can not move there
-2022-05-14 21:27:37,496 - INFO - is_check (<main.Bishop object at 0x000001874A01B250>, 'black')
-2022-05-14 21:27:37,496 - WARNING - Bishop can not move there
-2022-05-14 21:27:37,496 - INFO - is_check (<main.Bishop object at 0x000001874A01B160>, 'black')
-2022-05-14 21:27:37,496 - WARNING - Bishop can not move there
-2022-05-14 21:27:37,496 - INFO - is_check (<main.King object at 0x000001874A01B100>, 'black')
-2022-05-14 21:27:37,496 - INFO - King can not move there, ((0, 3), -7, 0)
-2022-05-14 21:27:37,496 - INFO - is_check (<main.Queen object at 0x000001874A01B070>, 'black')
-2022-05-14 21:27:37,496 - WARNING - Queen can not move there
-2022-05-14 21:27:37,496 - INFO - check amount: 0, attacker: [] 
-2022-05-14 21:27:38,698 - WARNING - Pawn can not move there
-2022-05-14 21:27:40,776 - INFO - EN PASSANT
-2022-05-14 21:27:40,776 - INFO - ('black', 'Pawn') moved from (4, 3) and attacked Pawn at (5, 4)
-2022-05-14 21:27:40,780 - INFO - (7, 3) black
-2022-05-14 21:27:40,780 - INFO - is_check (<main.Pawn object at 0x000001874A01B8E0>, 'black')
-2022-05-14 21:27:40,780 - WARNING - Pawn can not move there
-2022-05-14 21:27:40,780 - INFO - is_check (<main.Pawn object at 0x000001874A01B700>, 'black')
-2022-05-14 21:27:40,780 - WARNING - Pawn can not move there
-2022-05-14 21:27:40,780 - INFO - is_check (<main.Pawn object at 0x000001874A01B6A0>, 'black')
-2022-05-14 21:27:40,780 - WARNING - Pawn can not move there
-2022-05-14 21:27:40,781 - INFO - is_check (<main.Pawn object at 0x000001874A01B640>, 'black')
-2022-05-14 21:27:40,781 - WARNING - Pawn can not move there
-2022-05-14 21:27:40,781 - INFO - is_check (<main.Pawn object at 0x000001874A01B5E0>, 'black')
-2022-05-14 21:27:40,781 - WARNING - Pawn can not move there
-2022-05-14 21:27:40,781 - INFO - is_check (<main.Pawn object at 0x000001874A01B580>, 'black')
-2022-05-14 21:27:40,781 - WARNING - Pawn can not move there
-2022-05-14 21:27:40,781 - INFO - is_check (<main.Pawn object at 0x000001874A01B520>, 'black')
-2022-05-14 21:27:40,781 - WARNING - Pawn can not move there
-2022-05-14 21:27:40,781 - INFO - is_check (<main.Pawn object at 0x000001874A01B4C0>, 'black')
-2022-05-14 21:27:40,781 - WARNING - Pawn can not move there
-2022-05-14 21:27:40,781 - INFO - is_check (<main.Rook object at 0x000001874A01B910>, 'black')
-2022-05-14 21:27:40,781 - WARNING - Rook can not move there
-2022-05-14 21:27:40,781 - INFO - is_check (<main.Rook object at 0x000001874A01B370>, 'black')
-2022-05-14 21:27:40,781 - WARNING - Rook can not move there
-2022-05-14 21:27:40,781 - INFO - is_check (<main.Knight object at 0x000001874A01B310>, 'black')
-2022-05-14 21:27:40,781 - INFO - is_check (<main.Knight object at 0x000001874A01B2B0>, 'black')
-2022-05-14 21:27:40,781 - INFO - Knight can not move there
-2022-05-14 21:27:40,781 - INFO - is_check (<main.Bishop object at 0x000001874A01B250>, 'black')
-2022-05-14 21:27:40,781 - WARNING - Bishop can not move there
-2022-05-14 21:27:40,781 - INFO - is_check (<main.Bishop object at 0x000001874A01B160>, 'black')
-2022-05-14 21:27:40,781 - WARNING - Bishop can not move there
-2022-05-14 21:27:40,781 - INFO - is_check (<main.King object at 0x000001874A01B100>, 'black')
-2022-05-14 21:27:40,781 - INFO - King can not move there, ((0, 3), -7, 0)
-2022-05-14 21:27:40,781 - INFO - is_check (<main.Queen object at 0x000001874A01B070>, 'black')
-2022-05-14 21:27:40,781 - WARNING - Queen can not move there
-2022-05-14 21:27:40,781 - INFO - check amount: 0, attacker: [] 
+2022-05-22 19:17:36,990 - INFO - Pawn empty
+2022-05-22 19:17:36,990 - INFO - ('white', 'Pawn') moved from (6, 3) to (4, 3)
+2022-05-22 19:17:36,995 - INFO - (0, 3) white
+2022-05-22 19:17:36,995 - INFO - is_check (<main.Pawn object at 0x000001B4F40E4EE0>, 'white')
+2022-05-22 19:17:36,996 - WARNING - Pawn can not move there
+2022-05-22 19:17:36,996 - INFO - is_check (<main.Pawn object at 0x000001B4F40E4F40>, 'white')
+2022-05-22 19:17:36,996 - WARNING - Pawn can not move there
+2022-05-22 19:17:36,996 - INFO - is_check (<main.Pawn object at 0x000001B4F40E4FA0>, 'white')
+2022-05-22 19:17:36,996 - WARNING - Pawn can not move there
+2022-05-22 19:17:36,996 - INFO - is_check (<main.Pawn object at 0x000001B4F40E6040>, 'white')
+2022-05-22 19:17:36,996 - INFO - is_check (<main.Pawn object at 0x000001B4F40E60A0>, 'white')
+2022-05-22 19:17:36,996 - WARNING - Pawn can not move there
+2022-05-22 19:17:36,996 - INFO - is_check (<main.Pawn object at 0x000001B4F40E6100>, 'white')
+2022-05-22 19:17:36,996 - WARNING - Pawn can not move there
+2022-05-22 19:17:36,996 - INFO - is_check (<main.Pawn object at 0x000001B4F40E6160>, 'white')
+2022-05-22 19:17:36,996 - WARNING - Pawn can not move there
+2022-05-22 19:17:36,996 - INFO - is_check (<main.Pawn object at 0x000001B4F40E61C0>, 'white')
+2022-05-22 19:17:36,996 - WARNING - Pawn can not move there
+2022-05-22 19:17:36,996 - INFO - is_check (<main.Rook object at 0x000001B4F40E4EB0>, 'white')
+2022-05-22 19:17:36,996 - WARNING - Rook can not move there
+2022-05-22 19:17:36,996 - INFO - is_check (<main.Rook object at 0x000001B4F40E6250>, 'white')
+2022-05-22 19:17:36,996 - WARNING - Rook can not move there
+2022-05-22 19:17:36,996 - INFO - is_check (<main.Knight object at 0x000001B4F40E62B0>, 'white')
+2022-05-22 19:17:36,996 - INFO - is_check (<main.Knight object at 0x000001B4F40E6310>, 'white')
+2022-05-22 19:17:36,996 - INFO - Knight can not move there
+2022-05-22 19:17:36,997 - INFO - is_check (<main.Bishop object at 0x000001B4F40E6370>, 'white')
+2022-05-22 19:17:36,997 - WARNING - Bishop can not move there
+2022-05-22 19:17:36,997 - INFO - is_check (<main.Bishop object at 0x000001B4F40E63D0>, 'white')
+2022-05-22 19:17:36,997 - WARNING - Bishop can not move there
+2022-05-22 19:17:36,997 - INFO - is_check (<main.King object at 0x000001B4F40E6430>, 'white')
+2022-05-22 19:17:36,997 - INFO - King can not move there, ((7, 3), 7, 0)
+2022-05-22 19:17:36,997 - INFO - is_check (<main.Queen object at 0x000001B4F40E6490>, 'white')
+2022-05-22 19:17:36,997 - WARNING - Queen can not move there
+2022-05-22 19:17:36,997 - INFO - check amount: 0, attacker: [] 
+2022-05-22 19:17:39,270 - INFO - Pawn empty
+2022-05-22 19:17:39,270 - INFO - ('black', 'Pawn') moved from (1, 4) to (3, 4)
+2022-05-22 19:17:39,276 - INFO - (7, 3) black
+2022-05-22 19:17:39,276 - INFO - is_check (<main.Pawn object at 0x000001B4F40E48E0>, 'black')
+2022-05-22 19:17:39,277 - WARNING - Pawn can not move there
+2022-05-22 19:17:39,277 - INFO - is_check (<main.Pawn object at 0x000001B4F40E4940>, 'black')
+2022-05-22 19:17:39,277 - WARNING - Pawn can not move there
+2022-05-22 19:17:39,277 - INFO - is_check (<main.Pawn object at 0x000001B4F40E49A0>, 'black')
+2022-05-22 19:17:39,277 - WARNING - Pawn can not move there
+2022-05-22 19:17:39,277 - INFO - is_check (<main.Pawn object at 0x000001B4F40E4A00>, 'black')
+2022-05-22 19:17:39,277 - INFO - is_check (<main.Pawn object at 0x000001B4F40E4A60>, 'black')
+2022-05-22 19:17:39,277 - WARNING - Pawn can not move there
+2022-05-22 19:17:39,277 - INFO - is_check (<main.Pawn object at 0x000001B4F40E4AC0>, 'black')
+2022-05-22 19:17:39,277 - WARNING - Pawn can not move there
+2022-05-22 19:17:39,277 - INFO - is_check (<main.Pawn object at 0x000001B4F40E4B20>, 'black')
+2022-05-22 19:17:39,277 - WARNING - Pawn can not move there
+2022-05-22 19:17:39,277 - INFO - is_check (<main.Pawn object at 0x000001B4F40E4B80>, 'black')
+2022-05-22 19:17:39,277 - WARNING - Pawn can not move there
+2022-05-22 19:17:39,277 - INFO - is_check (<main.Rook object at 0x000001B4F40E48B0>, 'black')
+2022-05-22 19:17:39,277 - WARNING - Rook can not move there
+2022-05-22 19:17:39,277 - INFO - is_check (<main.Rook object at 0x000001B4F40E4C10>, 'black')
+2022-05-22 19:17:39,277 - WARNING - Rook can not move there
+2022-05-22 19:17:39,278 - INFO - is_check (<main.Knight object at 0x000001B4F40E4C70>, 'black')
+2022-05-22 19:17:39,278 - INFO - is_check (<main.Knight object at 0x000001B4F40E4CD0>, 'black')
+2022-05-22 19:17:39,278 - INFO - Knight can not move there
+2022-05-22 19:17:39,278 - INFO - is_check (<main.Bishop object at 0x000001B4F40E4D30>, 'black')
+2022-05-22 19:17:39,278 - WARNING - Bishop can not move there
+2022-05-22 19:17:39,278 - INFO - is_check (<main.Bishop object at 0x000001B4F40E4D90>, 'black')
+2022-05-22 19:17:39,278 - WARNING - Bishop can not move there
+2022-05-22 19:17:39,278 - INFO - is_check (<main.King object at 0x000001B4F40E4DF0>, 'black')
+2022-05-22 19:17:39,278 - INFO - King can not move there, ((0, 3), -7, 0)
+2022-05-22 19:17:39,278 - INFO - is_check (<main.Queen object at 0x000001B4F40E4E50>, 'black')
+2022-05-22 19:17:39,278 - WARNING - Queen can not move there
+2022-05-22 19:17:39,278 - INFO - check amount: 0, attacker: [] 
+2022-05-22 19:17:40,825 - INFO - pawn info ((4, 3), 3, 4)
+2022-05-22 19:17:40,826 - INFO - ('white', 'Pawn') moved from (4, 3) and attacked Pawn at (3, 4)
+2022-05-22 19:17:40,832 - INFO - (0, 3) white
+2022-05-22 19:17:40,832 - INFO - is_check (<main.Pawn object at 0x000001B4F40E4EE0>, 'white')
+2022-05-22 19:17:40,832 - WARNING - Pawn can not move there
+2022-05-22 19:17:40,832 - INFO - is_check (<main.Pawn object at 0x000001B4F40E4F40>, 'white')
+2022-05-22 19:17:40,832 - WARNING - Pawn can not move there
+2022-05-22 19:17:40,832 - INFO - is_check (<main.Pawn object at 0x000001B4F40E4FA0>, 'white')
+2022-05-22 19:17:40,832 - WARNING - Pawn can not move there
+2022-05-22 19:17:40,832 - INFO - is_check (<main.Pawn object at 0x000001B4F40E6040>, 'white')
+2022-05-22 19:17:40,832 - WARNING - Pawn can not move there
+2022-05-22 19:17:40,832 - INFO - is_check (<main.Pawn object at 0x000001B4F40E60A0>, 'white')
+2022-05-22 19:17:40,832 - WARNING - Pawn can not move there
+2022-05-22 19:17:40,832 - INFO - is_check (<main.Pawn object at 0x000001B4F40E6100>, 'white')
+2022-05-22 19:17:40,832 - WARNING - Pawn can not move there
+2022-05-22 19:17:40,833 - INFO - is_check (<main.Pawn object at 0x000001B4F40E6160>, 'white')
+2022-05-22 19:17:40,833 - WARNING - Pawn can not move there
+2022-05-22 19:17:40,833 - INFO - is_check (<main.Pawn object at 0x000001B4F40E61C0>, 'white')
+2022-05-22 19:17:40,833 - WARNING - Pawn can not move there
+2022-05-22 19:17:40,833 - INFO - is_check (<main.Rook object at 0x000001B4F40E4EB0>, 'white')
+2022-05-22 19:17:40,833 - WARNING - Rook can not move there
+2022-05-22 19:17:40,833 - INFO - is_check (<main.Rook object at 0x000001B4F40E6250>, 'white')
+2022-05-22 19:17:40,833 - WARNING - Rook can not move there
+2022-05-22 19:17:40,833 - INFO - is_check (<main.Knight object at 0x000001B4F40E62B0>, 'white')
+2022-05-22 19:17:40,833 - INFO - is_check (<main.Knight object at 0x000001B4F40E6310>, 'white')
+2022-05-22 19:17:40,833 - INFO - Knight can not move there
+2022-05-22 19:17:40,833 - INFO - is_check (<main.Bishop object at 0x000001B4F40E6370>, 'white')
+2022-05-22 19:17:40,833 - WARNING - Bishop can not move there
+2022-05-22 19:17:40,833 - INFO - is_check (<main.Bishop object at 0x000001B4F40E63D0>, 'white')
+2022-05-22 19:17:40,833 - WARNING - Bishop can not move there
+2022-05-22 19:17:40,833 - INFO - is_check (<main.King object at 0x000001B4F40E6430>, 'white')
+2022-05-22 19:17:40,833 - INFO - King can not move there, ((7, 3), 7, 0)
+2022-05-22 19:17:40,833 - INFO - is_check (<main.Queen object at 0x000001B4F40E6490>, 'white')
+2022-05-22 19:17:40,833 - WARNING - Queen can not move there
+2022-05-22 19:17:40,833 - INFO - check amount: 0, attacker: [] 
+2022-05-22 19:17:44,657 - INFO - Pawn empty
+2022-05-22 19:17:44,657 - INFO - ('black', 'Pawn') moved from (1, 5) to (3, 5)
+2022-05-22 19:17:44,663 - INFO - (7, 3) black
+2022-05-22 19:17:44,663 - INFO - is_check (<main.Pawn object at 0x000001B4F40E48E0>, 'black')
+2022-05-22 19:17:44,663 - WARNING - Pawn can not move there
+2022-05-22 19:17:44,663 - INFO - is_check (<main.Pawn object at 0x000001B4F40E4940>, 'black')
+2022-05-22 19:17:44,663 - WARNING - Pawn can not move there
+2022-05-22 19:17:44,663 - INFO - is_check (<main.Pawn object at 0x000001B4F40E49A0>, 'black')
+2022-05-22 19:17:44,663 - WARNING - Pawn can not move there
+2022-05-22 19:17:44,663 - INFO - is_check (<main.Pawn object at 0x000001B4F40E4A00>, 'black')
+2022-05-22 19:17:44,663 - INFO - is_check (<main.Pawn object at 0x000001B4F40E4AC0>, 'black')
+2022-05-22 19:17:44,663 - WARNING - Pawn can not move there
+2022-05-22 19:17:44,663 - INFO - is_check (<main.Pawn object at 0x000001B4F40E4B20>, 'black')
+2022-05-22 19:17:44,663 - WARNING - Pawn can not move there
+2022-05-22 19:17:44,663 - INFO - is_check (<main.Pawn object at 0x000001B4F40E4B80>, 'black')
+2022-05-22 19:17:44,664 - WARNING - Pawn can not move there
+2022-05-22 19:17:44,664 - INFO - is_check (<main.Rook object at 0x000001B4F40E48B0>, 'black')
+2022-05-22 19:17:44,664 - WARNING - Rook can not move there
+2022-05-22 19:17:44,664 - INFO - is_check (<main.Rook object at 0x000001B4F40E4C10>, 'black')
+2022-05-22 19:17:44,664 - WARNING - Rook can not move there
+2022-05-22 19:17:44,664 - INFO - is_check (<main.Knight object at 0x000001B4F40E4C70>, 'black')
+2022-05-22 19:17:44,664 - INFO - is_check (<main.Knight object at 0x000001B4F40E4CD0>, 'black')
+2022-05-22 19:17:44,664 - INFO - Knight can not move there
+2022-05-22 19:17:44,664 - INFO - is_check (<main.Bishop object at 0x000001B4F40E4D30>, 'black')
+2022-05-22 19:17:44,664 - WARNING - Bishop can not move there
+2022-05-22 19:17:44,664 - INFO - is_check (<main.Bishop object at 0x000001B4F40E4D90>, 'black')
+2022-05-22 19:17:44,664 - WARNING - Bishop can not move there
+2022-05-22 19:17:44,664 - INFO - is_check (<main.King object at 0x000001B4F40E4DF0>, 'black')
+2022-05-22 19:17:44,664 - INFO - King can not move there, ((0, 3), -7, 0)
+2022-05-22 19:17:44,664 - INFO - is_check (<main.Queen object at 0x000001B4F40E4E50>, 'black')
+2022-05-22 19:17:44,664 - WARNING - Queen can not move there
+2022-05-22 19:17:44,664 - INFO - check amount: 0, attacker: [] 
+2022-05-22 19:17:54,964 - INFO - Queen empty
+2022-05-22 19:17:54,965 - INFO - Queen empty
+2022-05-22 19:17:54,965 - INFO - ('white', 'Queen') moved from (7, 4) to (4, 1)
+2022-05-22 19:17:54,970 - INFO - (0, 3) white
+2022-05-22 19:17:54,970 - INFO - is_check (<main.Pawn object at 0x000001B4F40E4EE0>, 'white')
+2022-05-22 19:17:54,970 - WARNING - Pawn can not move there
+2022-05-22 19:17:54,970 - INFO - is_check (<main.Pawn object at 0x000001B4F40E4F40>, 'white')
+2022-05-22 19:17:54,971 - WARNING - Pawn can not move there
+2022-05-22 19:17:54,971 - INFO - is_check (<main.Pawn object at 0x000001B4F40E4FA0>, 'white')
+2022-05-22 19:17:54,971 - WARNING - Pawn can not move there
+2022-05-22 19:17:54,971 - INFO - is_check (<main.Pawn object at 0x000001B4F40E6040>, 'white')
+2022-05-22 19:17:54,971 - WARNING - Pawn can not move there
+2022-05-22 19:17:54,971 - INFO - is_check (<main.Pawn object at 0x000001B4F40E60A0>, 'white')
+2022-05-22 19:17:54,971 - WARNING - Pawn can not move there
+2022-05-22 19:17:54,971 - INFO - is_check (<main.Pawn object at 0x000001B4F40E6100>, 'white')
+2022-05-22 19:17:54,971 - WARNING - Pawn can not move there
+2022-05-22 19:17:54,971 - INFO - is_check (<main.Pawn object at 0x000001B4F40E6160>, 'white')
+2022-05-22 19:17:54,971 - WARNING - Pawn can not move there
+2022-05-22 19:17:54,971 - INFO - is_check (<main.Pawn object at 0x000001B4F40E61C0>, 'white')
+2022-05-22 19:17:54,971 - WARNING - Pawn can not move there
+2022-05-22 19:17:54,971 - INFO - is_check (<main.Rook object at 0x000001B4F40E4EB0>, 'white')
+2022-05-22 19:17:54,971 - WARNING - Rook can not move there
+2022-05-22 19:17:54,971 - INFO - is_check (<main.Rook object at 0x000001B4F40E6250>, 'white')
+2022-05-22 19:17:54,971 - WARNING - Rook can not move there
+2022-05-22 19:17:54,971 - INFO - is_check (<main.Knight object at 0x000001B4F40E62B0>, 'white')
+2022-05-22 19:17:54,971 - INFO - is_check (<main.Knight object at 0x000001B4F40E6310>, 'white')
+2022-05-22 19:17:54,971 - INFO - Knight can not move there
+2022-05-22 19:17:54,971 - INFO - is_check (<main.Bishop object at 0x000001B4F40E6370>, 'white')
+2022-05-22 19:17:54,971 - WARNING - Bishop can not move there
+2022-05-22 19:17:54,972 - INFO - is_check (<main.Bishop object at 0x000001B4F40E63D0>, 'white')
+2022-05-22 19:17:54,972 - WARNING - Bishop can not move there
+2022-05-22 19:17:54,972 - INFO - is_check (<main.King object at 0x000001B4F40E6430>, 'white')
+2022-05-22 19:17:54,972 - INFO - King can not move there, ((7, 3), 7, 0)
+2022-05-22 19:17:54,972 - INFO - is_check (<main.Queen object at 0x000001B4F40E6490>, 'white')
+2022-05-22 19:17:54,972 - WARNING - Queen can not move there
+2022-05-22 19:17:54,972 - INFO - check amount: 0, attacker: [] 
+2022-05-22 19:17:59,865 - INFO - Pawn empty
+2022-05-22 19:17:59,865 - INFO - ('black', 'Pawn') moved from (1, 3) to (3, 3)
+2022-05-22 19:17:59,870 - INFO - (7, 3) black
+2022-05-22 19:17:59,871 - INFO - is_check (<main.Pawn object at 0x000001B4F40E48E0>, 'black')
+2022-05-22 19:17:59,871 - WARNING - Pawn can not move there
+2022-05-22 19:17:59,871 - INFO - is_check (<main.Pawn object at 0x000001B4F40E4940>, 'black')
+2022-05-22 19:17:59,871 - WARNING - Pawn can not move there
+2022-05-22 19:17:59,871 - INFO - is_check (<main.Pawn object at 0x000001B4F40E49A0>, 'black')
+2022-05-22 19:17:59,871 - WARNING - Pawn can not move there
+2022-05-22 19:17:59,871 - INFO - is_check (<main.Pawn object at 0x000001B4F40E4A00>, 'black')
+2022-05-22 19:17:59,871 - INFO - is_check (<main.Pawn object at 0x000001B4F40E4AC0>, 'black')
+2022-05-22 19:17:59,871 - WARNING - Pawn can not move there
+2022-05-22 19:17:59,871 - INFO - is_check (<main.Pawn object at 0x000001B4F40E4B20>, 'black')
+2022-05-22 19:17:59,871 - WARNING - Pawn can not move there
+2022-05-22 19:17:59,871 - INFO - is_check (<main.Pawn object at 0x000001B4F40E4B80>, 'black')
+2022-05-22 19:17:59,871 - WARNING - Pawn can not move there
+2022-05-22 19:17:59,871 - INFO - is_check (<main.Rook object at 0x000001B4F40E48B0>, 'black')
+2022-05-22 19:17:59,871 - WARNING - Rook can not move there
+2022-05-22 19:17:59,871 - INFO - is_check (<main.Rook object at 0x000001B4F40E4C10>, 'black')
+2022-05-22 19:17:59,871 - WARNING - Rook can not move there
+2022-05-22 19:17:59,871 - INFO - is_check (<main.Knight object at 0x000001B4F40E4C70>, 'black')
+2022-05-22 19:17:59,871 - INFO - is_check (<main.Knight object at 0x000001B4F40E4CD0>, 'black')
+2022-05-22 19:17:59,871 - INFO - Knight can not move there
+2022-05-22 19:17:59,872 - INFO - is_check (<main.Bishop object at 0x000001B4F40E4D30>, 'black')
+2022-05-22 19:17:59,872 - WARNING - Bishop can not move there
+2022-05-22 19:17:59,872 - INFO - is_check (<main.Bishop object at 0x000001B4F40E4D90>, 'black')
+2022-05-22 19:17:59,872 - WARNING - Bishop can not move there
+2022-05-22 19:17:59,872 - INFO - is_check (<main.King object at 0x000001B4F40E4DF0>, 'black')
+2022-05-22 19:17:59,872 - INFO - King can not move there, ((0, 3), -7, 0)
+2022-05-22 19:17:59,872 - INFO - is_check (<main.Queen object at 0x000001B4F40E4E50>, 'black')
+2022-05-22 19:17:59,872 - WARNING - Queen can not move there
+2022-05-22 19:17:59,872 - INFO - check amount: 0, attacker: [] 
+2022-05-22 19:18:01,851 - INFO - Queen empty
+2022-05-22 19:18:01,851 - INFO - ('white', 'Queen') moved from (4, 1) to (2, 3)
+2022-05-22 19:18:01,856 - INFO - (0, 3) white
+2022-05-22 19:18:01,856 - INFO - is_check (<main.Pawn object at 0x000001B4F40E4EE0>, 'white')
+2022-05-22 19:18:01,856 - WARNING - Pawn can not move there
+2022-05-22 19:18:01,856 - INFO - is_check (<main.Pawn object at 0x000001B4F40E4F40>, 'white')
+2022-05-22 19:18:01,856 - WARNING - Pawn can not move there
+2022-05-22 19:18:01,857 - INFO - is_check (<main.Pawn object at 0x000001B4F40E4FA0>, 'white')
+2022-05-22 19:18:01,857 - WARNING - Pawn can not move there
+2022-05-22 19:18:01,857 - INFO - is_check (<main.Pawn object at 0x000001B4F40E6040>, 'white')
+2022-05-22 19:18:01,857 - WARNING - Pawn can not move there
+2022-05-22 19:18:01,857 - INFO - is_check (<main.Pawn object at 0x000001B4F40E60A0>, 'white')
+2022-05-22 19:18:01,857 - WARNING - Pawn can not move there
+2022-05-22 19:18:01,857 - INFO - is_check (<main.Pawn object at 0x000001B4F40E6100>, 'white')
+2022-05-22 19:18:01,857 - WARNING - Pawn can not move there
+2022-05-22 19:18:01,857 - INFO - is_check (<main.Pawn object at 0x000001B4F40E6160>, 'white')
+2022-05-22 19:18:01,857 - WARNING - Pawn can not move there
+2022-05-22 19:18:01,857 - INFO - is_check (<main.Pawn object at 0x000001B4F40E61C0>, 'white')
+2022-05-22 19:18:01,857 - WARNING - Pawn can not move there
+2022-05-22 19:18:01,857 - INFO - is_check (<main.Rook object at 0x000001B4F40E4EB0>, 'white')
+2022-05-22 19:18:01,857 - WARNING - Rook can not move there
+2022-05-22 19:18:01,857 - INFO - is_check (<main.Rook object at 0x000001B4F40E6250>, 'white')
+2022-05-22 19:18:01,857 - WARNING - Rook can not move there
+2022-05-22 19:18:01,857 - INFO - is_check (<main.Knight object at 0x000001B4F40E62B0>, 'white')
+2022-05-22 19:18:01,857 - INFO - is_check (<main.Knight object at 0x000001B4F40E6310>, 'white')
+2022-05-22 19:18:01,857 - INFO - Knight can not move there
+2022-05-22 19:18:01,857 - INFO - is_check (<main.Bishop object at 0x000001B4F40E6370>, 'white')
+2022-05-22 19:18:01,857 - WARNING - Bishop can not move there
+2022-05-22 19:18:01,858 - INFO - is_check (<main.Bishop object at 0x000001B4F40E63D0>, 'white')
+2022-05-22 19:18:01,858 - WARNING - Bishop can not move there
+2022-05-22 19:18:01,858 - INFO - is_check (<main.King object at 0x000001B4F40E6430>, 'white')
+2022-05-22 19:18:01,858 - INFO - King can not move there, ((7, 3), 7, 0)
+2022-05-22 19:18:01,858 - INFO - is_check (<main.Queen object at 0x000001B4F40E6490>, 'white')
+2022-05-22 19:18:01,858 - INFO - Queen empty
+2022-05-22 19:18:01,858 - INFO - white Queen at (2, 3) has put enemy in check 
+2022-05-22 19:18:01,858 - INFO - check amount: 1, attacker: [<main.Queen object at 0x000001B4F40E6490>] 
+2022-05-22 19:18:01,858 - INFO - move_king
+2022-05-22 19:18:01,865 - INFO - (1, 4) black
+2022-05-22 19:18:01,865 - INFO - is_check (<main.Pawn object at 0x000001B4F40E48E0>, 'black')
+2022-05-22 19:18:01,865 - WARNING - Pawn can not move there
+2022-05-22 19:18:01,865 - INFO - is_check (<main.Pawn object at 0x000001B4F40E4940>, 'black')
+2022-05-22 19:18:01,865 - WARNING - Pawn can not move there
+2022-05-22 19:18:01,865 - INFO - is_check (<main.Pawn object at 0x000001B4F40E49A0>, 'black')
+2022-05-22 19:18:01,865 - WARNING - Pawn can not move there
+2022-05-22 19:18:01,865 - INFO - is_check (<main.Pawn object at 0x000001B4F40E4A00>, 'black')
+2022-05-22 19:18:01,865 - WARNING - Pawn can not move there
+2022-05-22 19:18:01,865 - INFO - is_check (<main.Pawn object at 0x000001B4F40E4AC0>, 'black')
+2022-05-22 19:18:01,865 - WARNING - Pawn can not move there
+2022-05-22 19:18:01,865 - INFO - is_check (<main.Pawn object at 0x000001B4F40E4B20>, 'black')
+2022-05-22 19:18:01,865 - WARNING - Pawn can not move there
+2022-05-22 19:18:01,865 - INFO - is_check (<main.Pawn object at 0x000001B4F40E4B80>, 'black')
+2022-05-22 19:18:01,865 - WARNING - Pawn can not move there
+2022-05-22 19:18:01,865 - INFO - is_check (<main.Rook object at 0x000001B4F40E48B0>, 'black')
+2022-05-22 19:18:01,865 - WARNING - Rook can not move there
+2022-05-22 19:18:01,865 - INFO - is_check (<main.Rook object at 0x000001B4F40E4C10>, 'black')
+2022-05-22 19:18:01,865 - WARNING - Rook can not move there
+2022-05-22 19:18:01,865 - INFO - is_check (<main.Knight object at 0x000001B4F40E4C70>, 'black')
+2022-05-22 19:18:01,866 - INFO - Knight can not move there
+2022-05-22 19:18:01,866 - INFO - is_check (<main.Knight object at 0x000001B4F40E4CD0>, 'black')
+2022-05-22 19:18:01,866 - INFO - ('Knight', (0, 6)) Check
+2022-05-22 19:18:01,866 - INFO - is_check (<main.Bishop object at 0x000001B4F40E4D30>, 'black')
+2022-05-22 19:18:01,866 - WARNING - Bishop can not move there
+2022-05-22 19:18:01,866 - INFO - is_check (<main.Bishop object at 0x000001B4F40E4D90>, 'black')
+2022-05-22 19:18:01,866 - INFO - ('Bishop', (0, 5)) Check
+2022-05-22 19:18:01,866 - INFO - is_check (<main.King object at 0x000001B4F40E4DF0>, 'black')
+2022-05-22 19:18:01,866 - INFO - ('King', (0, 3)) Check
+2022-05-22 19:18:01,866 - INFO - is_check (<main.Queen object at 0x000001B4F40E4E50>, 'black')
+2022-05-22 19:18:01,866 - INFO - ('Queen', (0, 4)) Check
+2022-05-22 19:18:01,866 - INFO - check amount: 4, attacker: [<main.Knight object at 0x000001B4F40E4CD0>, <main.Bishop object at 0x000001B4F40E4D90>, <main.King object at 0x000001B4F40E4DF0>, <main.Queen object at 0x000001B4F40E4E50>] 
+2022-05-22 19:18:01,871 - INFO - (1, 3) black
+2022-05-22 19:18:01,871 - INFO - is_check (<main.Pawn object at 0x000001B4F40E48E0>, 'black')
+2022-05-22 19:18:01,871 - WARNING - Pawn can not move there
+2022-05-22 19:18:01,871 - INFO - is_check (<main.Pawn object at 0x000001B4F40E4940>, 'black')
+2022-05-22 19:18:01,871 - WARNING - Pawn can not move there
+2022-05-22 19:18:01,871 - INFO - is_check (<main.Pawn object at 0x000001B4F40E49A0>, 'black')
+2022-05-22 19:18:01,871 - WARNING - Pawn can not move there
+2022-05-22 19:18:01,871 - INFO - is_check (<main.Pawn object at 0x000001B4F40E4A00>, 'black')
+2022-05-22 19:18:01,871 - INFO - is_check (<main.Pawn object at 0x000001B4F40E4AC0>, 'black')
+2022-05-22 19:18:01,871 - WARNING - Pawn can not move there
+2022-05-22 19:18:01,871 - INFO - is_check (<main.Pawn object at 0x000001B4F40E4B20>, 'black')
+2022-05-22 19:18:01,871 - WARNING - Pawn can not move there
+2022-05-22 19:18:01,871 - INFO - is_check (<main.Pawn object at 0x000001B4F40E4B80>, 'black')
+2022-05-22 19:18:01,871 - WARNING - Pawn can not move there
+2022-05-22 19:18:01,871 - INFO - is_check (<main.Rook object at 0x000001B4F40E48B0>, 'black')
+2022-05-22 19:18:01,871 - WARNING - Rook can not move there
+2022-05-22 19:18:01,871 - INFO - is_check (<main.Rook object at 0x000001B4F40E4C10>, 'black')
+2022-05-22 19:18:01,871 - WARNING - Rook can not move there
+2022-05-22 19:18:01,871 - INFO - is_check (<main.Knight object at 0x000001B4F40E4C70>, 'black')
+2022-05-22 19:18:01,871 - INFO - ('Knight', (0, 1)) Check
+2022-05-22 19:18:01,871 - INFO - is_check (<main.Knight object at 0x000001B4F40E4CD0>, 'black')
+2022-05-22 19:18:01,871 - INFO - Knight can not move there
+2022-05-22 19:18:01,872 - INFO - is_check (<main.Bishop object at 0x000001B4F40E4D30>, 'black')
+2022-05-22 19:18:01,872 - INFO - ('Bishop', (0, 2)) Check
+2022-05-22 19:18:01,872 - INFO - is_check (<main.Bishop object at 0x000001B4F40E4D90>, 'black')
+2022-05-22 19:18:01,872 - WARNING - Bishop can not move there
+2022-05-22 19:18:01,872 - INFO - is_check (<main.King object at 0x000001B4F40E4DF0>, 'black')
+2022-05-22 19:18:01,872 - INFO - ('King', (0, 3)) Check
+2022-05-22 19:18:01,872 - INFO - is_check (<main.Queen object at 0x000001B4F40E4E50>, 'black')
+2022-05-22 19:18:01,872 - INFO - ('Queen', (0, 4)) Check
+2022-05-22 19:18:01,872 - INFO - check amount: 4, attacker: [<main.Knight object at 0x000001B4F40E4C70>, <main.Bishop object at 0x000001B4F40E4D30>, <main.King object at 0x000001B4F40E4DF0>, <main.Queen object at 0x000001B4F40E4E50>] 
+2022-05-22 19:18:01,872 - INFO - block
+2022-05-22 19:18:01,876 - INFO - ('Queen', <main.Queen object at 0x000001B4F40E6490>, <main.Queen object at 0x000001B4F40E6490>)
+2022-05-22 19:18:01,876 - INFO - []
+2022-05-22 19:18:01,876 - INFO - attack_attacker
+2022-05-22 19:18:01,881 - INFO - (2, 3) black
+2022-05-22 19:18:01,881 - INFO - is_check (<main.Pawn object at 0x000001B4F40E48E0>, 'black')
+2022-05-22 19:18:01,881 - WARNING - Pawn can not move there
+2022-05-22 19:18:01,881 - INFO - is_check (<main.Pawn object at 0x000001B4F40E4940>, 'black')
+2022-05-22 19:18:01,881 - WARNING - Pawn can not move there
+2022-05-22 19:18:01,881 - INFO - is_check (<main.Pawn object at 0x000001B4F40E49A0>, 'black')
+2022-05-22 19:18:01,881 - INFO - pawn info ((1, 2), 2, 3)
+2022-05-22 19:18:01,881 - INFO - black Pawn at (1, 2) has put enemy in check 
+2022-05-22 19:18:01,881 - INFO - is_check (<main.Pawn object at 0x000001B4F40E4A00>, 'black')
+2022-05-22 19:18:01,881 - INFO - is_check (<main.Pawn object at 0x000001B4F40E4AC0>, 'black')
+2022-05-22 19:18:01,881 - WARNING - Pawn can not move there
+2022-05-22 19:18:01,881 - INFO - is_check (<main.Pawn object at 0x000001B4F40E4B20>, 'black')
+2022-05-22 19:18:01,882 - WARNING - Pawn can not move there
+2022-05-22 19:18:01,882 - INFO - is_check (<main.Pawn object at 0x000001B4F40E4B80>, 'black')
+2022-05-22 19:18:01,882 - WARNING - Pawn can not move there
+2022-05-22 19:18:01,882 - INFO - is_check (<main.Rook object at 0x000001B4F40E48B0>, 'black')
+2022-05-22 19:18:01,882 - WARNING - Rook can not move there
+2022-05-22 19:18:01,882 - INFO - is_check (<main.Rook object at 0x000001B4F40E4C10>, 'black')
+2022-05-22 19:18:01,882 - WARNING - Rook can not move there
+2022-05-22 19:18:01,882 - INFO - is_check (<main.Knight object at 0x000001B4F40E4C70>, 'black')
+2022-05-22 19:18:01,882 - INFO - is_check (<main.Knight object at 0x000001B4F40E4CD0>, 'black')
+2022-05-22 19:18:01,882 - INFO - is_check (<main.Bishop object at 0x000001B4F40E4D30>, 'black')
+2022-05-22 19:18:01,882 - WARNING - Bishop can not move there
+2022-05-22 19:18:01,882 - INFO - is_check (<main.Bishop object at 0x000001B4F40E4D90>, 'black')
+2022-05-22 19:18:01,882 - INFO - Bishop empty
+2022-05-22 19:18:01,882 - INFO - black Bishop at (0, 5) has put enemy in check 
+2022-05-22 19:18:01,882 - INFO - is_check (<main.King object at 0x000001B4F40E4DF0>, 'black')
+2022-05-22 19:18:01,882 - INFO - King can not move there, ((0, 3), -2, 0)
+2022-05-22 19:18:01,882 - INFO - is_check (<main.Queen object at 0x000001B4F40E4E50>, 'black')
+2022-05-22 19:18:01,882 - WARNING - Queen can not move there
+2022-05-22 19:18:01,882 - INFO - check amount: 2, attacker: [<main.Pawn object at 0x000001B4F40E49A0>, <main.Bishop object at 0x000001B4F40E4D90>] 
+2022-05-22 19:18:01,882 - INFO - move_king
+2022-05-22 19:18:01,889 - INFO - (1, 4) black
+2022-05-22 19:18:01,889 - INFO - is_check (<main.Pawn object at 0x000001B4F40E48E0>, 'black')
+2022-05-22 19:18:01,889 - WARNING - Pawn can not move there
+2022-05-22 19:18:01,889 - INFO - is_check (<main.Pawn object at 0x000001B4F40E4940>, 'black')
+2022-05-22 19:18:01,889 - WARNING - Pawn can not move there
+2022-05-22 19:18:01,889 - INFO - is_check (<main.Pawn object at 0x000001B4F40E49A0>, 'black')
+2022-05-22 19:18:01,889 - WARNING - Pawn can not move there
+2022-05-22 19:18:01,889 - INFO - is_check (<main.Pawn object at 0x000001B4F40E4A00>, 'black')
+2022-05-22 19:18:01,889 - WARNING - Pawn can not move there
+2022-05-22 19:18:01,889 - INFO - is_check (<main.Pawn object at 0x000001B4F40E4AC0>, 'black')
+2022-05-22 19:18:01,889 - WARNING - Pawn can not move there
+2022-05-22 19:18:01,889 - INFO - is_check (<main.Pawn object at 0x000001B4F40E4B20>, 'black')
+2022-05-22 19:18:01,889 - WARNING - Pawn can not move there
+2022-05-22 19:18:01,890 - INFO - is_check (<main.Pawn object at 0x000001B4F40E4B80>, 'black')
+2022-05-22 19:18:01,890 - WARNING - Pawn can not move there
+2022-05-22 19:18:01,890 - INFO - is_check (<main.Rook object at 0x000001B4F40E48B0>, 'black')
+2022-05-22 19:18:01,890 - WARNING - Rook can not move there
+2022-05-22 19:18:01,890 - INFO - is_check (<main.Rook object at 0x000001B4F40E4C10>, 'black')
+2022-05-22 19:18:01,890 - WARNING - Rook can not move there
+2022-05-22 19:18:01,890 - INFO - is_check (<main.Knight object at 0x000001B4F40E4C70>, 'black')
+2022-05-22 19:18:01,890 - INFO - Knight can not move there
+2022-05-22 19:18:01,890 - INFO - is_check (<main.Knight object at 0x000001B4F40E4CD0>, 'black')
+2022-05-22 19:18:01,890 - INFO - ('Knight', (0, 6)) Check
+2022-05-22 19:18:01,890 - INFO - is_check (<main.Bishop object at 0x000001B4F40E4D30>, 'black')
+2022-05-22 19:18:01,890 - WARNING - Bishop can not move there
+2022-05-22 19:18:01,890 - INFO - is_check (<main.Bishop object at 0x000001B4F40E4D90>, 'black')
+2022-05-22 19:18:01,890 - INFO - ('Bishop', (0, 5)) Check
+2022-05-22 19:18:01,890 - INFO - is_check (<main.King object at 0x000001B4F40E4DF0>, 'black')
+2022-05-22 19:18:01,890 - INFO - ('King', (0, 3)) Check
+2022-05-22 19:18:01,890 - INFO - is_check (<main.Queen object at 0x000001B4F40E4E50>, 'black')
+2022-05-22 19:18:01,890 - INFO - ('Queen', (0, 4)) Check
+2022-05-22 19:18:01,890 - INFO - check amount: 4, attacker: [<main.Knight object at 0x000001B4F40E4CD0>, <main.Bishop object at 0x000001B4F40E4D90>, <main.King object at 0x000001B4F40E4DF0>, <main.Queen object at 0x000001B4F40E4E50>] 
+2022-05-22 19:18:01,895 - INFO - (1, 3) black
+2022-05-22 19:18:01,895 - INFO - is_check (<main.Pawn object at 0x000001B4F40E48E0>, 'black')
+2022-05-22 19:18:01,895 - WARNING - Pawn can not move there
+2022-05-22 19:18:01,895 - INFO - is_check (<main.Pawn object at 0x000001B4F40E4940>, 'black')
+2022-05-22 19:18:01,895 - WARNING - Pawn can not move there
+2022-05-22 19:18:01,895 - INFO - is_check (<main.Pawn object at 0x000001B4F40E49A0>, 'black')
+2022-05-22 19:18:01,895 - WARNING - Pawn can not move there
+2022-05-22 19:18:01,896 - INFO - is_check (<main.Pawn object at 0x000001B4F40E4A00>, 'black')
+2022-05-22 19:18:01,896 - INFO - is_check (<main.Pawn object at 0x000001B4F40E4AC0>, 'black')
+2022-05-22 19:18:01,896 - WARNING - Pawn can not move there
+2022-05-22 19:18:01,896 - INFO - is_check (<main.Pawn object at 0x000001B4F40E4B20>, 'black')
+2022-05-22 19:18:01,896 - WARNING - Pawn can not move there
+2022-05-22 19:18:01,896 - INFO - is_check (<main.Pawn object at 0x000001B4F40E4B80>, 'black')
+2022-05-22 19:18:01,896 - WARNING - Pawn can not move there
+2022-05-22 19:18:01,896 - INFO - is_check (<main.Rook object at 0x000001B4F40E48B0>, 'black')
+2022-05-22 19:18:01,896 - WARNING - Rook can not move there
+2022-05-22 19:18:01,896 - INFO - is_check (<main.Rook object at 0x000001B4F40E4C10>, 'black')
+2022-05-22 19:18:01,896 - WARNING - Rook can not move there
+2022-05-22 19:18:01,896 - INFO - is_check (<main.Knight object at 0x000001B4F40E4C70>, 'black')
+2022-05-22 19:18:01,896 - INFO - ('Knight', (0, 1)) Check
+2022-05-22 19:18:01,896 - INFO - is_check (<main.Knight object at 0x000001B4F40E4CD0>, 'black')
+2022-05-22 19:18:01,896 - INFO - Knight can not move there
+2022-05-22 19:18:01,896 - INFO - is_check (<main.Bishop object at 0x000001B4F40E4D30>, 'black')
+2022-05-22 19:18:01,896 - INFO - ('Bishop', (0, 2)) Check
+2022-05-22 19:18:01,896 - INFO - is_check (<main.Bishop object at 0x000001B4F40E4D90>, 'black')
+2022-05-22 19:18:01,896 - WARNING - Bishop can not move there
+2022-05-22 19:18:01,896 - INFO - is_check (<main.King object at 0x000001B4F40E4DF0>, 'black')
+2022-05-22 19:18:01,896 - INFO - ('King', (0, 3)) Check
+2022-05-22 19:18:01,896 - INFO - is_check (<main.Queen object at 0x000001B4F40E4E50>, 'black')
+2022-05-22 19:18:01,896 - INFO - ('Queen', (0, 4)) Check
+2022-05-22 19:18:01,897 - INFO - check amount: 4, attacker: [<main.Knight object at 0x000001B4F40E4C70>, <main.Bishop object at 0x000001B4F40E4D30>, <main.King object at 0x000001B4F40E4DF0>, <main.Queen object at 0x000001B4F40E4E50>] 
+2022-05-22 19:18:01,897 - INFO - block
+2022-05-22 19:18:01,902 - INFO - ('Queen', <main.Queen object at 0x000001B4F40E6490>, <main.Queen object at 0x000001B4F40E6490>)
+2022-05-22 19:18:01,902 - INFO - []
+2022-05-22 19:18:01,902 - INFO - attack_attacker
+2022-05-22 19:18:01,906 - INFO - (2, 3) black
+2022-05-22 19:18:01,906 - INFO - is_check (<main.Pawn object at 0x000001B4F40E48E0>, 'black')
+2022-05-22 19:18:01,906 - WARNING - Pawn can not move there
+2022-05-22 19:18:01,906 - INFO - is_check (<main.Pawn object at 0x000001B4F40E4940>, 'black')
+2022-05-22 19:18:01,906 - WARNING - Pawn can not move there
+2022-05-22 19:18:01,907 - INFO - is_check (<main.Pawn object at 0x000001B4F40E49A0>, 'black')
+2022-05-22 19:18:01,907 - INFO - pawn info ((1, 2), 2, 3)
+2022-05-22 19:18:01,907 - INFO - black Pawn at (1, 2) has put enemy in check 
+2022-05-22 19:18:01,907 - INFO - is_check (<main.Pawn object at 0x000001B4F40E4A00>, 'black')
+2022-05-22 19:18:01,907 - INFO - is_check (<main.Pawn object at 0x000001B4F40E4AC0>, 'black')
+2022-05-22 19:18:01,907 - WARNING - Pawn can not move there
+2022-05-22 19:18:01,907 - INFO - is_check (<main.Pawn object at 0x000001B4F40E4B20>, 'black')
+2022-05-22 19:18:01,907 - WARNING - Pawn can not move there
+2022-05-22 19:18:01,907 - INFO - is_check (<main.Pawn object at 0x000001B4F40E4B80>, 'black')
+2022-05-22 19:18:01,907 - WARNING - Pawn can not move there
+2022-05-22 19:18:01,907 - INFO - is_check (<main.Rook object at 0x000001B4F40E48B0>, 'black')
+2022-05-22 19:18:01,907 - WARNING - Rook can not move there
+2022-05-22 19:18:01,907 - INFO - is_check (<main.Rook object at 0x000001B4F40E4C10>, 'black')
+2022-05-22 19:18:01,907 - WARNING - Rook can not move there
+2022-05-22 19:18:01,907 - INFO - is_check (<main.Knight object at 0x000001B4F40E4C70>, 'black')
+2022-05-22 19:18:01,907 - INFO - is_check (<main.Knight object at 0x000001B4F40E4CD0>, 'black')
+2022-05-22 19:18:01,907 - INFO - is_check (<main.Bishop object at 0x000001B4F40E4D30>, 'black')
+2022-05-22 19:18:01,907 - WARNING - Bishop can not move there
+2022-05-22 19:18:01,907 - INFO - is_check (<main.Bishop object at 0x000001B4F40E4D90>, 'black')
+2022-05-22 19:18:01,907 - INFO - Bishop empty
+2022-05-22 19:18:01,907 - INFO - black Bishop at (0, 5) has put enemy in check 
+2022-05-22 19:18:01,908 - INFO - is_check (<main.King object at 0x000001B4F40E4DF0>, 'black')
+2022-05-22 19:18:01,908 - INFO - King can not move there, ((0, 3), -2, 0)
+2022-05-22 19:18:01,908 - INFO - is_check (<main.Queen object at 0x000001B4F40E4E50>, 'black')
+2022-05-22 19:18:01,908 - WARNING - Queen can not move there
+2022-05-22 19:18:01,908 - INFO - check amount: 2, attacker: [<main.Pawn object at 0x000001B4F40E49A0>, <main.Bishop object at 0x000001B4F40E4D90>] 
+2022-05-22 19:18:01,908 - INFO - FalseFalseTrueCHECKMATE FUNCTION
+2022-05-22 19:19:01,972 - INFO - ('black', 'King') moved from (0, 3) to (1, 3)
+2022-05-22 19:19:01,978 - INFO - (7, 3) black
+2022-05-22 19:19:01,978 - INFO - is_check (<main.Pawn object at 0x000001B4F40E48E0>, 'black')
+2022-05-22 19:19:01,978 - WARNING - Pawn can not move there
+2022-05-22 19:19:01,978 - INFO - is_check (<main.Pawn object at 0x000001B4F40E4940>, 'black')
+2022-05-22 19:19:01,978 - WARNING - Pawn can not move there
+2022-05-22 19:19:01,978 - INFO - is_check (<main.Pawn object at 0x000001B4F40E49A0>, 'black')
+2022-05-22 19:19:01,978 - WARNING - Pawn can not move there
+2022-05-22 19:19:01,978 - INFO - is_check (<main.Pawn object at 0x000001B4F40E4A00>, 'black')
+2022-05-22 19:19:01,978 - INFO - is_check (<main.Pawn object at 0x000001B4F40E4AC0>, 'black')
+2022-05-22 19:19:01,978 - WARNING - Pawn can not move there
+2022-05-22 19:19:01,978 - INFO - is_check (<main.Pawn object at 0x000001B4F40E4B20>, 'black')
+2022-05-22 19:19:01,978 - WARNING - Pawn can not move there
+2022-05-22 19:19:01,978 - INFO - is_check (<main.Pawn object at 0x000001B4F40E4B80>, 'black')
+2022-05-22 19:19:01,978 - WARNING - Pawn can not move there
+2022-05-22 19:19:01,979 - INFO - is_check (<main.Rook object at 0x000001B4F40E48B0>, 'black')
+2022-05-22 19:19:01,979 - WARNING - Rook can not move there
+2022-05-22 19:19:01,979 - INFO - is_check (<main.Rook object at 0x000001B4F40E4C10>, 'black')
+2022-05-22 19:19:01,979 - WARNING - Rook can not move there
+2022-05-22 19:19:01,979 - INFO - is_check (<main.Knight object at 0x000001B4F40E4C70>, 'black')
+2022-05-22 19:19:01,979 - INFO - is_check (<main.Knight object at 0x000001B4F40E4CD0>, 'black')
+2022-05-22 19:19:01,979 - INFO - Knight can not move there
+2022-05-22 19:19:01,979 - INFO - is_check (<main.Bishop object at 0x000001B4F40E4D30>, 'black')
+2022-05-22 19:19:01,979 - WARNING - Bishop can not move there
+2022-05-22 19:19:01,979 - INFO - is_check (<main.Bishop object at 0x000001B4F40E4D90>, 'black')
+2022-05-22 19:19:01,979 - WARNING - Bishop can not move there
+2022-05-22 19:19:01,979 - INFO - is_check (<main.King object at 0x000001B4F40E4DF0>, 'black')
+2022-05-22 19:19:01,979 - INFO - King can not move there, ((1, 3), -6, 0)
+2022-05-22 19:19:01,979 - INFO - is_check (<main.Queen object at 0x000001B4F40E4E50>, 'black')
+2022-05-22 19:19:01,979 - WARNING - Queen can not move there
+2022-05-22 19:19:01,979 - INFO - check amount: 0, attacker: [] 

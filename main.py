@@ -415,25 +415,34 @@ def update_board():
             board_state[i].append(piece)
     return board_state
 
+# changes the value of cur_turn from black to white or white to black and adds 1 to the total amount of moves
+def change_turn(cur_turn, turn_i):
+    turn = "black" if cur_turn == "white" else "white"
+    turn_i += 1
+    return turn, turn_i
 
 # takes two coordinates from GUI.py and if it is a piece, it is moved from (x1, y1) to (x2, y2). After moving, it checks
 # if the enemy has been put in check or checkmate
-def move_piece(stored_commands):
+def move_piece(stored_commands, cur_turn, turn_i):
     x1, y1, x2, y2 = stored_commands
     check_amount = 0
     if not grid[x1][y1].check_for_piece():
         return False
     color = grid[x1][y1].piece.color
+    if color != cur_turn:
+        return False
     if grid[x1][y1].piece.move(x2, y2):
+        cur_turn, turn_i = change_turn(cur_turn, turn_i)
         check_amount = is_check(color)
     else:
         return False
     if check_amount[0] == 0:
-        return False
+        return [True, cur_turn, turn_i]
+
     elif check_amount[0]:
         if not check_mate(color, *check_amount):
-            return "check mate"
-        return "check"
+            return ["check mate", cur_turn, turn_i]
+        return ["check", cur_turn, turn_i]
 
 
 #
