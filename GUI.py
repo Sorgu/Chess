@@ -8,7 +8,7 @@ import main as chess
 #        self.position = position
 
 pygame.init()
-WIDTH, HEIGHT = 600, 660
+WIDTH, HEIGHT = 600, 720
 win = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Chess")
 pawn_pic = pygame.image.load("./pieces/pawn.png")
@@ -23,7 +23,6 @@ ROWS, COLS = 8, 8
 SIZE = WIDTH / ROWS
 
 field = [[0 for _ in range(COLS)]for _ in range(ROWS)]
-print(field)
 def draw(win, field):
     win.fill(BG_COLOR)
     for i, row in enumerate(field):
@@ -75,7 +74,6 @@ def main():
             for j, value in enumerate(row):
                 if value == "NoneType":
                     continue
-                print(value)
                 if value == "Pawn":
                     image = pawn_pic
                 elif value == "Rook":
@@ -89,13 +87,20 @@ def main():
                 elif value == "King":
                     image = king_pic
                 win.blit(image, (j * SIZE + 12, i * SIZE + 12))
+        if check:
+            writeText(cur_turn.capitalize() + " is in check", 220, 680, 50)
+        elif checkmate:
+            writeText(cur_turn.capitalize() + " is in checkmate", 280, 680, 50)
         writeText(cur_turn.capitalize() + "'s turn", 160, 630, 50)
         writeText("Turn: " + str(turn_i), 500, 630, 50)
         pygame.display.update()
 
     cur_turn = "white"
     turn_i = 0
+    check = False
+    checkmate = False
     update_board_state()
+
 
     while run:
 
@@ -117,9 +122,13 @@ def main():
                         result, cur_turn, turn_i = result
                         if result == "check":
                             print("CHECK")
+                            check = True
                         elif result == "check mate":
                             print("MATE")
-                    print(chess.update_board())
+                            checkmate = True
+                            check = False
+                        else:
+                            check = False
                     stored_commands = []
 
                     update_board_state()
