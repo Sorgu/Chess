@@ -87,6 +87,7 @@ class Piece:
     # replaces the piece at (z, w) with the piece at (x, y)
     def attack(self, x, y, z, w):
         attacked_piece = self.grid[z][w].piece.__class__.__name__
+        del self.grid[x][y].piece
         self.grid[x][y].set_piece(None)
         self.grid[z][w].set_piece(self)
         self.position = (z, w)
@@ -134,8 +135,9 @@ class Piece:
 # class for the pawn piece with rules on how it can move and which direction to move
 class Pawn(Piece):
     def __init__(self, color, position, self_grid, en_passant=False):
-        self.do_en_passant = en_passant
-        super(Pawn, self).__init__(color, position, self_grid)
+        self.en_passant = en_passant
+        self.do_en_passant = False
+        super(Pawn, self).__init__(color, position, self_grid, en_passant)
     def move(self, targetx, targety, check_if_check=False):
         self.attacking = False
         en_passant = False
@@ -201,6 +203,7 @@ class Pawn(Piece):
                 return new_position
 
         if self.do_en_passant:
+            logging.critical("EN PASSANT")
             if check_if_check:
                 return "check"
             x, y = self.position
@@ -472,7 +475,7 @@ def move_piece(stored_commands, cur_turn, turn_i):
 
 
 #
-def is_check(color, local_grid, king_position=None, mate_check=False):
+def is_check(color, local_grid, king_position=None, mate_check=False, king=None):
     king_pos, black_list_of_pieces, white_list_of_pieces = get_king_position(color, local_grid)
     attacker = []
     check_amount = 0
@@ -480,17 +483,17 @@ def is_check(color, local_grid, king_position=None, mate_check=False):
         king_pos = king_position
     logging.info(f"{king_pos} {color}")
     color_list_of_pieces = black_list_of_pieces if color == "black" else white_list_of_pieces
+    #if mate_check:
+    #    if king.move(king_pos[0], king_pos[1], check_if_check=True):
+    #        return 0, attacker
+    #        check_amount += 1
+    #        attacker.append(each)
     for each in color_list_of_pieces:
-        #if mate_check:
-        #    if each.move(king_pos[0], king_pos[1], check_if_check=True) == "check":
-        #        check_amount += 1
-        #        attacker.append(each)
-        logging.info(f"{each.__class__.__name__, each.color}")
         if each.move(king_pos[0], king_pos[1], check_if_check=True):
             check_amount += 1
             attacker.append(each)
     logging.info(f"check amount: {check_amount}, attacker: {attacker} ")
-    return check_amount, attacker
+    return [check_amount, attacker]
 
 # checker is the color of the piece putting the enemy in check, check_amount is the amount of pieces putting enemy in check
 def check_mate(checker, check_amount, attacker):
@@ -512,7 +515,7 @@ def check_mate(checker, check_amount, attacker):
             if grid[x][y].check_for_piece():
                 if grid[x][y].piece.color == checkered:
                     continue
-            if not is_check(checkered, grid, king_position=(x,y), mate_check=True)[0]:
+            if not is_check(checker, grid, king_position=(x,y), mate_check=True)[0]:
                 return True
             continue
         return False
@@ -560,8 +563,11 @@ def check_mate(checker, check_amount, attacker):
 
     def attack_attacker():
         logging.info("attack_attacker")
-        a = is_check(checkered, grid, king_position=attacker.position)[0]
-        if a:
+        a = is_check(checkered, grid, king_position=attacker.position)
+        logging.info(f"{a}")
+        if isinstance(a[1][0], King):
+            a[0] -=1
+        if a[0]:
             return True
         else:
             return False
@@ -576,7 +582,6 @@ def check_mate(checker, check_amount, attacker):
             logging.info(f"{move_king()}{block()}{attack_attacker()}CHECKMATE FUNCTION")
             return True
         else:
-
             return False
     return False
 

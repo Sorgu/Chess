@@ -1,1414 +1,207 @@
-2022-05-23 14:54:27,480 - INFO - ('white', 'Pawn') moved from (6, 3) to (4, 3)
-2022-05-23 14:54:27,485 - INFO - (7, 3) black
-2022-05-23 14:54:27,486 - INFO - ('Rook', 'black')
-2022-05-23 14:54:27,486 - INFO - ('Knight', 'black')
-2022-05-23 14:54:27,486 - INFO - ('Bishop', 'black')
-2022-05-23 14:54:27,486 - INFO - ('King', 'black')
-2022-05-23 14:54:27,486 - INFO - ('Queen', 'black')
-2022-05-23 14:54:27,486 - INFO - ('Bishop', 'black')
-2022-05-23 14:54:27,486 - INFO - ('Knight', 'black')
-2022-05-23 14:54:27,486 - INFO - ('Rook', 'black')
-2022-05-23 14:54:27,486 - INFO - ('Pawn', 'black')
-2022-05-23 14:54:27,486 - INFO - ('Pawn', 'black')
-2022-05-23 14:54:27,486 - INFO - ('Pawn', 'black')
-2022-05-23 14:54:27,486 - INFO - ('Pawn', 'black')
-2022-05-23 14:54:27,486 - INFO - ('Pawn', 'black')
-2022-05-23 14:54:27,486 - INFO - ('Pawn', 'black')
-2022-05-23 14:54:27,486 - INFO - ('Pawn', 'black')
-2022-05-23 14:54:27,486 - INFO - ('Pawn', 'black')
-2022-05-23 14:54:27,486 - INFO - check amount: 0, attacker: [] 
-2022-05-23 14:54:27,487 - INFO - ('white', 'Pawn') moved from (6, 3) to (4, 3)
-2022-05-23 14:54:27,490 - INFO - (0, 3) white
-2022-05-23 14:54:27,490 - INFO - ('Pawn', 'white')
-2022-05-23 14:54:27,490 - INFO - ('Pawn', 'white')
-2022-05-23 14:54:27,490 - INFO - ('Pawn', 'white')
-2022-05-23 14:54:27,490 - INFO - ('Pawn', 'white')
-2022-05-23 14:54:27,490 - INFO - ('Pawn', 'white')
-2022-05-23 14:54:27,490 - INFO - ('Pawn', 'white')
-2022-05-23 14:54:27,490 - INFO - ('Pawn', 'white')
-2022-05-23 14:54:27,491 - INFO - ('Pawn', 'white')
-2022-05-23 14:54:27,491 - INFO - ('Rook', 'white')
-2022-05-23 14:54:27,491 - INFO - ('Rook', 'white')
-2022-05-23 14:54:27,491 - INFO - ('Knight', 'white')
-2022-05-23 14:54:27,491 - INFO - ('Knight', 'white')
-2022-05-23 14:54:27,491 - INFO - ('Bishop', 'white')
-2022-05-23 14:54:27,491 - INFO - ('Bishop', 'white')
-2022-05-23 14:54:27,491 - INFO - ('King', 'white')
-2022-05-23 14:54:27,491 - INFO - ('Queen', 'white')
-2022-05-23 14:54:27,491 - INFO - check amount: 0, attacker: [] 
-2022-05-23 14:54:30,000 - INFO - ('black', 'Pawn') moved from (1, 3) to (3, 3)
-2022-05-23 14:54:30,003 - INFO - (0, 3) white
-2022-05-23 14:54:30,003 - INFO - ('Pawn', 'white')
-2022-05-23 14:54:30,003 - INFO - ('Pawn', 'white')
-2022-05-23 14:54:30,003 - INFO - ('Pawn', 'white')
-2022-05-23 14:54:30,003 - INFO - ('Pawn', 'white')
-2022-05-23 14:54:30,003 - INFO - ('Pawn', 'white')
-2022-05-23 14:54:30,003 - INFO - ('Pawn', 'white')
-2022-05-23 14:54:30,003 - INFO - ('Pawn', 'white')
-2022-05-23 14:54:30,003 - INFO - ('Pawn', 'white')
-2022-05-23 14:54:30,003 - INFO - ('Rook', 'white')
-2022-05-23 14:54:30,003 - INFO - ('Knight', 'white')
-2022-05-23 14:54:30,003 - INFO - ('Bishop', 'white')
-2022-05-23 14:54:30,003 - INFO - ('King', 'white')
-2022-05-23 14:54:30,003 - INFO - ('Queen', 'white')
-2022-05-23 14:54:30,003 - INFO - ('Bishop', 'white')
-2022-05-23 14:54:30,003 - INFO - ('Knight', 'white')
-2022-05-23 14:54:30,003 - INFO - ('Rook', 'white')
-2022-05-23 14:54:30,003 - INFO - check amount: 0, attacker: [] 
-2022-05-23 14:54:30,003 - INFO - ('black', 'Pawn') moved from (1, 3) to (3, 3)
-2022-05-23 14:54:30,006 - INFO - (7, 3) black
-2022-05-23 14:54:30,006 - INFO - ('Pawn', 'black')
-2022-05-23 14:54:30,006 - INFO - ('Pawn', 'black')
-2022-05-23 14:54:30,006 - INFO - ('Pawn', 'black')
-2022-05-23 14:54:30,006 - INFO - ('Pawn', 'black')
-2022-05-23 14:54:30,006 - INFO - ('Pawn', 'black')
-2022-05-23 14:54:30,006 - INFO - ('Pawn', 'black')
-2022-05-23 14:54:30,006 - INFO - ('Pawn', 'black')
-2022-05-23 14:54:30,006 - INFO - ('Pawn', 'black')
-2022-05-23 14:54:30,006 - INFO - ('Rook', 'black')
-2022-05-23 14:54:30,006 - INFO - ('Rook', 'black')
-2022-05-23 14:54:30,006 - INFO - ('Knight', 'black')
-2022-05-23 14:54:30,006 - INFO - ('Knight', 'black')
-2022-05-23 14:54:30,006 - INFO - ('Bishop', 'black')
-2022-05-23 14:54:30,006 - INFO - ('Bishop', 'black')
-2022-05-23 14:54:30,007 - INFO - ('King', 'black')
-2022-05-23 14:54:30,007 - INFO - ('Queen', 'black')
-2022-05-23 14:54:30,007 - INFO - check amount: 0, attacker: [] 
-2022-05-23 14:54:39,982 - INFO - ('white', 'Knight') moved from (7, 1) to (5, 2)
-2022-05-23 14:54:39,985 - INFO - (7, 3) black
-2022-05-23 14:54:39,985 - INFO - ('Rook', 'black')
-2022-05-23 14:54:39,985 - INFO - ('Knight', 'black')
-2022-05-23 14:54:39,985 - INFO - ('Bishop', 'black')
-2022-05-23 14:54:39,985 - INFO - ('King', 'black')
-2022-05-23 14:54:39,986 - INFO - ('Queen', 'black')
-2022-05-23 14:54:39,986 - INFO - ('Bishop', 'black')
-2022-05-23 14:54:39,986 - INFO - ('Knight', 'black')
-2022-05-23 14:54:39,986 - INFO - ('Rook', 'black')
-2022-05-23 14:54:39,986 - INFO - ('Pawn', 'black')
-2022-05-23 14:54:39,986 - INFO - ('Pawn', 'black')
-2022-05-23 14:54:39,986 - INFO - ('Pawn', 'black')
-2022-05-23 14:54:39,986 - INFO - ('Pawn', 'black')
-2022-05-23 14:54:39,986 - INFO - ('Pawn', 'black')
-2022-05-23 14:54:39,986 - INFO - ('Pawn', 'black')
-2022-05-23 14:54:39,986 - INFO - ('Pawn', 'black')
-2022-05-23 14:54:39,986 - INFO - ('Pawn', 'black')
-2022-05-23 14:54:39,986 - INFO - check amount: 0, attacker: [] 
-2022-05-23 14:54:39,986 - INFO - ('white', 'Knight') moved from (7, 1) to (5, 2)
-2022-05-23 14:54:39,989 - INFO - (0, 3) white
-2022-05-23 14:54:39,989 - INFO - ('Pawn', 'white')
-2022-05-23 14:54:39,989 - INFO - ('Pawn', 'white')
-2022-05-23 14:54:39,989 - INFO - ('Pawn', 'white')
-2022-05-23 14:54:39,989 - INFO - ('Pawn', 'white')
-2022-05-23 14:54:39,989 - INFO - ('Pawn', 'white')
-2022-05-23 14:54:39,989 - INFO - ('Pawn', 'white')
-2022-05-23 14:54:39,989 - INFO - ('Pawn', 'white')
-2022-05-23 14:54:39,989 - INFO - ('Pawn', 'white')
-2022-05-23 14:54:39,989 - INFO - ('Rook', 'white')
-2022-05-23 14:54:39,989 - INFO - ('Rook', 'white')
-2022-05-23 14:54:39,989 - INFO - ('Knight', 'white')
-2022-05-23 14:54:39,989 - INFO - ('Knight', 'white')
-2022-05-23 14:54:39,989 - INFO - ('Bishop', 'white')
-2022-05-23 14:54:39,989 - INFO - ('Bishop', 'white')
-2022-05-23 14:54:39,989 - INFO - ('King', 'white')
-2022-05-23 14:54:39,989 - INFO - ('Queen', 'white')
-2022-05-23 14:54:39,989 - INFO - check amount: 0, attacker: [] 
-2022-05-23 14:54:44,287 - INFO - ('black', 'Knight') moved from (0, 1) to (2, 2)
-2022-05-23 14:54:44,290 - INFO - (0, 3) white
-2022-05-23 14:54:44,290 - INFO - ('Pawn', 'white')
-2022-05-23 14:54:44,290 - INFO - ('Knight', 'white')
-2022-05-23 14:54:44,290 - INFO - ('Pawn', 'white')
-2022-05-23 14:54:44,290 - INFO - ('Pawn', 'white')
-2022-05-23 14:54:44,290 - INFO - ('Pawn', 'white')
-2022-05-23 14:54:44,290 - INFO - ('Pawn', 'white')
-2022-05-23 14:54:44,290 - INFO - ('Pawn', 'white')
-2022-05-23 14:54:44,290 - INFO - ('Pawn', 'white')
-2022-05-23 14:54:44,290 - INFO - ('Pawn', 'white')
-2022-05-23 14:54:44,290 - INFO - ('Rook', 'white')
-2022-05-23 14:54:44,290 - INFO - ('Bishop', 'white')
-2022-05-23 14:54:44,290 - INFO - ('King', 'white')
-2022-05-23 14:54:44,291 - INFO - ('Queen', 'white')
-2022-05-23 14:54:44,291 - INFO - ('Bishop', 'white')
-2022-05-23 14:54:44,291 - INFO - ('Knight', 'white')
-2022-05-23 14:54:44,291 - INFO - ('Rook', 'white')
-2022-05-23 14:54:44,291 - INFO - check amount: 0, attacker: [] 
-2022-05-23 14:54:44,291 - INFO - ('black', 'Knight') moved from (0, 1) to (2, 2)
-2022-05-23 14:54:44,293 - INFO - (7, 3) black
-2022-05-23 14:54:44,293 - INFO - ('Pawn', 'black')
-2022-05-23 14:54:44,293 - INFO - ('Pawn', 'black')
-2022-05-23 14:54:44,293 - INFO - ('Pawn', 'black')
-2022-05-23 14:54:44,293 - INFO - ('Pawn', 'black')
-2022-05-23 14:54:44,293 - INFO - ('Pawn', 'black')
-2022-05-23 14:54:44,293 - INFO - ('Pawn', 'black')
-2022-05-23 14:54:44,293 - INFO - ('Pawn', 'black')
-2022-05-23 14:54:44,293 - INFO - ('Pawn', 'black')
-2022-05-23 14:54:44,293 - INFO - ('Rook', 'black')
-2022-05-23 14:54:44,293 - INFO - ('Rook', 'black')
-2022-05-23 14:54:44,293 - INFO - ('Knight', 'black')
-2022-05-23 14:54:44,294 - INFO - ('Knight', 'black')
-2022-05-23 14:54:44,294 - INFO - ('Bishop', 'black')
-2022-05-23 14:54:44,294 - INFO - ('Bishop', 'black')
-2022-05-23 14:54:44,294 - INFO - ('King', 'black')
-2022-05-23 14:54:44,294 - INFO - ('Queen', 'black')
-2022-05-23 14:54:44,294 - INFO - check amount: 0, attacker: [] 
-2022-05-23 14:55:03,578 - INFO - ('white', 'Pawn') moved from (6, 4) to (4, 4)
-2022-05-23 14:55:03,582 - INFO - (7, 3) black
-2022-05-23 14:55:03,582 - INFO - ('Rook', 'black')
-2022-05-23 14:55:03,583 - INFO - ('Bishop', 'black')
-2022-05-23 14:55:03,583 - INFO - ('King', 'black')
-2022-05-23 14:55:03,583 - INFO - ('Queen', 'black')
-2022-05-23 14:55:03,583 - INFO - ('Bishop', 'black')
-2022-05-23 14:55:03,583 - INFO - ('Knight', 'black')
-2022-05-23 14:55:03,583 - INFO - ('Rook', 'black')
-2022-05-23 14:55:03,583 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:03,583 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:03,583 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:03,583 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:03,583 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:03,583 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:03,583 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:03,583 - INFO - ('Knight', 'black')
-2022-05-23 14:55:03,583 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:03,583 - INFO - check amount: 0, attacker: [] 
-2022-05-23 14:55:03,583 - INFO - ('white', 'Pawn') moved from (6, 4) to (4, 4)
-2022-05-23 14:55:03,587 - INFO - (0, 3) white
-2022-05-23 14:55:03,587 - INFO - ('Pawn', 'white')
-2022-05-23 14:55:03,587 - INFO - ('Pawn', 'white')
-2022-05-23 14:55:03,587 - INFO - ('Pawn', 'white')
-2022-05-23 14:55:03,587 - INFO - ('Pawn', 'white')
-2022-05-23 14:55:03,587 - INFO - ('Pawn', 'white')
-2022-05-23 14:55:03,587 - INFO - ('Pawn', 'white')
-2022-05-23 14:55:03,587 - INFO - ('Pawn', 'white')
-2022-05-23 14:55:03,588 - INFO - ('Pawn', 'white')
-2022-05-23 14:55:03,588 - INFO - ('Rook', 'white')
-2022-05-23 14:55:03,588 - INFO - ('Rook', 'white')
-2022-05-23 14:55:03,588 - INFO - ('Knight', 'white')
-2022-05-23 14:55:03,588 - INFO - ('Knight', 'white')
-2022-05-23 14:55:03,588 - INFO - ('Bishop', 'white')
-2022-05-23 14:55:03,588 - INFO - ('Bishop', 'white')
-2022-05-23 14:55:03,588 - INFO - ('King', 'white')
-2022-05-23 14:55:03,588 - INFO - ('Queen', 'white')
-2022-05-23 14:55:03,588 - INFO - check amount: 0, attacker: [] 
-2022-05-23 14:55:12,074 - INFO - Illegal move
-2022-05-23 14:55:34,661 - INFO - ('black', 'Pawn') moved from (1, 4) to (3, 4)
-2022-05-23 14:55:34,664 - INFO - (0, 3) white
-2022-05-23 14:55:34,664 - INFO - ('Pawn', 'white')
-2022-05-23 14:55:34,664 - INFO - ('Pawn', 'white')
-2022-05-23 14:55:34,664 - INFO - ('Knight', 'white')
-2022-05-23 14:55:34,664 - INFO - ('Pawn', 'white')
-2022-05-23 14:55:34,664 - INFO - ('Pawn', 'white')
-2022-05-23 14:55:34,664 - INFO - ('Pawn', 'white')
-2022-05-23 14:55:34,664 - INFO - ('Pawn', 'white')
-2022-05-23 14:55:34,665 - INFO - ('Pawn', 'white')
-2022-05-23 14:55:34,665 - INFO - ('Pawn', 'white')
-2022-05-23 14:55:34,665 - INFO - ('Rook', 'white')
-2022-05-23 14:55:34,665 - INFO - ('Bishop', 'white')
-2022-05-23 14:55:34,665 - INFO - ('King', 'white')
-2022-05-23 14:55:34,665 - INFO - ('Queen', 'white')
-2022-05-23 14:55:34,665 - INFO - ('Bishop', 'white')
-2022-05-23 14:55:34,665 - INFO - ('Knight', 'white')
-2022-05-23 14:55:34,665 - INFO - ('Rook', 'white')
-2022-05-23 14:55:34,665 - INFO - check amount: 0, attacker: [] 
-2022-05-23 14:55:34,665 - INFO - ('black', 'Pawn') moved from (1, 4) to (3, 4)
-2022-05-23 14:55:34,668 - INFO - (7, 3) black
-2022-05-23 14:55:34,668 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:34,668 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:34,668 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:34,668 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:34,668 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:34,668 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:34,668 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:34,668 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:34,668 - INFO - ('Rook', 'black')
-2022-05-23 14:55:34,668 - INFO - ('Rook', 'black')
-2022-05-23 14:55:34,668 - INFO - ('Knight', 'black')
-2022-05-23 14:55:34,668 - INFO - ('Knight', 'black')
-2022-05-23 14:55:34,668 - INFO - ('Bishop', 'black')
-2022-05-23 14:55:34,668 - INFO - ('Bishop', 'black')
-2022-05-23 14:55:34,668 - INFO - ('King', 'black')
-2022-05-23 14:55:34,669 - INFO - ('Queen', 'black')
-2022-05-23 14:55:34,669 - INFO - check amount: 0, attacker: [] 
-2022-05-23 14:55:38,403 - INFO - ('white', 'Pawn') moved from (4, 4) and attacked Pawn at (3, 3)
-2022-05-23 14:55:38,406 - INFO - (7, 3) black
-2022-05-23 14:55:38,406 - INFO - ('Rook', 'black')
-2022-05-23 14:55:38,406 - INFO - ('Bishop', 'black')
-2022-05-23 14:55:38,406 - INFO - ('King', 'black')
-2022-05-23 14:55:38,406 - INFO - ('Queen', 'black')
-2022-05-23 14:55:38,406 - INFO - ('Bishop', 'black')
-2022-05-23 14:55:38,406 - INFO - ('Knight', 'black')
-2022-05-23 14:55:38,406 - INFO - ('Rook', 'black')
-2022-05-23 14:55:38,406 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:38,406 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:38,407 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:38,407 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:38,407 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:38,407 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:38,407 - INFO - ('Knight', 'black')
-2022-05-23 14:55:38,407 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:38,407 - INFO - check amount: 0, attacker: [] 
-2022-05-23 14:55:38,407 - INFO - ('white', 'Pawn') moved from (4, 4) and attacked Pawn at (3, 3)
-2022-05-23 14:55:38,410 - INFO - (0, 3) white
-2022-05-23 14:55:38,410 - INFO - ('Pawn', 'white')
-2022-05-23 14:55:38,410 - INFO - ('Pawn', 'white')
-2022-05-23 14:55:38,410 - INFO - ('Pawn', 'white')
-2022-05-23 14:55:38,410 - INFO - ('Pawn', 'white')
-2022-05-23 14:55:38,410 - INFO - ('Pawn', 'white')
-2022-05-23 14:55:38,410 - INFO - ('Pawn', 'white')
-2022-05-23 14:55:38,410 - INFO - ('Pawn', 'white')
-2022-05-23 14:55:38,410 - INFO - ('Pawn', 'white')
-2022-05-23 14:55:38,410 - INFO - ('Rook', 'white')
-2022-05-23 14:55:38,410 - INFO - ('Rook', 'white')
-2022-05-23 14:55:38,410 - INFO - ('Knight', 'white')
-2022-05-23 14:55:38,410 - INFO - ('Knight', 'white')
-2022-05-23 14:55:38,410 - INFO - ('Bishop', 'white')
-2022-05-23 14:55:38,411 - INFO - ('Bishop', 'white')
-2022-05-23 14:55:38,411 - INFO - ('King', 'white')
-2022-05-23 14:55:38,411 - INFO - ('Queen', 'white')
-2022-05-23 14:55:38,411 - INFO - check amount: 0, attacker: [] 
-2022-05-23 14:55:40,280 - INFO - ('black', 'Pawn') moved from (3, 4) and attacked Pawn at (4, 3)
-2022-05-23 14:55:40,283 - INFO - (0, 3) white
-2022-05-23 14:55:40,283 - INFO - ('Knight', 'white')
-2022-05-23 14:55:40,283 - INFO - ('Pawn', 'white')
-2022-05-23 14:55:40,283 - INFO - ('Pawn', 'white')
-2022-05-23 14:55:40,283 - INFO - ('Pawn', 'white')
-2022-05-23 14:55:40,283 - INFO - ('Pawn', 'white')
-2022-05-23 14:55:40,283 - INFO - ('Pawn', 'white')
-2022-05-23 14:55:40,283 - INFO - ('Pawn', 'white')
-2022-05-23 14:55:40,284 - INFO - ('Rook', 'white')
-2022-05-23 14:55:40,284 - INFO - ('Bishop', 'white')
-2022-05-23 14:55:40,284 - INFO - ('King', 'white')
-2022-05-23 14:55:40,284 - INFO - ('Queen', 'white')
-2022-05-23 14:55:40,284 - INFO - ('Bishop', 'white')
-2022-05-23 14:55:40,284 - INFO - ('Knight', 'white')
-2022-05-23 14:55:40,284 - INFO - ('Rook', 'white')
-2022-05-23 14:55:40,284 - INFO - check amount: 0, attacker: [] 
-2022-05-23 14:55:40,284 - INFO - ('black', 'Pawn') moved from (3, 4) and attacked Pawn at (4, 3)
-2022-05-23 14:55:40,286 - INFO - (7, 3) black
-2022-05-23 14:55:40,286 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:40,286 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:40,286 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:40,286 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:40,286 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:40,286 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:40,286 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:40,287 - INFO - ('Rook', 'black')
-2022-05-23 14:55:40,287 - INFO - ('Rook', 'black')
-2022-05-23 14:55:40,287 - INFO - ('Knight', 'black')
-2022-05-23 14:55:40,287 - INFO - ('Knight', 'black')
-2022-05-23 14:55:40,287 - INFO - ('Bishop', 'black')
-2022-05-23 14:55:40,287 - INFO - ('Bishop', 'black')
-2022-05-23 14:55:40,287 - INFO - ('King', 'black')
-2022-05-23 14:55:40,287 - INFO - ('Queen', 'black')
-2022-05-23 14:55:40,287 - INFO - check amount: 0, attacker: [] 
-2022-05-23 14:55:46,881 - INFO - ('white', 'Queen') moved from (7, 4) and attacked Queen at (0, 4)
-2022-05-23 14:55:46,884 - INFO - (7, 3) black
-2022-05-23 14:55:46,884 - INFO - ('Rook', 'black')
-2022-05-23 14:55:46,884 - INFO - ('Bishop', 'black')
-2022-05-23 14:55:46,884 - INFO - ('King', 'black')
-2022-05-23 14:55:46,885 - INFO - ('Bishop', 'black')
-2022-05-23 14:55:46,885 - INFO - ('Knight', 'black')
-2022-05-23 14:55:46,885 - INFO - ('Rook', 'black')
-2022-05-23 14:55:46,885 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:46,885 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:46,885 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:46,885 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:46,885 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:46,885 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:46,885 - INFO - ('Knight', 'black')
-2022-05-23 14:55:46,885 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:46,885 - INFO - check amount: 0, attacker: [] 
-2022-05-23 14:55:46,885 - INFO - ('white', 'Queen') moved from (7, 4) and attacked Queen at (0, 4)
-2022-05-23 14:55:46,887 - INFO - (0, 3) white
-2022-05-23 14:55:46,888 - INFO - ('Pawn', 'white')
-2022-05-23 14:55:46,888 - INFO - ('Pawn', 'white')
-2022-05-23 14:55:46,888 - INFO - ('Pawn', 'white')
-2022-05-23 14:55:46,888 - INFO - ('Pawn', 'white')
-2022-05-23 14:55:46,888 - INFO - ('Pawn', 'white')
-2022-05-23 14:55:46,888 - INFO - ('Pawn', 'white')
-2022-05-23 14:55:46,888 - INFO - ('Pawn', 'white')
-2022-05-23 14:55:46,888 - INFO - ('Rook', 'white')
-2022-05-23 14:55:46,888 - INFO - ('Rook', 'white')
-2022-05-23 14:55:46,888 - INFO - ('Knight', 'white')
-2022-05-23 14:55:46,888 - INFO - ('Knight', 'white')
-2022-05-23 14:55:46,888 - INFO - ('Bishop', 'white')
-2022-05-23 14:55:46,888 - INFO - ('Bishop', 'white')
-2022-05-23 14:55:46,888 - INFO - ('King', 'white')
-2022-05-23 14:55:46,888 - INFO - ('Queen', 'white')
-2022-05-23 14:55:46,888 - INFO - white Queen at (0, 4) has put enemy in check 
-2022-05-23 14:55:46,888 - INFO - check amount: 1, attacker: [<main.Queen object at 0x0000029F7EEC8970>] 
-2022-05-23 14:55:46,888 - INFO - move_king
-2022-05-23 14:55:46,893 - INFO - (1, 4) black
-2022-05-23 14:55:46,893 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:46,893 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:46,893 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:46,893 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:46,893 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:46,893 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:46,893 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:46,893 - INFO - ('Rook', 'black')
-2022-05-23 14:55:46,893 - INFO - ('Rook', 'black')
-2022-05-23 14:55:46,893 - INFO - ('Knight', 'black')
-2022-05-23 14:55:46,893 - INFO - ('Knight', (2, 2)) Check
-2022-05-23 14:55:46,893 - INFO - ('Knight', 'black')
-2022-05-23 14:55:46,893 - INFO - ('Knight', (0, 6)) Check
-2022-05-23 14:55:46,893 - INFO - ('Bishop', 'black')
-2022-05-23 14:55:46,893 - INFO - ('Bishop', 'black')
-2022-05-23 14:55:46,893 - INFO - ('Bishop', (0, 5)) Check
-2022-05-23 14:55:46,893 - INFO - ('King', 'black')
-2022-05-23 14:55:46,893 - INFO - ('King', (0, 3)) Check
-2022-05-23 14:55:46,894 - INFO - check amount: 4, attacker: [<main.Knight object at 0x0000029F7EEC8190>, <main.Knight object at 0x0000029F7EEC81F0>, <main.Bishop object at 0x0000029F7EEC82B0>, <main.King object at 0x0000029F7EEC8310>] 
-2022-05-23 14:55:46,896 - INFO - (1, 3) black
-2022-05-23 14:55:46,896 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:46,896 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:46,896 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:46,896 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:46,896 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:46,896 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:46,896 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:46,896 - INFO - ('Rook', 'black')
-2022-05-23 14:55:46,896 - INFO - ('Rook', 'black')
-2022-05-23 14:55:46,896 - INFO - ('Knight', 'black')
-2022-05-23 14:55:46,896 - INFO - ('Knight', 'black')
-2022-05-23 14:55:46,896 - INFO - ('Bishop', 'black')
-2022-05-23 14:55:46,896 - INFO - ('Bishop', (0, 2)) Check
-2022-05-23 14:55:46,896 - INFO - ('Bishop', 'black')
-2022-05-23 14:55:46,897 - INFO - ('King', 'black')
-2022-05-23 14:55:46,897 - INFO - ('King', (0, 3)) Check
-2022-05-23 14:55:46,897 - INFO - check amount: 2, attacker: [<main.Bishop object at 0x0000029F7EEC8250>, <main.King object at 0x0000029F7EEC8310>] 
-2022-05-23 14:55:46,899 - INFO - (0, 4) black
-2022-05-23 14:55:46,899 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:46,899 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:46,899 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:46,899 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:46,899 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:46,899 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:46,899 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:46,899 - INFO - ('Rook', 'black')
-2022-05-23 14:55:46,899 - INFO - Friendly piece in the way at (0, 2, <main.Bishop object at 0x0000029F7EEC8250>)
-2022-05-23 14:55:46,899 - INFO - ('Rook', 'black')
-2022-05-23 14:55:46,899 - INFO - Friendly piece in the way at (0, 6, <main.Knight object at 0x0000029F7EEC81F0>)
-2022-05-23 14:55:46,899 - INFO - ('Knight', 'black')
-2022-05-23 14:55:46,899 - INFO - ('Knight', 'black')
-2022-05-23 14:55:46,900 - INFO - ('Bishop', 'black')
-2022-05-23 14:55:46,900 - INFO - ('Bishop', 'black')
-2022-05-23 14:55:46,900 - INFO - ('King', 'black')
-2022-05-23 14:55:46,900 - INFO - black King at (0, 3) has put enemy in check 
-2022-05-23 14:55:46,900 - INFO - check amount: 1, attacker: [<main.King object at 0x0000029F7EEC8310>] 
-2022-05-23 14:55:46,900 - INFO - block
-2022-05-23 14:55:46,902 - INFO - Queen is attacking
-2022-05-23 14:55:46,902 - INFO - tile list: [] 
-2022-05-23 14:55:46,902 - INFO - attack_attacker
-2022-05-23 14:55:46,904 - INFO - (0, 4) black
-2022-05-23 14:55:46,904 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:46,904 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:46,905 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:46,905 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:46,905 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:46,905 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:46,905 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:46,905 - INFO - ('Rook', 'black')
-2022-05-23 14:55:46,905 - INFO - Friendly piece in the way at (0, 2, <main.Bishop object at 0x0000029F7EEC8250>)
-2022-05-23 14:55:46,905 - INFO - ('Rook', 'black')
-2022-05-23 14:55:46,905 - INFO - Friendly piece in the way at (0, 6, <main.Knight object at 0x0000029F7EEC81F0>)
-2022-05-23 14:55:46,905 - INFO - ('Knight', 'black')
-2022-05-23 14:55:46,905 - INFO - ('Knight', 'black')
-2022-05-23 14:55:46,905 - INFO - ('Bishop', 'black')
-2022-05-23 14:55:46,905 - INFO - ('Bishop', 'black')
-2022-05-23 14:55:46,905 - INFO - ('King', 'black')
-2022-05-23 14:55:46,905 - INFO - black King at (0, 3) has put enemy in check 
-2022-05-23 14:55:46,905 - INFO - check amount: 1, attacker: [<main.King object at 0x0000029F7EEC8310>] 
-2022-05-23 14:55:46,905 - INFO - move_king
-2022-05-23 14:55:46,910 - INFO - (1, 4) black
-2022-05-23 14:55:46,910 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:46,910 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:46,910 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:46,910 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:46,910 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:46,910 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:46,910 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:46,910 - INFO - ('Rook', 'black')
-2022-05-23 14:55:46,910 - INFO - ('Rook', 'black')
-2022-05-23 14:55:46,910 - INFO - ('Knight', 'black')
-2022-05-23 14:55:46,910 - INFO - ('Knight', (2, 2)) Check
-2022-05-23 14:55:46,910 - INFO - ('Knight', 'black')
-2022-05-23 14:55:46,910 - INFO - ('Knight', (0, 6)) Check
-2022-05-23 14:55:46,910 - INFO - ('Bishop', 'black')
-2022-05-23 14:55:46,910 - INFO - ('Bishop', 'black')
-2022-05-23 14:55:46,910 - INFO - ('Bishop', (0, 5)) Check
-2022-05-23 14:55:46,910 - INFO - ('King', 'black')
-2022-05-23 14:55:46,910 - INFO - ('King', (0, 3)) Check
-2022-05-23 14:55:46,910 - INFO - check amount: 4, attacker: [<main.Knight object at 0x0000029F7EEC8190>, <main.Knight object at 0x0000029F7EEC81F0>, <main.Bishop object at 0x0000029F7EEC82B0>, <main.King object at 0x0000029F7EEC8310>] 
-2022-05-23 14:55:46,913 - INFO - (1, 3) black
-2022-05-23 14:55:46,913 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:46,913 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:46,913 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:46,913 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:46,913 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:46,913 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:46,913 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:46,913 - INFO - ('Rook', 'black')
-2022-05-23 14:55:46,914 - INFO - ('Rook', 'black')
-2022-05-23 14:55:46,914 - INFO - ('Knight', 'black')
-2022-05-23 14:55:46,914 - INFO - ('Knight', 'black')
-2022-05-23 14:55:46,914 - INFO - ('Bishop', 'black')
-2022-05-23 14:55:46,914 - INFO - ('Bishop', (0, 2)) Check
-2022-05-23 14:55:46,914 - INFO - ('Bishop', 'black')
-2022-05-23 14:55:46,914 - INFO - ('King', 'black')
-2022-05-23 14:55:46,914 - INFO - ('King', (0, 3)) Check
-2022-05-23 14:55:46,914 - INFO - check amount: 2, attacker: [<main.Bishop object at 0x0000029F7EEC8250>, <main.King object at 0x0000029F7EEC8310>] 
-2022-05-23 14:55:46,916 - INFO - (0, 4) black
-2022-05-23 14:55:46,916 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:46,916 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:46,916 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:46,917 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:46,917 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:46,917 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:46,917 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:46,917 - INFO - ('Rook', 'black')
-2022-05-23 14:55:46,917 - INFO - Friendly piece in the way at (0, 2, <main.Bishop object at 0x0000029F7EEC8250>)
-2022-05-23 14:55:46,917 - INFO - ('Rook', 'black')
-2022-05-23 14:55:46,917 - INFO - Friendly piece in the way at (0, 6, <main.Knight object at 0x0000029F7EEC81F0>)
-2022-05-23 14:55:46,917 - INFO - ('Knight', 'black')
-2022-05-23 14:55:46,917 - INFO - ('Knight', 'black')
-2022-05-23 14:55:46,917 - INFO - ('Bishop', 'black')
-2022-05-23 14:55:46,917 - INFO - ('Bishop', 'black')
-2022-05-23 14:55:46,917 - INFO - ('King', 'black')
-2022-05-23 14:55:46,917 - INFO - black King at (0, 3) has put enemy in check 
-2022-05-23 14:55:46,917 - INFO - check amount: 1, attacker: [<main.King object at 0x0000029F7EEC8310>] 
-2022-05-23 14:55:46,917 - INFO - block
-2022-05-23 14:55:46,920 - INFO - Queen is attacking
-2022-05-23 14:55:46,920 - INFO - tile list: [] 
-2022-05-23 14:55:46,920 - INFO - attack_attacker
-2022-05-23 14:55:46,922 - INFO - (0, 4) black
-2022-05-23 14:55:46,922 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:46,922 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:46,922 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:46,922 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:46,922 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:46,922 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:46,922 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:46,922 - INFO - ('Rook', 'black')
-2022-05-23 14:55:46,922 - INFO - Friendly piece in the way at (0, 2, <main.Bishop object at 0x0000029F7EEC8250>)
-2022-05-23 14:55:46,922 - INFO - ('Rook', 'black')
-2022-05-23 14:55:46,922 - INFO - Friendly piece in the way at (0, 6, <main.Knight object at 0x0000029F7EEC81F0>)
-2022-05-23 14:55:46,922 - INFO - ('Knight', 'black')
-2022-05-23 14:55:46,922 - INFO - ('Knight', 'black')
-2022-05-23 14:55:46,923 - INFO - ('Bishop', 'black')
-2022-05-23 14:55:46,923 - INFO - ('Bishop', 'black')
-2022-05-23 14:55:46,923 - INFO - ('King', 'black')
-2022-05-23 14:55:46,923 - INFO - black King at (0, 3) has put enemy in check 
-2022-05-23 14:55:46,923 - INFO - check amount: 1, attacker: [<main.King object at 0x0000029F7EEC8310>] 
-2022-05-23 14:55:46,923 - INFO - FalseFalseTrueCHECKMATE FUNCTION
-2022-05-23 14:55:54,504 - INFO - ('black', 'King') moved from (0, 3) and attacked Queen at (0, 4)
-2022-05-23 14:55:54,507 - INFO - (0, 4) white
-2022-05-23 14:55:54,507 - INFO - ('Pawn', 'white')
-2022-05-23 14:55:54,507 - INFO - ('Knight', 'white')
-2022-05-23 14:55:54,507 - INFO - ('Pawn', 'white')
-2022-05-23 14:55:54,507 - INFO - ('Pawn', 'white')
-2022-05-23 14:55:54,507 - INFO - ('Pawn', 'white')
-2022-05-23 14:55:54,507 - INFO - ('Pawn', 'white')
-2022-05-23 14:55:54,507 - INFO - ('Pawn', 'white')
-2022-05-23 14:55:54,507 - INFO - ('Pawn', 'white')
-2022-05-23 14:55:54,508 - INFO - ('Rook', 'white')
-2022-05-23 14:55:54,508 - INFO - ('Bishop', 'white')
-2022-05-23 14:55:54,508 - INFO - ('King', 'white')
-2022-05-23 14:55:54,508 - INFO - ('Bishop', 'white')
-2022-05-23 14:55:54,508 - INFO - ('Knight', 'white')
-2022-05-23 14:55:54,508 - INFO - ('Rook', 'white')
-2022-05-23 14:55:54,508 - INFO - check amount: 0, attacker: [] 
-2022-05-23 14:55:54,508 - INFO - ('black', 'King') moved from (0, 3) and attacked Queen at (0, 4)
-2022-05-23 14:55:54,511 - INFO - (7, 3) black
-2022-05-23 14:55:54,511 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:54,511 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:54,511 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:54,511 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:54,511 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:54,511 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:54,511 - INFO - ('Pawn', 'black')
-2022-05-23 14:55:54,511 - INFO - ('Rook', 'black')
-2022-05-23 14:55:54,511 - INFO - ('Rook', 'black')
-2022-05-23 14:55:54,511 - INFO - ('Knight', 'black')
-2022-05-23 14:55:54,511 - INFO - ('Knight', 'black')
-2022-05-23 14:55:54,511 - INFO - ('Bishop', 'black')
-2022-05-23 14:55:54,511 - INFO - ('Bishop', 'black')
-2022-05-23 14:55:54,511 - INFO - ('King', 'black')
-2022-05-23 14:55:54,511 - INFO - check amount: 0, attacker: [] 
-2022-05-23 14:56:04,576 - INFO - Friendly piece in the way at (3, 3, <main.Pawn object at 0x0000029F7EEC8C40>)
-2022-05-23 14:56:04,576 - INFO - Illegal move
-2022-05-23 14:56:10,763 - INFO - Friendly piece in the way at (3, 3, <main.Pawn object at 0x0000029F7EEC8B80>)
-2022-05-23 14:56:10,763 - INFO - Illegal move
-2022-05-23 14:56:25,508 - INFO - ('white', 'Pawn') moved from (3, 3) and attacked Knight at (2, 2)
-2022-05-23 14:56:25,511 - INFO - (7, 3) black
-2022-05-23 14:56:25,511 - INFO - ('Rook', 'black')
-2022-05-23 14:56:25,512 - INFO - ('Bishop', 'black')
-2022-05-23 14:56:25,512 - INFO - ('King', 'black')
-2022-05-23 14:56:25,512 - INFO - ('Bishop', 'black')
-2022-05-23 14:56:25,512 - INFO - ('Knight', 'black')
-2022-05-23 14:56:25,512 - INFO - ('Rook', 'black')
-2022-05-23 14:56:25,512 - INFO - ('Pawn', 'black')
-2022-05-23 14:56:25,512 - INFO - ('Pawn', 'black')
-2022-05-23 14:56:25,512 - INFO - ('Pawn', 'black')
-2022-05-23 14:56:25,512 - INFO - ('Pawn', 'black')
-2022-05-23 14:56:25,512 - INFO - ('Pawn', 'black')
-2022-05-23 14:56:25,512 - INFO - ('Pawn', 'black')
-2022-05-23 14:56:25,512 - INFO - ('Pawn', 'black')
-2022-05-23 14:56:25,512 - INFO - check amount: 0, attacker: [] 
-2022-05-23 14:56:25,512 - INFO - ('white', 'Pawn') moved from (3, 3) and attacked Knight at (2, 2)
-2022-05-23 14:56:25,514 - INFO - (0, 4) white
-2022-05-23 14:56:25,514 - INFO - ('Pawn', 'white')
-2022-05-23 14:56:25,515 - INFO - ('Pawn', 'white')
-2022-05-23 14:56:25,515 - INFO - ('Pawn', 'white')
-2022-05-23 14:56:25,515 - INFO - ('Pawn', 'white')
-2022-05-23 14:56:25,515 - INFO - ('Pawn', 'white')
-2022-05-23 14:56:25,515 - INFO - ('Pawn', 'white')
-2022-05-23 14:56:25,515 - INFO - ('Pawn', 'white')
-2022-05-23 14:56:25,515 - INFO - ('Rook', 'white')
-2022-05-23 14:56:25,515 - INFO - ('Rook', 'white')
-2022-05-23 14:56:25,515 - INFO - ('Knight', 'white')
-2022-05-23 14:56:25,515 - INFO - ('Knight', 'white')
-2022-05-23 14:56:25,515 - INFO - ('Bishop', 'white')
-2022-05-23 14:56:25,515 - INFO - ('Bishop', 'white')
-2022-05-23 14:56:25,515 - INFO - ('King', 'white')
-2022-05-23 14:56:25,515 - INFO - check amount: 0, attacker: [] 
-2022-05-23 14:57:01,355 - INFO - ('black', 'Pawn') moved from (4, 3) and attacked Knight at (5, 2)
-2022-05-23 14:57:01,358 - INFO - (0, 4) white
-2022-05-23 14:57:01,359 - INFO - ('Pawn', 'white')
-2022-05-23 14:57:01,359 - INFO - ('Pawn', 'white')
-2022-05-23 14:57:01,359 - INFO - ('Pawn', 'white')
-2022-05-23 14:57:01,359 - INFO - ('Pawn', 'white')
-2022-05-23 14:57:01,359 - INFO - ('Pawn', 'white')
-2022-05-23 14:57:01,359 - INFO - ('Pawn', 'white')
-2022-05-23 14:57:01,359 - INFO - ('Pawn', 'white')
-2022-05-23 14:57:01,359 - INFO - ('Rook', 'white')
-2022-05-23 14:57:01,359 - INFO - ('Bishop', 'white')
-2022-05-23 14:57:01,359 - INFO - ('King', 'white')
-2022-05-23 14:57:01,359 - INFO - ('Bishop', 'white')
-2022-05-23 14:57:01,359 - INFO - ('Knight', 'white')
-2022-05-23 14:57:01,359 - INFO - ('Rook', 'white')
-2022-05-23 14:57:01,359 - INFO - check amount: 0, attacker: [] 
-2022-05-23 14:57:01,359 - INFO - ('black', 'Pawn') moved from (4, 3) and attacked Knight at (5, 2)
-2022-05-23 14:57:01,362 - INFO - (7, 3) black
-2022-05-23 14:57:01,362 - INFO - ('Pawn', 'black')
-2022-05-23 14:57:01,362 - INFO - ('Pawn', 'black')
-2022-05-23 14:57:01,362 - INFO - ('Pawn', 'black')
-2022-05-23 14:57:01,362 - INFO - ('Pawn', 'black')
-2022-05-23 14:57:01,362 - INFO - ('Pawn', 'black')
-2022-05-23 14:57:01,362 - INFO - ('Pawn', 'black')
-2022-05-23 14:57:01,362 - INFO - ('Pawn', 'black')
-2022-05-23 14:57:01,362 - INFO - ('Rook', 'black')
-2022-05-23 14:57:01,362 - INFO - ('Rook', 'black')
-2022-05-23 14:57:01,362 - INFO - ('Knight', 'black')
-2022-05-23 14:57:01,362 - INFO - ('Bishop', 'black')
-2022-05-23 14:57:01,363 - INFO - ('Bishop', 'black')
-2022-05-23 14:57:01,363 - INFO - ('King', 'black')
-2022-05-23 14:57:01,363 - INFO - check amount: 0, attacker: [] 
-2022-05-23 14:57:40,471 - INFO - ('white', 'Bishop') moved from (7, 5) to (3, 1)
-2022-05-23 14:57:40,474 - INFO - (7, 3) black
-2022-05-23 14:57:40,474 - INFO - ('Rook', 'black')
-2022-05-23 14:57:40,474 - INFO - ('Bishop', 'black')
-2022-05-23 14:57:40,474 - INFO - ('King', 'black')
-2022-05-23 14:57:40,474 - INFO - ('Bishop', 'black')
-2022-05-23 14:57:40,474 - INFO - ('Knight', 'black')
-2022-05-23 14:57:40,474 - INFO - ('Rook', 'black')
-2022-05-23 14:57:40,474 - INFO - ('Pawn', 'black')
-2022-05-23 14:57:40,474 - INFO - ('Pawn', 'black')
-2022-05-23 14:57:40,474 - INFO - ('Pawn', 'black')
-2022-05-23 14:57:40,474 - INFO - ('Pawn', 'black')
-2022-05-23 14:57:40,474 - INFO - ('Pawn', 'black')
-2022-05-23 14:57:40,474 - INFO - ('Pawn', 'black')
-2022-05-23 14:57:40,474 - INFO - ('Pawn', 'black')
-2022-05-23 14:57:40,474 - INFO - check amount: 0, attacker: [] 
-2022-05-23 14:57:40,474 - INFO - ('white', 'Bishop') moved from (7, 5) to (3, 1)
-2022-05-23 14:57:40,477 - INFO - (0, 4) white
-2022-05-23 14:57:40,477 - INFO - ('Pawn', 'white')
-2022-05-23 14:57:40,477 - INFO - ('Pawn', 'white')
-2022-05-23 14:57:40,477 - INFO - ('Pawn', 'white')
-2022-05-23 14:57:40,477 - INFO - ('Pawn', 'white')
-2022-05-23 14:57:40,477 - INFO - ('Pawn', 'white')
-2022-05-23 14:57:40,477 - INFO - ('Pawn', 'white')
-2022-05-23 14:57:40,477 - INFO - ('Pawn', 'white')
-2022-05-23 14:57:40,477 - INFO - ('Rook', 'white')
-2022-05-23 14:57:40,477 - INFO - ('Rook', 'white')
-2022-05-23 14:57:40,477 - INFO - ('Knight', 'white')
-2022-05-23 14:57:40,477 - INFO - ('Bishop', 'white')
-2022-05-23 14:57:40,477 - INFO - ('Bishop', 'white')
-2022-05-23 14:57:40,477 - INFO - Friendly piece in the way at (2, 2, <main.Pawn object at 0x0000029F7EEC8580>)
-2022-05-23 14:57:40,477 - INFO - ('King', 'white')
-2022-05-23 14:57:40,477 - INFO - check amount: 0, attacker: [] 
-2022-05-23 14:57:54,392 - INFO - ('black', 'Pawn') moved from (1, 1) to (2, 1)
-2022-05-23 14:57:54,395 - INFO - (0, 4) white
-2022-05-23 14:57:54,395 - INFO - ('Pawn', 'white')
-2022-05-23 14:57:54,395 - INFO - ('Bishop', 'white')
-2022-05-23 14:57:54,395 - INFO - Friendly piece in the way at (2, 2, <main.Pawn object at 0x0000029F7EEC8B80>)
-2022-05-23 14:57:54,395 - INFO - ('Pawn', 'white')
-2022-05-23 14:57:54,395 - INFO - ('Pawn', 'white')
-2022-05-23 14:57:54,395 - INFO - ('Pawn', 'white')
-2022-05-23 14:57:54,395 - INFO - ('Pawn', 'white')
-2022-05-23 14:57:54,395 - INFO - ('Pawn', 'white')
-2022-05-23 14:57:54,395 - INFO - ('Pawn', 'white')
-2022-05-23 14:57:54,395 - INFO - ('Rook', 'white')
-2022-05-23 14:57:54,395 - INFO - ('Bishop', 'white')
-2022-05-23 14:57:54,395 - INFO - ('King', 'white')
-2022-05-23 14:57:54,395 - INFO - ('Knight', 'white')
-2022-05-23 14:57:54,395 - INFO - ('Rook', 'white')
-2022-05-23 14:57:54,396 - INFO - check amount: 0, attacker: [] 
-2022-05-23 14:57:54,396 - INFO - ('black', 'Pawn') moved from (1, 1) to (2, 1)
-2022-05-23 14:57:54,398 - INFO - (7, 3) black
-2022-05-23 14:57:54,398 - INFO - ('Pawn', 'black')
-2022-05-23 14:57:54,398 - INFO - ('Pawn', 'black')
-2022-05-23 14:57:54,398 - INFO - ('Pawn', 'black')
-2022-05-23 14:57:54,398 - INFO - ('Pawn', 'black')
-2022-05-23 14:57:54,398 - INFO - ('Pawn', 'black')
-2022-05-23 14:57:54,398 - INFO - ('Pawn', 'black')
-2022-05-23 14:57:54,398 - INFO - ('Pawn', 'black')
-2022-05-23 14:57:54,398 - INFO - ('Rook', 'black')
-2022-05-23 14:57:54,398 - INFO - ('Rook', 'black')
-2022-05-23 14:57:54,398 - INFO - ('Knight', 'black')
-2022-05-23 14:57:54,398 - INFO - ('Bishop', 'black')
-2022-05-23 14:57:54,398 - INFO - ('Bishop', 'black')
-2022-05-23 14:57:54,398 - INFO - ('King', 'black')
-2022-05-23 14:57:54,398 - INFO - check amount: 0, attacker: [] 
-2022-05-23 14:58:15,890 - INFO - ('white', 'Pawn') moved from (6, 1) and attacked Pawn at (5, 2)
-2022-05-23 14:58:15,893 - INFO - (7, 3) black
-2022-05-23 14:58:15,893 - INFO - ('Rook', 'black')
-2022-05-23 14:58:15,894 - INFO - ('Bishop', 'black')
-2022-05-23 14:58:15,894 - INFO - ('King', 'black')
-2022-05-23 14:58:15,894 - INFO - ('Bishop', 'black')
-2022-05-23 14:58:15,894 - INFO - ('Knight', 'black')
-2022-05-23 14:58:15,894 - INFO - ('Rook', 'black')
-2022-05-23 14:58:15,894 - INFO - ('Pawn', 'black')
-2022-05-23 14:58:15,894 - INFO - ('Pawn', 'black')
-2022-05-23 14:58:15,894 - INFO - ('Pawn', 'black')
-2022-05-23 14:58:15,894 - INFO - ('Pawn', 'black')
-2022-05-23 14:58:15,894 - INFO - ('Pawn', 'black')
-2022-05-23 14:58:15,894 - INFO - ('Pawn', 'black')
-2022-05-23 14:58:15,894 - INFO - check amount: 0, attacker: [] 
-2022-05-23 14:58:15,894 - INFO - ('white', 'Pawn') moved from (6, 1) and attacked Pawn at (5, 2)
-2022-05-23 14:58:15,896 - INFO - (0, 4) white
-2022-05-23 14:58:15,896 - INFO - ('Pawn', 'white')
-2022-05-23 14:58:15,896 - INFO - ('Pawn', 'white')
-2022-05-23 14:58:15,897 - INFO - ('Pawn', 'white')
-2022-05-23 14:58:15,897 - INFO - ('Pawn', 'white')
-2022-05-23 14:58:15,897 - INFO - ('Pawn', 'white')
-2022-05-23 14:58:15,897 - INFO - ('Pawn', 'white')
-2022-05-23 14:58:15,897 - INFO - ('Pawn', 'white')
-2022-05-23 14:58:15,897 - INFO - ('Rook', 'white')
-2022-05-23 14:58:15,897 - INFO - ('Rook', 'white')
-2022-05-23 14:58:15,897 - INFO - ('Knight', 'white')
-2022-05-23 14:58:15,897 - INFO - ('Bishop', 'white')
-2022-05-23 14:58:15,897 - INFO - ('Bishop', 'white')
-2022-05-23 14:58:15,897 - INFO - Friendly piece in the way at (2, 2, <main.Pawn object at 0x0000029F7EEC8580>)
-2022-05-23 14:58:15,897 - INFO - ('King', 'white')
-2022-05-23 14:58:15,897 - INFO - check amount: 0, attacker: [] 
-2022-05-23 14:58:38,928 - INFO - it is not white's turn
-2022-05-23 14:58:48,455 - INFO - ('black', 'Pawn') moved from (1, 0) to (2, 0)
-2022-05-23 14:58:48,458 - INFO - (0, 4) white
-2022-05-23 14:58:48,458 - INFO - ('Pawn', 'white')
-2022-05-23 14:58:48,458 - INFO - ('Bishop', 'white')
-2022-05-23 14:58:48,459 - INFO - Friendly piece in the way at (2, 2, <main.Pawn object at 0x0000029F7EEC8AC0>)
-2022-05-23 14:58:48,459 - INFO - ('Pawn', 'white')
-2022-05-23 14:58:48,459 - INFO - ('Pawn', 'white')
-2022-05-23 14:58:48,459 - INFO - ('Pawn', 'white')
-2022-05-23 14:58:48,459 - INFO - ('Pawn', 'white')
-2022-05-23 14:58:48,459 - INFO - ('Pawn', 'white')
-2022-05-23 14:58:48,459 - INFO - ('Pawn', 'white')
-2022-05-23 14:58:48,459 - INFO - ('Rook', 'white')
-2022-05-23 14:58:48,459 - INFO - ('Bishop', 'white')
-2022-05-23 14:58:48,459 - INFO - ('King', 'white')
-2022-05-23 14:58:48,459 - INFO - ('Knight', 'white')
-2022-05-23 14:58:48,459 - INFO - ('Rook', 'white')
-2022-05-23 14:58:48,459 - INFO - check amount: 0, attacker: [] 
-2022-05-23 14:58:48,459 - INFO - ('black', 'Pawn') moved from (1, 0) to (2, 0)
-2022-05-23 14:58:48,462 - INFO - (7, 3) black
-2022-05-23 14:58:48,462 - INFO - ('Pawn', 'black')
-2022-05-23 14:58:48,462 - INFO - ('Pawn', 'black')
-2022-05-23 14:58:48,462 - INFO - ('Pawn', 'black')
-2022-05-23 14:58:48,462 - INFO - ('Pawn', 'black')
-2022-05-23 14:58:48,462 - INFO - ('Pawn', 'black')
-2022-05-23 14:58:48,462 - INFO - ('Pawn', 'black')
-2022-05-23 14:58:48,462 - INFO - ('Rook', 'black')
-2022-05-23 14:58:48,462 - INFO - ('Rook', 'black')
-2022-05-23 14:58:48,462 - INFO - ('Knight', 'black')
-2022-05-23 14:58:48,462 - INFO - ('Bishop', 'black')
-2022-05-23 14:58:48,462 - INFO - ('Bishop', 'black')
-2022-05-23 14:58:48,462 - INFO - ('King', 'black')
-2022-05-23 14:58:48,462 - INFO - check amount: 0, attacker: [] 
-2022-05-23 14:59:00,909 - INFO - ('white', 'Bishop') moved from (3, 1) to (5, 3)
-2022-05-23 14:59:00,912 - INFO - (7, 3) black
-2022-05-23 14:59:00,912 - INFO - ('Rook', 'black')
-2022-05-23 14:59:00,912 - INFO - ('Bishop', 'black')
-2022-05-23 14:59:00,912 - INFO - ('King', 'black')
-2022-05-23 14:59:00,912 - INFO - ('Bishop', 'black')
-2022-05-23 14:59:00,912 - INFO - ('Knight', 'black')
-2022-05-23 14:59:00,912 - INFO - ('Rook', 'black')
-2022-05-23 14:59:00,912 - INFO - ('Pawn', 'black')
-2022-05-23 14:59:00,912 - INFO - ('Pawn', 'black')
-2022-05-23 14:59:00,912 - INFO - ('Pawn', 'black')
-2022-05-23 14:59:00,913 - INFO - ('Pawn', 'black')
-2022-05-23 14:59:00,913 - INFO - ('Pawn', 'black')
-2022-05-23 14:59:00,913 - INFO - ('Pawn', 'black')
-2022-05-23 14:59:00,913 - INFO - check amount: 0, attacker: [] 
-2022-05-23 14:59:00,913 - INFO - ('white', 'Bishop') moved from (3, 1) to (5, 3)
-2022-05-23 14:59:00,916 - INFO - (0, 4) white
-2022-05-23 14:59:00,916 - INFO - ('Pawn', 'white')
-2022-05-23 14:59:00,916 - INFO - ('Pawn', 'white')
-2022-05-23 14:59:00,916 - INFO - ('Pawn', 'white')
-2022-05-23 14:59:00,916 - INFO - ('Pawn', 'white')
-2022-05-23 14:59:00,916 - INFO - ('Pawn', 'white')
-2022-05-23 14:59:00,916 - INFO - ('Pawn', 'white')
-2022-05-23 14:59:00,916 - INFO - ('Pawn', 'white')
-2022-05-23 14:59:00,916 - INFO - ('Rook', 'white')
-2022-05-23 14:59:00,917 - INFO - ('Rook', 'white')
-2022-05-23 14:59:00,917 - INFO - ('Knight', 'white')
-2022-05-23 14:59:00,917 - INFO - ('Bishop', 'white')
-2022-05-23 14:59:00,917 - INFO - ('Bishop', 'white')
-2022-05-23 14:59:00,917 - INFO - ('King', 'white')
-2022-05-23 14:59:00,917 - INFO - check amount: 0, attacker: [] 
-2022-05-23 14:59:26,033 - INFO - ('black', 'Knight') moved from (0, 6) to (2, 5)
-2022-05-23 14:59:26,040 - INFO - (0, 4) white
-2022-05-23 14:59:26,040 - INFO - ('Pawn', 'white')
-2022-05-23 14:59:26,040 - INFO - ('Pawn', 'white')
-2022-05-23 14:59:26,040 - INFO - ('Bishop', 'white')
-2022-05-23 14:59:26,040 - INFO - ('Pawn', 'white')
-2022-05-23 14:59:26,040 - INFO - ('Pawn', 'white')
-2022-05-23 14:59:26,040 - INFO - ('Pawn', 'white')
-2022-05-23 14:59:26,040 - INFO - ('Pawn', 'white')
-2022-05-23 14:59:26,041 - INFO - ('Pawn', 'white')
-2022-05-23 14:59:26,041 - INFO - ('Rook', 'white')
-2022-05-23 14:59:26,041 - INFO - ('Bishop', 'white')
-2022-05-23 14:59:26,041 - INFO - ('King', 'white')
-2022-05-23 14:59:26,041 - INFO - ('Knight', 'white')
-2022-05-23 14:59:26,041 - INFO - ('Rook', 'white')
-2022-05-23 14:59:26,041 - INFO - check amount: 0, attacker: [] 
-2022-05-23 14:59:26,041 - INFO - ('black', 'Knight') moved from (0, 6) to (2, 5)
-2022-05-23 14:59:26,047 - INFO - (7, 3) black
-2022-05-23 14:59:26,047 - INFO - ('Pawn', 'black')
-2022-05-23 14:59:26,047 - INFO - ('Pawn', 'black')
-2022-05-23 14:59:26,047 - INFO - ('Pawn', 'black')
-2022-05-23 14:59:26,047 - INFO - ('Pawn', 'black')
-2022-05-23 14:59:26,047 - INFO - ('Pawn', 'black')
-2022-05-23 14:59:26,047 - INFO - ('Pawn', 'black')
-2022-05-23 14:59:26,047 - INFO - ('Rook', 'black')
-2022-05-23 14:59:26,047 - INFO - ('Rook', 'black')
-2022-05-23 14:59:26,047 - INFO - ('Knight', 'black')
-2022-05-23 14:59:26,047 - INFO - ('Bishop', 'black')
-2022-05-23 14:59:26,047 - INFO - ('Bishop', 'black')
-2022-05-23 14:59:26,047 - INFO - ('King', 'black')
-2022-05-23 14:59:26,048 - INFO - check amount: 0, attacker: [] 
-2022-05-23 14:59:35,207 - INFO - ('white', 'Knight') moved from (7, 6) to (5, 5)
-2022-05-23 14:59:35,210 - INFO - (7, 3) black
-2022-05-23 14:59:35,210 - INFO - ('Rook', 'black')
-2022-05-23 14:59:35,210 - INFO - ('Bishop', 'black')
-2022-05-23 14:59:35,211 - INFO - ('King', 'black')
-2022-05-23 14:59:35,211 - INFO - ('Bishop', 'black')
-2022-05-23 14:59:35,211 - INFO - ('Rook', 'black')
-2022-05-23 14:59:35,211 - INFO - ('Pawn', 'black')
-2022-05-23 14:59:35,211 - INFO - ('Pawn', 'black')
-2022-05-23 14:59:35,211 - INFO - ('Pawn', 'black')
-2022-05-23 14:59:35,211 - INFO - ('Pawn', 'black')
-2022-05-23 14:59:35,211 - INFO - ('Pawn', 'black')
-2022-05-23 14:59:35,211 - INFO - ('Pawn', 'black')
-2022-05-23 14:59:35,211 - INFO - ('Knight', 'black')
-2022-05-23 14:59:35,211 - INFO - check amount: 0, attacker: [] 
-2022-05-23 14:59:35,211 - INFO - ('white', 'Knight') moved from (7, 6) to (5, 5)
-2022-05-23 14:59:35,214 - INFO - (0, 4) white
-2022-05-23 14:59:35,214 - INFO - ('Pawn', 'white')
-2022-05-23 14:59:35,214 - INFO - ('Pawn', 'white')
-2022-05-23 14:59:35,214 - INFO - ('Pawn', 'white')
-2022-05-23 14:59:35,214 - INFO - ('Pawn', 'white')
-2022-05-23 14:59:35,214 - INFO - ('Pawn', 'white')
-2022-05-23 14:59:35,214 - INFO - ('Pawn', 'white')
-2022-05-23 14:59:35,214 - INFO - ('Pawn', 'white')
-2022-05-23 14:59:35,214 - INFO - ('Rook', 'white')
-2022-05-23 14:59:35,214 - INFO - ('Rook', 'white')
-2022-05-23 14:59:35,214 - INFO - ('Knight', 'white')
-2022-05-23 14:59:35,214 - INFO - ('Bishop', 'white')
-2022-05-23 14:59:35,214 - INFO - ('Bishop', 'white')
-2022-05-23 14:59:35,214 - INFO - ('King', 'white')
-2022-05-23 14:59:35,214 - INFO - check amount: 0, attacker: [] 
-2022-05-23 14:59:59,548 - INFO - ('black', 'Bishop') moved from (0, 2) to (2, 4)
-2022-05-23 14:59:59,552 - INFO - (0, 4) white
-2022-05-23 14:59:59,552 - INFO - ('Pawn', 'white')
-2022-05-23 14:59:59,552 - INFO - ('Pawn', 'white')
-2022-05-23 14:59:59,552 - INFO - ('Bishop', 'white')
-2022-05-23 14:59:59,552 - INFO - ('Knight', 'white')
-2022-05-23 14:59:59,552 - INFO - ('Pawn', 'white')
-2022-05-23 14:59:59,552 - INFO - ('Pawn', 'white')
-2022-05-23 14:59:59,552 - INFO - ('Pawn', 'white')
-2022-05-23 14:59:59,552 - INFO - ('Pawn', 'white')
-2022-05-23 14:59:59,552 - INFO - ('Pawn', 'white')
-2022-05-23 14:59:59,552 - INFO - ('Rook', 'white')
-2022-05-23 14:59:59,552 - INFO - ('Bishop', 'white')
-2022-05-23 14:59:59,552 - INFO - ('King', 'white')
-2022-05-23 14:59:59,552 - INFO - ('Rook', 'white')
-2022-05-23 14:59:59,552 - INFO - check amount: 0, attacker: [] 
-2022-05-23 14:59:59,552 - INFO - ('black', 'Bishop') moved from (0, 2) to (2, 4)
-2022-05-23 14:59:59,555 - INFO - (7, 3) black
-2022-05-23 14:59:59,555 - INFO - ('Pawn', 'black')
-2022-05-23 14:59:59,555 - INFO - ('Pawn', 'black')
-2022-05-23 14:59:59,555 - INFO - ('Pawn', 'black')
-2022-05-23 14:59:59,555 - INFO - ('Pawn', 'black')
-2022-05-23 14:59:59,555 - INFO - ('Pawn', 'black')
-2022-05-23 14:59:59,555 - INFO - ('Pawn', 'black')
-2022-05-23 14:59:59,555 - INFO - ('Rook', 'black')
-2022-05-23 14:59:59,555 - INFO - ('Rook', 'black')
-2022-05-23 14:59:59,555 - INFO - ('Knight', 'black')
-2022-05-23 14:59:59,555 - INFO - ('Bishop', 'black')
-2022-05-23 14:59:59,555 - INFO - ('Bishop', 'black')
-2022-05-23 14:59:59,555 - INFO - ('King', 'black')
-2022-05-23 14:59:59,555 - INFO - check amount: 0, attacker: [] 
-2022-05-23 15:00:07,846 - INFO - ('white', 'Rook') moved from (7, 7) to (7, 4)
-2022-05-23 15:00:07,850 - INFO - (7, 3) black
-2022-05-23 15:00:07,850 - INFO - ('Rook', 'black')
-2022-05-23 15:00:07,850 - INFO - ('King', 'black')
-2022-05-23 15:00:07,850 - INFO - ('Bishop', 'black')
-2022-05-23 15:00:07,850 - INFO - ('Rook', 'black')
-2022-05-23 15:00:07,850 - INFO - ('Pawn', 'black')
-2022-05-23 15:00:07,850 - INFO - ('Pawn', 'black')
-2022-05-23 15:00:07,850 - INFO - ('Pawn', 'black')
-2022-05-23 15:00:07,850 - INFO - ('Pawn', 'black')
-2022-05-23 15:00:07,850 - INFO - ('Pawn', 'black')
-2022-05-23 15:00:07,850 - INFO - ('Pawn', 'black')
-2022-05-23 15:00:07,850 - INFO - ('Bishop', 'black')
-2022-05-23 15:00:07,850 - INFO - ('Knight', 'black')
-2022-05-23 15:00:07,850 - INFO - check amount: 0, attacker: [] 
-2022-05-23 15:00:07,851 - INFO - ('white', 'Rook') moved from (7, 7) to (7, 4)
-2022-05-23 15:00:07,853 - INFO - (0, 4) white
-2022-05-23 15:00:07,853 - INFO - ('Pawn', 'white')
-2022-05-23 15:00:07,853 - INFO - ('Pawn', 'white')
-2022-05-23 15:00:07,853 - INFO - ('Pawn', 'white')
-2022-05-23 15:00:07,853 - INFO - ('Pawn', 'white')
-2022-05-23 15:00:07,853 - INFO - ('Pawn', 'white')
-2022-05-23 15:00:07,853 - INFO - ('Pawn', 'white')
-2022-05-23 15:00:07,853 - INFO - ('Pawn', 'white')
-2022-05-23 15:00:07,853 - INFO - ('Rook', 'white')
-2022-05-23 15:00:07,854 - INFO - ('Rook', 'white')
-2022-05-23 15:00:07,854 - INFO - Enemy piece in the way at (2, 4)
-2022-05-23 15:00:07,854 - INFO - ('Knight', 'white')
-2022-05-23 15:00:07,854 - INFO - ('Bishop', 'white')
-2022-05-23 15:00:07,854 - INFO - ('Bishop', 'white')
-2022-05-23 15:00:07,854 - INFO - ('King', 'white')
-2022-05-23 15:00:07,854 - INFO - check amount: 0, attacker: [] 
-2022-05-23 15:00:20,510 - INFO - ('black', 'Rook') moved from (0, 0) to (0, 3)
-2022-05-23 15:00:20,513 - INFO - (0, 4) white
-2022-05-23 15:00:20,513 - INFO - ('Pawn', 'white')
-2022-05-23 15:00:20,513 - INFO - ('Pawn', 'white')
-2022-05-23 15:00:20,513 - INFO - ('Bishop', 'white')
-2022-05-23 15:00:20,513 - INFO - ('Knight', 'white')
-2022-05-23 15:00:20,513 - INFO - ('Pawn', 'white')
-2022-05-23 15:00:20,513 - INFO - ('Pawn', 'white')
-2022-05-23 15:00:20,513 - INFO - ('Pawn', 'white')
-2022-05-23 15:00:20,513 - INFO - ('Pawn', 'white')
-2022-05-23 15:00:20,513 - INFO - ('Pawn', 'white')
-2022-05-23 15:00:20,513 - INFO - ('Rook', 'white')
-2022-05-23 15:00:20,513 - INFO - ('Bishop', 'white')
-2022-05-23 15:00:20,513 - INFO - ('King', 'white')
-2022-05-23 15:00:20,514 - INFO - ('Rook', 'white')
-2022-05-23 15:00:20,514 - INFO - Enemy piece in the way at (2, 4)
-2022-05-23 15:00:20,514 - INFO - check amount: 0, attacker: [] 
-2022-05-23 15:00:20,514 - INFO - ('black', 'Rook') moved from (0, 0) to (0, 3)
-2022-05-23 15:00:20,516 - INFO - (7, 3) black
-2022-05-23 15:00:20,516 - INFO - ('Pawn', 'black')
-2022-05-23 15:00:20,516 - INFO - ('Pawn', 'black')
-2022-05-23 15:00:20,516 - INFO - ('Pawn', 'black')
-2022-05-23 15:00:20,516 - INFO - ('Pawn', 'black')
-2022-05-23 15:00:20,517 - INFO - ('Pawn', 'black')
-2022-05-23 15:00:20,517 - INFO - ('Pawn', 'black')
-2022-05-23 15:00:20,517 - INFO - ('Rook', 'black')
-2022-05-23 15:00:20,517 - INFO - Enemy piece in the way at (5, 3)
-2022-05-23 15:00:20,517 - INFO - ('Rook', 'black')
-2022-05-23 15:00:20,517 - INFO - ('Knight', 'black')
-2022-05-23 15:00:20,517 - INFO - ('Bishop', 'black')
-2022-05-23 15:00:20,517 - INFO - ('Bishop', 'black')
-2022-05-23 15:00:20,517 - INFO - ('King', 'black')
-2022-05-23 15:00:20,517 - INFO - check amount: 0, attacker: [] 
-2022-05-23 15:00:33,714 - INFO - ('white', 'Rook') moved from (7, 4) and attacked Bishop at (2, 4)
-2022-05-23 15:00:33,718 - INFO - (7, 3) black
-2022-05-23 15:00:33,719 - INFO - ('Rook', 'black')
-2022-05-23 15:00:33,719 - INFO - Enemy piece in the way at (5, 3)
-2022-05-23 15:00:33,719 - INFO - ('King', 'black')
-2022-05-23 15:00:33,719 - INFO - ('Bishop', 'black')
-2022-05-23 15:00:33,719 - INFO - ('Rook', 'black')
-2022-05-23 15:00:33,719 - INFO - ('Pawn', 'black')
-2022-05-23 15:00:33,719 - INFO - ('Pawn', 'black')
-2022-05-23 15:00:33,719 - INFO - ('Pawn', 'black')
-2022-05-23 15:00:33,719 - INFO - ('Pawn', 'black')
-2022-05-23 15:00:33,719 - INFO - ('Pawn', 'black')
-2022-05-23 15:00:33,719 - INFO - ('Pawn', 'black')
-2022-05-23 15:00:33,719 - INFO - ('Knight', 'black')
-2022-05-23 15:00:33,719 - INFO - check amount: 0, attacker: [] 
-2022-05-23 15:00:33,719 - INFO - ('white', 'Rook') moved from (7, 4) and attacked Bishop at (2, 4)
-2022-05-23 15:00:33,723 - INFO - (0, 4) white
-2022-05-23 15:00:33,723 - INFO - ('Pawn', 'white')
-2022-05-23 15:00:33,723 - INFO - ('Pawn', 'white')
-2022-05-23 15:00:33,724 - INFO - ('Pawn', 'white')
-2022-05-23 15:00:33,724 - INFO - ('Pawn', 'white')
-2022-05-23 15:00:33,724 - INFO - ('Pawn', 'white')
-2022-05-23 15:00:33,724 - INFO - ('Pawn', 'white')
-2022-05-23 15:00:33,724 - INFO - ('Pawn', 'white')
-2022-05-23 15:00:33,724 - INFO - ('Rook', 'white')
-2022-05-23 15:00:33,724 - INFO - ('Rook', 'white')
-2022-05-23 15:00:33,724 - INFO - white Rook at (2, 4) has put enemy in check 
-2022-05-23 15:00:33,724 - INFO - ('Knight', 'white')
-2022-05-23 15:00:33,724 - INFO - ('Bishop', 'white')
-2022-05-23 15:00:33,724 - INFO - ('Bishop', 'white')
-2022-05-23 15:00:33,724 - INFO - ('King', 'white')
-2022-05-23 15:00:33,724 - INFO - check amount: 1, attacker: [<main.Rook object at 0x0000029F7EEC8730>] 
-2022-05-23 15:00:33,724 - INFO - move_king
-2022-05-23 15:00:33,731 - INFO - (1, 4) black
-2022-05-23 15:00:33,731 - INFO - ('Pawn', 'black')
-2022-05-23 15:00:33,731 - INFO - ('Pawn', 'black')
-2022-05-23 15:00:33,731 - INFO - ('Pawn', 'black')
-2022-05-23 15:00:33,731 - INFO - ('Pawn', 'black')
-2022-05-23 15:00:33,731 - INFO - ('Pawn', 'black')
-2022-05-23 15:00:33,731 - INFO - ('Pawn', 'black')
-2022-05-23 15:00:33,731 - INFO - ('Rook', 'black')
-2022-05-23 15:00:33,731 - INFO - ('Rook', 'black')
-2022-05-23 15:00:33,731 - INFO - ('Knight', 'black')
-2022-05-23 15:00:33,731 - INFO - ('Bishop', 'black')
-2022-05-23 15:00:33,731 - INFO - ('Bishop', (0, 5)) Check
-2022-05-23 15:00:33,731 - INFO - ('King', 'black')
-2022-05-23 15:00:33,731 - INFO - ('King', (0, 4)) Check
-2022-05-23 15:00:33,731 - INFO - check amount: 2, attacker: [<main.Bishop object at 0x0000029F7EEC82B0>, <main.King object at 0x0000029F7EEC8310>] 
-2022-05-23 15:00:33,734 - INFO - (1, 3) black
-2022-05-23 15:00:33,734 - INFO - ('Pawn', 'black')
-2022-05-23 15:00:33,734 - INFO - ('Pawn', 'black')
-2022-05-23 15:00:33,734 - INFO - ('Pawn', 'black')
-2022-05-23 15:00:33,734 - INFO - ('Pawn', 'black')
-2022-05-23 15:00:33,735 - INFO - ('Pawn', 'black')
-2022-05-23 15:00:33,735 - INFO - ('Pawn', 'black')
-2022-05-23 15:00:33,735 - INFO - ('Rook', 'black')
-2022-05-23 15:00:33,735 - INFO - ('Rook', (0, 3)) Check
-2022-05-23 15:00:33,735 - INFO - ('Rook', 'black')
-2022-05-23 15:00:33,735 - INFO - ('Knight', 'black')
-2022-05-23 15:00:33,735 - INFO - ('Knight', (2, 5)) Check
-2022-05-23 15:00:33,735 - INFO - ('Bishop', 'black')
-2022-05-23 15:00:33,735 - INFO - ('King', 'black')
-2022-05-23 15:00:33,735 - INFO - ('King', (0, 4)) Check
-2022-05-23 15:00:33,735 - INFO - check amount: 3, attacker: [<main.Rook object at 0x0000029F7EEC6D90>, <main.Knight object at 0x0000029F7EEC81F0>, <main.King object at 0x0000029F7EEC8310>] 
-2022-05-23 15:00:33,735 - INFO - block
-2022-05-23 15:00:33,738 - INFO - Rook is attacking
-2022-05-23 15:00:33,738 - INFO - tile list: [[1, 4]] 
-2022-05-23 15:00:33,742 - INFO - [1, 4] black
-2022-05-23 15:00:33,742 - INFO - ('Pawn', 'black')
-2022-05-23 15:00:33,742 - INFO - ('Pawn', 'black')
-2022-05-23 15:00:33,742 - INFO - ('Pawn', 'black')
-2022-05-23 15:00:33,742 - INFO - ('Pawn', 'black')
-2022-05-23 15:00:33,742 - INFO - ('Pawn', 'black')
-2022-05-23 15:00:33,742 - INFO - ('Pawn', 'black')
-2022-05-23 15:00:33,742 - INFO - ('Rook', 'black')
-2022-05-23 15:00:33,742 - INFO - ('Rook', 'black')
-2022-05-23 15:00:33,742 - INFO - ('Knight', 'black')
-2022-05-23 15:00:33,742 - INFO - ('Bishop', 'black')
-2022-05-23 15:00:33,742 - INFO - ('Bishop', (0, 5)) Check
-2022-05-23 15:00:33,742 - INFO - ('King', 'black')
-2022-05-23 15:00:33,742 - INFO - ('King', (0, 4)) Check
-2022-05-23 15:00:33,742 - INFO - check amount: 2, attacker: [<main.Bishop object at 0x0000029F7EEC82B0>, <main.King object at 0x0000029F7EEC8310>] 
-2022-05-23 15:00:33,742 - CRITICAL - Bishop
-2022-05-23 15:00:33,742 - INFO - move_king
-2022-05-23 15:00:33,748 - INFO - (1, 4) black
-2022-05-23 15:00:33,748 - INFO - ('Pawn', 'black')
-2022-05-23 15:00:33,748 - INFO - ('Pawn', 'black')
-2022-05-23 15:00:33,748 - INFO - ('Pawn', 'black')
-2022-05-23 15:00:33,748 - INFO - ('Pawn', 'black')
-2022-05-23 15:00:33,748 - INFO - ('Pawn', 'black')
-2022-05-23 15:00:33,748 - INFO - ('Pawn', 'black')
-2022-05-23 15:00:33,748 - INFO - ('Rook', 'black')
-2022-05-23 15:00:33,748 - INFO - ('Rook', 'black')
-2022-05-23 15:00:33,748 - INFO - ('Knight', 'black')
-2022-05-23 15:00:33,748 - INFO - ('Bishop', 'black')
-2022-05-23 15:00:33,748 - INFO - ('Bishop', (0, 5)) Check
-2022-05-23 15:00:33,748 - INFO - ('King', 'black')
-2022-05-23 15:00:33,749 - INFO - ('King', (0, 4)) Check
-2022-05-23 15:00:33,749 - INFO - check amount: 2, attacker: [<main.Bishop object at 0x0000029F7EEC82B0>, <main.King object at 0x0000029F7EEC8310>] 
-2022-05-23 15:00:33,752 - INFO - (1, 3) black
-2022-05-23 15:00:33,753 - INFO - ('Pawn', 'black')
-2022-05-23 15:00:33,753 - INFO - ('Pawn', 'black')
-2022-05-23 15:00:33,753 - INFO - ('Pawn', 'black')
-2022-05-23 15:00:33,753 - INFO - ('Pawn', 'black')
-2022-05-23 15:00:33,753 - INFO - ('Pawn', 'black')
-2022-05-23 15:00:33,753 - INFO - ('Pawn', 'black')
-2022-05-23 15:00:33,753 - INFO - ('Rook', 'black')
-2022-05-23 15:00:33,753 - INFO - ('Rook', (0, 3)) Check
-2022-05-23 15:00:33,753 - INFO - ('Rook', 'black')
-2022-05-23 15:00:33,753 - INFO - ('Knight', 'black')
-2022-05-23 15:00:33,753 - INFO - ('Knight', (2, 5)) Check
-2022-05-23 15:00:33,753 - INFO - ('Bishop', 'black')
-2022-05-23 15:00:33,753 - INFO - ('King', 'black')
-2022-05-23 15:00:33,753 - INFO - ('King', (0, 4)) Check
-2022-05-23 15:00:33,753 - INFO - check amount: 3, attacker: [<main.Rook object at 0x0000029F7EEC6D90>, <main.Knight object at 0x0000029F7EEC81F0>, <main.King object at 0x0000029F7EEC8310>] 
-2022-05-23 15:00:33,753 - INFO - block
-2022-05-23 15:00:33,757 - INFO - Rook is attacking
-2022-05-23 15:00:33,757 - INFO - tile list: [[1, 4]] 
-2022-05-23 15:00:33,761 - INFO - [1, 4] black
-2022-05-23 15:00:33,761 - INFO - ('Pawn', 'black')
-2022-05-23 15:00:33,761 - INFO - ('Pawn', 'black')
-2022-05-23 15:00:33,761 - INFO - ('Pawn', 'black')
-2022-05-23 15:00:33,761 - INFO - ('Pawn', 'black')
-2022-05-23 15:00:33,761 - INFO - ('Pawn', 'black')
-2022-05-23 15:00:33,761 - INFO - ('Pawn', 'black')
-2022-05-23 15:00:33,761 - INFO - ('Rook', 'black')
-2022-05-23 15:00:33,761 - INFO - ('Rook', 'black')
-2022-05-23 15:00:33,761 - INFO - ('Knight', 'black')
-2022-05-23 15:00:33,761 - INFO - ('Bishop', 'black')
-2022-05-23 15:00:33,761 - INFO - ('Bishop', (0, 5)) Check
-2022-05-23 15:00:33,761 - INFO - ('King', 'black')
-2022-05-23 15:00:33,761 - INFO - ('King', (0, 4)) Check
-2022-05-23 15:00:33,761 - INFO - check amount: 2, attacker: [<main.Bishop object at 0x0000029F7EEC82B0>, <main.King object at 0x0000029F7EEC8310>] 
-2022-05-23 15:00:33,761 - CRITICAL - Bishop
-2022-05-23 15:00:33,762 - INFO - attack_attacker
-2022-05-23 15:00:33,765 - INFO - (2, 4) black
-2022-05-23 15:00:33,765 - INFO - ('Pawn', 'black')
-2022-05-23 15:00:33,765 - INFO - ('Pawn', 'black')
-2022-05-23 15:00:33,765 - INFO - ('Pawn', 'black')
-2022-05-23 15:00:33,765 - INFO - ('Pawn', 'black')
-2022-05-23 15:00:33,765 - INFO - black Pawn at (1, 5) has put enemy in check 
-2022-05-23 15:00:33,765 - INFO - ('Pawn', 'black')
-2022-05-23 15:00:33,766 - INFO - ('Pawn', 'black')
-2022-05-23 15:00:33,766 - INFO - ('Rook', 'black')
-2022-05-23 15:00:33,766 - INFO - ('Rook', 'black')
-2022-05-23 15:00:33,766 - INFO - ('Knight', 'black')
-2022-05-23 15:00:33,766 - INFO - ('Bishop', 'black')
-2022-05-23 15:00:33,766 - INFO - ('King', 'black')
-2022-05-23 15:00:33,766 - INFO - check amount: 1, attacker: [<main.Pawn object at 0x0000029F7EEC6FA0>] 
-2022-05-23 15:00:33,766 - INFO - FalseTrueTrueCHECKMATE FUNCTION
-2022-05-23 15:00:38,671 - INFO - ('black', 'Pawn') moved from (1, 5) and attacked Rook at (2, 4)
-2022-05-23 15:00:38,673 - INFO - (0, 4) white
-2022-05-23 15:00:38,674 - INFO - ('Pawn', 'white')
-2022-05-23 15:00:38,674 - INFO - ('Pawn', 'white')
-2022-05-23 15:00:38,674 - INFO - ('Bishop', 'white')
-2022-05-23 15:00:38,674 - INFO - ('Knight', 'white')
-2022-05-23 15:00:38,674 - INFO - ('Pawn', 'white')
-2022-05-23 15:00:38,674 - INFO - ('Pawn', 'white')
-2022-05-23 15:00:38,674 - INFO - ('Pawn', 'white')
-2022-05-23 15:00:38,674 - INFO - ('Pawn', 'white')
-2022-05-23 15:00:38,674 - INFO - ('Pawn', 'white')
-2022-05-23 15:00:38,674 - INFO - ('Rook', 'white')
-2022-05-23 15:00:38,674 - INFO - ('Bishop', 'white')
-2022-05-23 15:00:38,674 - INFO - ('King', 'white')
-2022-05-23 15:00:38,674 - INFO - check amount: 0, attacker: [] 
-2022-05-23 15:00:38,674 - INFO - ('black', 'Pawn') moved from (1, 5) and attacked Rook at (2, 4)
-2022-05-23 15:00:38,677 - INFO - (7, 3) black
-2022-05-23 15:00:38,677 - INFO - ('Pawn', 'black')
-2022-05-23 15:00:38,677 - INFO - ('Pawn', 'black')
-2022-05-23 15:00:38,677 - INFO - ('Pawn', 'black')
-2022-05-23 15:00:38,677 - INFO - ('Pawn', 'black')
-2022-05-23 15:00:38,677 - INFO - ('Pawn', 'black')
-2022-05-23 15:00:38,677 - INFO - ('Pawn', 'black')
-2022-05-23 15:00:38,678 - INFO - ('Rook', 'black')
-2022-05-23 15:00:38,678 - INFO - Enemy piece in the way at (5, 3)
-2022-05-23 15:00:38,678 - INFO - ('Rook', 'black')
-2022-05-23 15:00:38,678 - INFO - ('Knight', 'black')
-2022-05-23 15:00:38,678 - INFO - ('Bishop', 'black')
-2022-05-23 15:00:38,678 - INFO - ('King', 'black')
-2022-05-23 15:00:38,678 - INFO - check amount: 0, attacker: [] 
-2022-05-23 15:00:41,759 - INFO - ('white', 'Bishop') moved from (5, 3) to (2, 6)
-2022-05-23 15:00:41,763 - INFO - (7, 3) black
-2022-05-23 15:00:41,763 - INFO - ('Rook', 'black')
-2022-05-23 15:00:41,763 - INFO - black Rook at (0, 3) has put enemy in check 
-2022-05-23 15:00:41,763 - INFO - ('King', 'black')
-2022-05-23 15:00:41,763 - INFO - ('Bishop', 'black')
-2022-05-23 15:00:41,763 - INFO - ('Rook', 'black')
-2022-05-23 15:00:41,763 - INFO - ('Pawn', 'black')
-2022-05-23 15:00:41,763 - INFO - ('Pawn', 'black')
-2022-05-23 15:00:41,763 - INFO - ('Pawn', 'black')
-2022-05-23 15:00:41,763 - INFO - ('Pawn', 'black')
-2022-05-23 15:00:41,763 - INFO - ('Pawn', 'black')
-2022-05-23 15:00:41,763 - INFO - ('Pawn', 'black')
-2022-05-23 15:00:41,763 - INFO - ('Knight', 'black')
-2022-05-23 15:00:41,763 - INFO - check amount: 1, attacker: [<main.Rook object at 0x0000029F7EEC8D60>] 
-2022-05-23 15:00:41,763 - INFO - white tried putting themselves in check
-2022-05-23 15:00:49,399 - INFO - ('white', 'Bishop') moved from (7, 2) to (3, 6)
-2022-05-23 15:00:49,402 - INFO - (7, 3) black
-2022-05-23 15:00:49,402 - INFO - ('Rook', 'black')
-2022-05-23 15:00:49,402 - INFO - Enemy piece in the way at (5, 3)
-2022-05-23 15:00:49,402 - INFO - ('King', 'black')
-2022-05-23 15:00:49,402 - INFO - ('Bishop', 'black')
-2022-05-23 15:00:49,402 - INFO - ('Rook', 'black')
-2022-05-23 15:00:49,402 - INFO - ('Pawn', 'black')
-2022-05-23 15:00:49,402 - INFO - ('Pawn', 'black')
-2022-05-23 15:00:49,402 - INFO - ('Pawn', 'black')
-2022-05-23 15:00:49,403 - INFO - ('Pawn', 'black')
-2022-05-23 15:00:49,403 - INFO - ('Pawn', 'black')
-2022-05-23 15:00:49,403 - INFO - ('Pawn', 'black')
-2022-05-23 15:00:49,403 - INFO - ('Knight', 'black')
-2022-05-23 15:00:49,403 - INFO - check amount: 0, attacker: [] 
-2022-05-23 15:00:49,403 - INFO - ('white', 'Bishop') moved from (7, 2) to (3, 6)
-2022-05-23 15:00:49,405 - INFO - (0, 4) white
-2022-05-23 15:00:49,405 - INFO - ('Pawn', 'white')
-2022-05-23 15:00:49,405 - INFO - ('Pawn', 'white')
-2022-05-23 15:00:49,405 - INFO - ('Pawn', 'white')
-2022-05-23 15:00:49,405 - INFO - ('Pawn', 'white')
-2022-05-23 15:00:49,405 - INFO - ('Pawn', 'white')
-2022-05-23 15:00:49,405 - INFO - ('Pawn', 'white')
-2022-05-23 15:00:49,405 - INFO - ('Pawn', 'white')
-2022-05-23 15:00:49,405 - INFO - ('Rook', 'white')
-2022-05-23 15:00:49,405 - INFO - ('Knight', 'white')
-2022-05-23 15:00:49,406 - INFO - ('Bishop', 'white')
-2022-05-23 15:00:49,406 - INFO - ('Bishop', 'white')
-2022-05-23 15:00:49,406 - INFO - ('King', 'white')
-2022-05-23 15:00:49,406 - INFO - check amount: 0, attacker: [] 
-2022-05-23 15:01:03,202 - INFO - ('black', 'Rook') moved from (0, 3) and attacked Bishop at (5, 3)
-2022-05-23 15:01:03,206 - INFO - (0, 4) white
-2022-05-23 15:01:03,206 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,206 - INFO - ('Bishop', 'white')
-2022-05-23 15:01:03,206 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,206 - INFO - ('Knight', 'white')
-2022-05-23 15:01:03,206 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,206 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,206 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,207 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,207 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,207 - INFO - ('Rook', 'white')
-2022-05-23 15:01:03,207 - INFO - ('King', 'white')
-2022-05-23 15:01:03,207 - INFO - check amount: 0, attacker: [] 
-2022-05-23 15:01:03,207 - INFO - ('black', 'Rook') moved from (0, 3) and attacked Bishop at (5, 3)
-2022-05-23 15:01:03,211 - INFO - (7, 3) black
-2022-05-23 15:01:03,211 - INFO - ('Pawn', 'black')
-2022-05-23 15:01:03,211 - INFO - ('Pawn', 'black')
-2022-05-23 15:01:03,211 - INFO - ('Pawn', 'black')
-2022-05-23 15:01:03,211 - INFO - ('Pawn', 'black')
-2022-05-23 15:01:03,211 - INFO - ('Pawn', 'black')
-2022-05-23 15:01:03,211 - INFO - ('Pawn', 'black')
-2022-05-23 15:01:03,211 - INFO - ('Rook', 'black')
-2022-05-23 15:01:03,211 - INFO - black Rook at (5, 3) has put enemy in check 
-2022-05-23 15:01:03,211 - INFO - ('Rook', 'black')
-2022-05-23 15:01:03,211 - INFO - ('Knight', 'black')
-2022-05-23 15:01:03,211 - INFO - ('Bishop', 'black')
-2022-05-23 15:01:03,211 - INFO - ('King', 'black')
-2022-05-23 15:01:03,211 - INFO - check amount: 1, attacker: [<main.Rook object at 0x0000029F7EEC6D90>] 
-2022-05-23 15:01:03,211 - INFO - move_king
-2022-05-23 15:01:03,217 - INFO - (7, 4) white
-2022-05-23 15:01:03,217 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,217 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,217 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,217 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,217 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,218 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,218 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,218 - INFO - ('Rook', 'white')
-2022-05-23 15:01:03,218 - INFO - Friendly piece in the way at (7, 3, <main.King object at 0x0000029F7EEC8910>)
-2022-05-23 15:01:03,218 - INFO - ('Knight', 'white')
-2022-05-23 15:01:03,218 - INFO - ('Knight', (5, 5)) Check
-2022-05-23 15:01:03,218 - INFO - ('Bishop', 'white')
-2022-05-23 15:01:03,218 - INFO - ('King', 'white')
-2022-05-23 15:01:03,218 - INFO - ('King', (7, 3)) Check
-2022-05-23 15:01:03,218 - INFO - check amount: 2, attacker: [<main.Knight object at 0x0000029F7EEC87F0>, <main.King object at 0x0000029F7EEC8910>] 
-2022-05-23 15:01:03,221 - INFO - (7, 2) white
-2022-05-23 15:01:03,221 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,221 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,221 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,221 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,221 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,221 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,221 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,221 - INFO - ('Rook', 'white')
-2022-05-23 15:01:03,221 - INFO - ('Rook', (7, 0)) Check
-2022-05-23 15:01:03,221 - INFO - ('Knight', 'white')
-2022-05-23 15:01:03,221 - INFO - ('Bishop', 'white')
-2022-05-23 15:01:03,221 - INFO - ('Bishop', (3, 6)) Check
-2022-05-23 15:01:03,221 - INFO - ('King', 'white')
-2022-05-23 15:01:03,221 - INFO - ('King', (7, 3)) Check
-2022-05-23 15:01:03,221 - INFO - check amount: 3, attacker: [<main.Rook object at 0x0000029F7EEC83D0>, <main.Bishop object at 0x0000029F7EEC8850>, <main.King object at 0x0000029F7EEC8910>] 
-2022-05-23 15:01:03,224 - INFO - (6, 4) white
-2022-05-23 15:01:03,224 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,224 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,224 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,224 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,224 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,225 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,225 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,225 - INFO - ('Rook', 'white')
-2022-05-23 15:01:03,225 - INFO - ('Knight', 'white')
-2022-05-23 15:01:03,225 - INFO - ('Bishop', 'white')
-2022-05-23 15:01:03,225 - INFO - ('King', 'white')
-2022-05-23 15:01:03,225 - INFO - ('King', (7, 3)) Check
-2022-05-23 15:01:03,225 - INFO - check amount: 1, attacker: [<main.King object at 0x0000029F7EEC8910>] 
-2022-05-23 15:01:03,228 - INFO - (6, 3) white
-2022-05-23 15:01:03,228 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,228 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,228 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,228 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,228 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,228 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,228 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,228 - INFO - ('Rook', 'white')
-2022-05-23 15:01:03,228 - INFO - ('Knight', 'white')
-2022-05-23 15:01:03,228 - INFO - ('Knight', (5, 5)) Check
-2022-05-23 15:01:03,228 - INFO - ('Bishop', 'white')
-2022-05-23 15:01:03,228 - INFO - ('Bishop', (3, 6)) Check
-2022-05-23 15:01:03,228 - INFO - ('King', 'white')
-2022-05-23 15:01:03,228 - INFO - ('King', (7, 3)) Check
-2022-05-23 15:01:03,228 - INFO - check amount: 3, attacker: [<main.Knight object at 0x0000029F7EEC87F0>, <main.Bishop object at 0x0000029F7EEC8850>, <main.King object at 0x0000029F7EEC8910>] 
-2022-05-23 15:01:03,228 - INFO - block
-2022-05-23 15:01:03,231 - INFO - Rook is attacking
-2022-05-23 15:01:03,231 - INFO - tile list: [[6, 3]] 
-2022-05-23 15:01:03,233 - INFO - [6, 3] white
-2022-05-23 15:01:03,233 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,233 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,234 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,234 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,234 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,234 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,234 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,234 - INFO - ('Rook', 'white')
-2022-05-23 15:01:03,234 - INFO - ('Knight', 'white')
-2022-05-23 15:01:03,234 - INFO - ('Knight', (5, 5)) Check
-2022-05-23 15:01:03,234 - INFO - ('Bishop', 'white')
-2022-05-23 15:01:03,234 - INFO - ('Bishop', (3, 6)) Check
-2022-05-23 15:01:03,234 - INFO - ('King', 'white')
-2022-05-23 15:01:03,234 - INFO - ('King', (7, 3)) Check
-2022-05-23 15:01:03,234 - INFO - check amount: 3, attacker: [<main.Knight object at 0x0000029F7EEC87F0>, <main.Bishop object at 0x0000029F7EEC8850>, <main.King object at 0x0000029F7EEC8910>] 
-2022-05-23 15:01:03,234 - CRITICAL - Knight
-2022-05-23 15:01:03,234 - INFO - move_king
-2022-05-23 15:01:03,239 - INFO - (7, 4) white
-2022-05-23 15:01:03,239 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,239 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,239 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,239 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,239 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,239 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,239 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,239 - INFO - ('Rook', 'white')
-2022-05-23 15:01:03,239 - INFO - Friendly piece in the way at (7, 3, <main.King object at 0x0000029F7EEC8910>)
-2022-05-23 15:01:03,239 - INFO - ('Knight', 'white')
-2022-05-23 15:01:03,239 - INFO - ('Knight', (5, 5)) Check
-2022-05-23 15:01:03,239 - INFO - ('Bishop', 'white')
-2022-05-23 15:01:03,239 - INFO - ('King', 'white')
-2022-05-23 15:01:03,239 - INFO - ('King', (7, 3)) Check
-2022-05-23 15:01:03,240 - INFO - check amount: 2, attacker: [<main.Knight object at 0x0000029F7EEC87F0>, <main.King object at 0x0000029F7EEC8910>] 
-2022-05-23 15:01:03,243 - INFO - (7, 2) white
-2022-05-23 15:01:03,243 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,243 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,243 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,243 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,244 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,244 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,244 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,244 - INFO - ('Rook', 'white')
-2022-05-23 15:01:03,244 - INFO - ('Rook', (7, 0)) Check
-2022-05-23 15:01:03,244 - INFO - ('Knight', 'white')
-2022-05-23 15:01:03,244 - INFO - ('Bishop', 'white')
-2022-05-23 15:01:03,244 - INFO - ('Bishop', (3, 6)) Check
-2022-05-23 15:01:03,245 - INFO - ('King', 'white')
-2022-05-23 15:01:03,245 - INFO - ('King', (7, 3)) Check
-2022-05-23 15:01:03,245 - INFO - check amount: 3, attacker: [<main.Rook object at 0x0000029F7EEC83D0>, <main.Bishop object at 0x0000029F7EEC8850>, <main.King object at 0x0000029F7EEC8910>] 
-2022-05-23 15:01:03,251 - INFO - (6, 4) white
-2022-05-23 15:01:03,251 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,251 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,251 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,251 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,251 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,251 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,251 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,251 - INFO - ('Rook', 'white')
-2022-05-23 15:01:03,251 - INFO - ('Knight', 'white')
-2022-05-23 15:01:03,251 - INFO - ('Bishop', 'white')
-2022-05-23 15:01:03,251 - INFO - ('King', 'white')
-2022-05-23 15:01:03,251 - INFO - ('King', (7, 3)) Check
-2022-05-23 15:01:03,251 - INFO - check amount: 1, attacker: [<main.King object at 0x0000029F7EEC8910>] 
-2022-05-23 15:01:03,256 - INFO - (6, 3) white
-2022-05-23 15:01:03,256 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,256 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,256 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,256 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,256 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,256 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,256 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,256 - INFO - ('Rook', 'white')
-2022-05-23 15:01:03,256 - INFO - ('Knight', 'white')
-2022-05-23 15:01:03,256 - INFO - ('Knight', (5, 5)) Check
-2022-05-23 15:01:03,256 - INFO - ('Bishop', 'white')
-2022-05-23 15:01:03,256 - INFO - ('Bishop', (3, 6)) Check
-2022-05-23 15:01:03,256 - INFO - ('King', 'white')
-2022-05-23 15:01:03,256 - INFO - ('King', (7, 3)) Check
-2022-05-23 15:01:03,257 - INFO - check amount: 3, attacker: [<main.Knight object at 0x0000029F7EEC87F0>, <main.Bishop object at 0x0000029F7EEC8850>, <main.King object at 0x0000029F7EEC8910>] 
-2022-05-23 15:01:03,257 - INFO - block
-2022-05-23 15:01:03,261 - INFO - Rook is attacking
-2022-05-23 15:01:03,261 - INFO - tile list: [[6, 3]] 
-2022-05-23 15:01:03,265 - INFO - [6, 3] white
-2022-05-23 15:01:03,265 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,265 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,265 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,265 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,265 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,265 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,265 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,265 - INFO - ('Rook', 'white')
-2022-05-23 15:01:03,265 - INFO - ('Knight', 'white')
-2022-05-23 15:01:03,265 - INFO - ('Knight', (5, 5)) Check
-2022-05-23 15:01:03,265 - INFO - ('Bishop', 'white')
-2022-05-23 15:01:03,265 - INFO - ('Bishop', (3, 6)) Check
-2022-05-23 15:01:03,266 - INFO - ('King', 'white')
-2022-05-23 15:01:03,266 - INFO - ('King', (7, 3)) Check
-2022-05-23 15:01:03,266 - INFO - check amount: 3, attacker: [<main.Knight object at 0x0000029F7EEC87F0>, <main.Bishop object at 0x0000029F7EEC8850>, <main.King object at 0x0000029F7EEC8910>] 
-2022-05-23 15:01:03,266 - CRITICAL - Knight
-2022-05-23 15:01:03,266 - INFO - attack_attacker
-2022-05-23 15:01:03,269 - INFO - (5, 3) white
-2022-05-23 15:01:03,269 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,269 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,269 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,269 - INFO - white Pawn at (6, 2) has put enemy in check 
-2022-05-23 15:01:03,269 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,269 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,270 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,270 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:03,270 - INFO - ('Rook', 'white')
-2022-05-23 15:01:03,270 - INFO - ('Knight', 'white')
-2022-05-23 15:01:03,270 - INFO - ('Bishop', 'white')
-2022-05-23 15:01:03,270 - INFO - ('King', 'white')
-2022-05-23 15:01:03,270 - INFO - check amount: 1, attacker: [<main.Pawn object at 0x0000029F7EEC84C0>] 
-2022-05-23 15:01:03,270 - INFO - FalseTrueTrueCHECKMATE FUNCTION
-2022-05-23 15:01:07,149 - INFO - ('white', 'Pawn') moved from (6, 2) and attacked Rook at (5, 3)
-2022-05-23 15:01:07,152 - INFO - (7, 3) black
-2022-05-23 15:01:07,152 - INFO - ('King', 'black')
-2022-05-23 15:01:07,152 - INFO - ('Bishop', 'black')
-2022-05-23 15:01:07,153 - INFO - ('Rook', 'black')
-2022-05-23 15:01:07,153 - INFO - ('Pawn', 'black')
-2022-05-23 15:01:07,153 - INFO - ('Pawn', 'black')
-2022-05-23 15:01:07,153 - INFO - ('Pawn', 'black')
-2022-05-23 15:01:07,153 - INFO - ('Pawn', 'black')
-2022-05-23 15:01:07,153 - INFO - ('Pawn', 'black')
-2022-05-23 15:01:07,153 - INFO - ('Pawn', 'black')
-2022-05-23 15:01:07,153 - INFO - ('Knight', 'black')
-2022-05-23 15:01:07,153 - INFO - check amount: 0, attacker: [] 
-2022-05-23 15:01:07,153 - INFO - ('white', 'Pawn') moved from (6, 2) and attacked Rook at (5, 3)
-2022-05-23 15:01:07,156 - INFO - (0, 4) white
-2022-05-23 15:01:07,156 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:07,156 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:07,156 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:07,156 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:07,156 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:07,156 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:07,156 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:07,156 - INFO - ('Rook', 'white')
-2022-05-23 15:01:07,156 - INFO - ('Knight', 'white')
-2022-05-23 15:01:07,156 - INFO - ('Bishop', 'white')
-2022-05-23 15:01:07,156 - INFO - ('King', 'white')
-2022-05-23 15:01:07,156 - INFO - check amount: 0, attacker: [] 
-2022-05-23 15:01:16,683 - INFO - ('black', 'Knight') moved from (2, 5) to (3, 3)
-2022-05-23 15:01:16,687 - INFO - (0, 4) white
-2022-05-23 15:01:16,687 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:16,687 - INFO - ('Bishop', 'white')
-2022-05-23 15:01:16,687 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:16,687 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:16,687 - INFO - ('Knight', 'white')
-2022-05-23 15:01:16,687 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:16,688 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:16,688 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:16,688 - INFO - ('Pawn', 'white')
-2022-05-23 15:01:16,688 - INFO - ('Rook', 'white')
-2022-05-23 15:01:16,688 - INFO - ('King', 'white')
-2022-05-23 15:01:16,688 - INFO - check amount: 0, attacker: [] 
-2022-05-23 15:01:16,688 - INFO - ('black', 'Knight') moved from (2, 5) to (3, 3)
-2022-05-23 15:01:16,690 - INFO - (7, 3) black
-2022-05-23 15:01:16,690 - INFO - ('Pawn', 'black')
-2022-05-23 15:01:16,690 - INFO - ('Pawn', 'black')
-2022-05-23 15:01:16,690 - INFO - ('Pawn', 'black')
-2022-05-23 15:01:16,690 - INFO - ('Pawn', 'black')
-2022-05-23 15:01:16,690 - INFO - ('Pawn', 'black')
-2022-05-23 15:01:16,690 - INFO - ('Pawn', 'black')
-2022-05-23 15:01:16,691 - INFO - ('Rook', 'black')
-2022-05-23 15:01:16,691 - INFO - ('Knight', 'black')
-2022-05-23 15:01:16,691 - INFO - ('Bishop', 'black')
-2022-05-23 15:01:16,691 - INFO - ('King', 'black')
-2022-05-23 15:01:16,691 - INFO - check amount: 0, attacker: [] 
+2022-05-25 18:52:17,578 - INFO - ('white', 'Pawn') moved from (6, 4) to (4, 4)
+2022-05-25 18:52:17,582 - INFO - (7, 3) black
+2022-05-25 18:52:17,582 - INFO - check amount: 0, attacker: [] 
+2022-05-25 18:52:17,582 - INFO - ('white', 'Pawn') moved from (6, 4) to (4, 4)
+2022-05-25 18:52:17,585 - INFO - (0, 3) white
+2022-05-25 18:52:17,585 - INFO - check amount: 0, attacker: [] 
+2022-05-25 18:52:18,384 - INFO - ('black', 'Pawn') moved from (1, 3) to (3, 3)
+2022-05-25 18:52:18,389 - INFO - (0, 3) white
+2022-05-25 18:52:18,389 - INFO - check amount: 0, attacker: [] 
+2022-05-25 18:52:18,389 - INFO - ('black', 'Pawn') moved from (1, 3) to (3, 3)
+2022-05-25 18:52:18,392 - INFO - (7, 3) black
+2022-05-25 18:52:18,392 - INFO - check amount: 0, attacker: [] 
+2022-05-25 18:52:18,984 - INFO - ('white', 'Pawn') moved from (4, 4) to (3, 4)
+2022-05-25 18:52:18,988 - INFO - (7, 3) black
+2022-05-25 18:52:18,989 - INFO - check amount: 0, attacker: [] 
+2022-05-25 18:52:18,989 - INFO - ('white', 'Pawn') moved from (4, 4) to (3, 4)
+2022-05-25 18:52:18,992 - INFO - (0, 3) white
+2022-05-25 18:52:18,993 - INFO - check amount: 0, attacker: [] 
+2022-05-25 18:52:19,689 - INFO - ('black', 'King') moved from (0, 3) to (1, 3)
+2022-05-25 18:52:19,693 - INFO - (1, 3) white
+2022-05-25 18:52:19,693 - INFO - check amount: 0, attacker: [] 
+2022-05-25 18:52:19,693 - INFO - ('black', 'King') moved from (0, 3) to (1, 3)
+2022-05-25 18:52:19,696 - INFO - (7, 3) black
+2022-05-25 18:52:19,696 - INFO - check amount: 0, attacker: [] 
+2022-05-25 18:52:20,452 - INFO - EN PASSANT
+2022-05-25 18:52:20,452 - CRITICAL - EN PASSANT
+2022-05-25 18:52:20,452 - INFO - ('white', 'Pawn') moved from (3, 4) and attacked Pawn at (2, 3)
+2022-05-25 18:52:20,455 - INFO - (7, 3) black
+2022-05-25 18:52:20,456 - INFO - check amount: 0, attacker: [] 
+2022-05-25 18:52:20,456 - INFO - EN PASSANT
+2022-05-25 18:52:20,456 - CRITICAL - EN PASSANT
+2022-05-25 18:52:20,456 - INFO - ('white', 'Pawn') moved from (3, 4) and attacked Pawn at (2, 3)
+2022-05-25 18:52:20,459 - INFO - (1, 3) white
+2022-05-25 18:52:20,459 - INFO - check amount: 0, attacker: [] 
+2022-05-25 18:52:20,979 - INFO - ('black', 'King') moved from (1, 3) to (2, 2)
+2022-05-25 18:52:20,983 - INFO - (2, 2) white
+2022-05-25 18:52:20,983 - INFO - check amount: 0, attacker: [] 
+2022-05-25 18:52:20,983 - INFO - ('black', 'King') moved from (1, 3) to (2, 2)
+2022-05-25 18:52:20,986 - INFO - (7, 3) black
+2022-05-25 18:52:20,986 - INFO - check amount: 0, attacker: [] 
+2022-05-25 18:52:22,053 - INFO - ('white', 'Pawn') moved from (6, 7) to (4, 7)
+2022-05-25 18:52:22,057 - INFO - (7, 3) black
+2022-05-25 18:52:22,057 - INFO - check amount: 0, attacker: [] 
+2022-05-25 18:52:22,057 - INFO - ('white', 'Pawn') moved from (6, 7) to (4, 7)
+2022-05-25 18:52:22,060 - INFO - (2, 2) white
+2022-05-25 18:52:22,060 - INFO - check amount: 0, attacker: [] 
+2022-05-25 18:52:22,884 - INFO - no piece found at 2, 1
+2022-05-25 18:52:23,858 - INFO - no piece found at 3, 2
+2022-05-25 18:52:24,482 - INFO - no piece found at 3, 2
+2022-05-25 18:52:25,753 - INFO - ('black', 'King') moved from (2, 2) to (3, 2)
+2022-05-25 18:52:25,757 - INFO - (3, 2) white
+2022-05-25 18:52:25,757 - INFO - check amount: 0, attacker: [] 
+2022-05-25 18:52:25,757 - INFO - ('black', 'King') moved from (2, 2) to (3, 2)
+2022-05-25 18:52:25,760 - INFO - (7, 3) black
+2022-05-25 18:52:25,760 - INFO - check amount: 0, attacker: [] 
+2022-05-25 18:52:27,477 - INFO - ('white', 'Rook') moved from (7, 7) to (5, 7)
+2022-05-25 18:52:27,481 - INFO - (7, 3) black
+2022-05-25 18:52:27,481 - INFO - check amount: 0, attacker: [] 
+2022-05-25 18:52:27,481 - INFO - ('white', 'Rook') moved from (7, 7) to (5, 7)
+2022-05-25 18:52:27,484 - INFO - (3, 2) white
+2022-05-25 18:52:27,484 - INFO - check amount: 0, attacker: [] 
+2022-05-25 18:52:28,197 - INFO - ('black', 'King') moved from (3, 2) to (4, 1)
+2022-05-25 18:52:28,201 - INFO - (4, 1) white
+2022-05-25 18:52:28,201 - INFO - Friendly piece in the way at (6, 3, <main.Pawn object at 0x0000010A7EE89C40>)
+2022-05-25 18:52:28,201 - INFO - check amount: 0, attacker: [] 
+2022-05-25 18:52:28,201 - INFO - ('black', 'King') moved from (3, 2) to (4, 1)
+2022-05-25 18:52:28,204 - INFO - (7, 3) black
+2022-05-25 18:52:28,204 - INFO - check amount: 0, attacker: [] 
+2022-05-25 18:52:29,010 - INFO - ('white', 'Rook') moved from (5, 7) to (5, 6)
+2022-05-25 18:52:29,014 - INFO - (7, 3) black
+2022-05-25 18:52:29,014 - INFO - check amount: 0, attacker: [] 
+2022-05-25 18:52:29,014 - INFO - ('white', 'Rook') moved from (5, 7) to (5, 6)
+2022-05-25 18:52:29,018 - INFO - (4, 1) white
+2022-05-25 18:52:29,018 - INFO - Friendly piece in the way at (6, 3, <main.Pawn object at 0x0000010A7EE89580>)
+2022-05-25 18:52:29,018 - INFO - check amount: 0, attacker: [] 
+2022-05-25 18:52:29,754 - INFO - ('black', 'King') moved from (4, 1) to (4, 0)
+2022-05-25 18:52:29,757 - INFO - (4, 0) white
+2022-05-25 18:52:29,757 - INFO - Friendly piece in the way at (6, 0, <main.Pawn object at 0x0000010A7EE8B460>)
+2022-05-25 18:52:29,757 - INFO - check amount: 0, attacker: [] 
+2022-05-25 18:52:29,757 - INFO - ('black', 'King') moved from (4, 1) to (4, 0)
+2022-05-25 18:52:29,760 - INFO - (7, 3) black
+2022-05-25 18:52:29,760 - INFO - check amount: 0, attacker: [] 
+2022-05-25 18:52:30,719 - INFO - ('white', 'Rook') moved from (5, 6) to (3, 6)
+2022-05-25 18:52:30,723 - INFO - (7, 3) black
+2022-05-25 18:52:30,723 - INFO - check amount: 0, attacker: [] 
+2022-05-25 18:52:30,724 - INFO - ('white', 'Rook') moved from (5, 6) to (3, 6)
+2022-05-25 18:52:30,727 - INFO - (4, 0) white
+2022-05-25 18:52:30,727 - INFO - Friendly piece in the way at (6, 0, <main.Pawn object at 0x0000010A7EE89460>)
+2022-05-25 18:52:30,727 - INFO - check amount: 0, attacker: [] 
+2022-05-25 18:52:31,519 - INFO - (4, 0) white
+2022-05-25 18:52:31,519 - INFO - Friendly piece in the way at (6, 0, <main.Pawn object at 0x0000010A7EE8B820>)
+2022-05-25 18:52:31,519 - INFO - check amount: 0, attacker: [] 
+2022-05-25 18:52:31,521 - INFO - (7, 3) black
+2022-05-25 18:52:31,522 - INFO - check amount: 0, attacker: [] 
+2022-05-25 18:52:32,506 - INFO - ('white', 'Queen') moved from (7, 4) to (5, 4)
+2022-05-25 18:52:32,509 - INFO - (7, 3) black
+2022-05-25 18:52:32,509 - INFO - check amount: 0, attacker: [] 
+2022-05-25 18:52:32,509 - INFO - ('white', 'Queen') moved from (7, 4) to (5, 4)
+2022-05-25 18:52:32,512 - INFO - (4, 0) white
+2022-05-25 18:52:32,512 - INFO - Friendly piece in the way at (6, 0, <main.Pawn object at 0x0000010A7EE89460>)
+2022-05-25 18:52:32,512 - INFO - check amount: 0, attacker: [] 
+2022-05-25 18:52:33,082 - INFO - (4, 0) white
+2022-05-25 18:52:33,083 - INFO - Friendly piece in the way at (6, 0, <main.Pawn object at 0x0000010A7EE8B1C0>)
+2022-05-25 18:52:33,083 - INFO - check amount: 0, attacker: [] 
+2022-05-25 18:52:33,086 - INFO - (7, 3) black
+2022-05-25 18:52:33,086 - INFO - check amount: 0, attacker: [] 
+2022-05-25 18:52:33,664 - INFO - ('white', 'Pawn') moved from (6, 2) to (5, 2)
+2022-05-25 18:52:33,667 - INFO - (7, 3) black
+2022-05-25 18:52:33,667 - INFO - check amount: 0, attacker: [] 
+2022-05-25 18:52:33,668 - INFO - ('white', 'Pawn') moved from (6, 2) to (5, 2)
+2022-05-25 18:52:33,670 - INFO - (4, 0) white
+2022-05-25 18:52:33,671 - INFO - Friendly piece in the way at (6, 0, <main.Pawn object at 0x0000010A7EE89460>)
+2022-05-25 18:52:33,671 - INFO - check amount: 0, attacker: [] 
+2022-05-25 18:52:34,774 - INFO - it is not white's turn
+2022-05-25 18:52:35,108 - INFO - (4, 0) white
+2022-05-25 18:52:35,108 - INFO - Friendly piece in the way at (6, 0, <main.Pawn object at 0x0000010A7EE8B6A0>)
+2022-05-25 18:52:35,108 - INFO - check amount: 0, attacker: [] 
+2022-05-25 18:52:35,111 - INFO - (7, 3) black
+2022-05-25 18:52:35,111 - INFO - check amount: 0, attacker: [] 
+2022-05-25 18:52:36,520 - INFO - ('white', 'Queen') moved from (5, 4) to (3, 2)
+2022-05-25 18:52:36,524 - INFO - (7, 3) black
+2022-05-25 18:52:36,524 - INFO - check amount: 0, attacker: [] 
+2022-05-25 18:52:36,524 - INFO - ('white', 'Queen') moved from (5, 4) to (3, 2)
+2022-05-25 18:52:36,527 - INFO - (4, 0) white
+2022-05-25 18:52:36,527 - INFO - Friendly piece in the way at (6, 0, <main.Pawn object at 0x0000010A7EE89460>)
+2022-05-25 18:52:36,527 - INFO - check amount: 0, attacker: [] 
+2022-05-25 18:52:37,322 - INFO - (4, 0) white
+2022-05-25 18:52:37,322 - INFO - Friendly piece in the way at (6, 0, <main.Pawn object at 0x0000010A7EE8B460>)
+2022-05-25 18:52:37,322 - INFO - check amount: 0, attacker: [] 
+2022-05-25 18:52:37,325 - INFO - (7, 3) black
+2022-05-25 18:52:37,325 - INFO - check amount: 0, attacker: [] 
+2022-05-25 18:52:37,991 - INFO - ('white', 'Queen') moved from (3, 2) to (4, 1)
+2022-05-25 18:52:37,994 - INFO - (7, 3) black
+2022-05-25 18:52:37,994 - INFO - check amount: 0, attacker: [] 
+2022-05-25 18:52:37,995 - INFO - ('white', 'Queen') moved from (3, 2) to (4, 1)
+2022-05-25 18:52:37,998 - INFO - (4, 0) white
+2022-05-25 18:52:37,998 - INFO - Friendly piece in the way at (6, 0, <main.Pawn object at 0x0000010A7EE89460>)
+2022-05-25 18:52:37,998 - INFO - white Queen at (4, 1) has put enemy in check 
+2022-05-25 18:52:37,998 - INFO - check amount: 1, attacker: [<main.Queen object at 0x0000010A7EE899D0>] 
+2022-05-25 18:52:37,998 - INFO - move_king
+2022-05-25 18:52:38,004 - INFO - (5, 1) white
+2022-05-25 18:52:38,005 - INFO - ('Queen', (4, 1)) Check
+2022-05-25 18:52:38,005 - INFO - check amount: 1, attacker: [<main.Queen object at 0x0000010A7EE899D0>] 
+2022-05-25 18:52:38,007 - INFO - (5, 0) white
+2022-05-25 18:52:38,008 - INFO - Friendly piece in the way at (6, 0, <main.Pawn object at 0x0000010A7EE89460>)
+2022-05-25 18:52:38,008 - INFO - ('Knight', (7, 1)) Check
+2022-05-25 18:52:38,008 - INFO - Friendly piece in the way at (6, 1, <main.Pawn object at 0x0000010A7EE894C0>)
+2022-05-25 18:52:38,008 - INFO - ('Queen', (4, 1)) Check
+2022-05-25 18:52:38,008 - INFO - check amount: 2, attacker: [<main.Knight object at 0x0000010A7EE897F0>, <main.Queen object at 0x0000010A7EE899D0>] 
+2022-05-25 18:52:38,011 - INFO - (4, 1) white
+2022-05-25 18:52:38,011 - INFO - Friendly piece in the way at (4, 1, <main.Queen object at 0x0000010A7EE899D0>)
+2022-05-25 18:52:38,011 - INFO - check amount: 1, attacker: [<main.Queen object at 0x0000010A7EE899D0>] 
+2022-05-25 18:52:38,014 - INFO - (3, 1) white
+2022-05-25 18:52:38,014 - INFO - ('Rook', (3, 6)) Check
+2022-05-25 18:52:38,014 - INFO - ('Bishop', (7, 5)) Check
+2022-05-25 18:52:38,015 - INFO - ('Queen', (4, 1)) Check
+2022-05-25 18:52:38,015 - INFO - check amount: 3, attacker: [<main.Rook object at 0x0000010A7EE89790>, <main.Bishop object at 0x0000010A7EE89910>, <main.Queen object at 0x0000010A7EE899D0>] 
+2022-05-25 18:52:38,018 - INFO - (3, 0) white
+2022-05-25 18:52:38,018 - INFO - Friendly piece in the way at (6, 0, <main.Pawn object at 0x0000010A7EE89460>)
+2022-05-25 18:52:38,018 - INFO - ('Rook', (3, 6)) Check
+2022-05-25 18:52:38,018 - INFO - ('Queen', (4, 1)) Check
+2022-05-25 18:52:38,018 - INFO - check amount: 2, attacker: [<main.Rook object at 0x0000010A7EE89790>, <main.Queen object at 0x0000010A7EE899D0>] 
+2022-05-25 18:52:38,018 - INFO - block
+2022-05-25 18:52:38,021 - INFO - Queen is attacking
+2022-05-25 18:52:38,021 - INFO - tile list: [] 
+2022-05-25 18:52:38,022 - INFO - attack_attacker
+2022-05-25 18:52:38,025 - INFO - (4, 1) black
+2022-05-25 18:52:38,025 - INFO - Friendly piece in the way at (1, 4, <main.Pawn object at 0x0000010A76788550>)
+2022-05-25 18:52:38,025 - INFO - black King at (4, 0) has put enemy in check 
+2022-05-25 18:52:38,025 - INFO - check amount: 1, attacker: [<main.King object at 0x0000010A7EE89370>] 
+2022-05-25 18:52:38,025 - INFO - [1, [<main.King object at 0x0000010A7EE89370>]]
+2022-05-25 18:52:38,025 - CRITICAL - 1
+2022-05-25 18:52:38,025 - CRITICAL - 0
+2022-05-25 18:52:42,709 - INFO - ('black', 'King') moved from (4, 0) and attacked Queen at (4, 1)
+2022-05-25 18:52:42,713 - INFO - (4, 1) white
+2022-05-25 18:52:42,713 - INFO - white Pawn at (5, 2) has put enemy in check 
+2022-05-25 18:52:42,713 - INFO - check amount: 1, attacker: [<main.Pawn object at 0x0000010A7EE8BFA0>] 
+2022-05-25 18:52:42,713 - INFO - black tried putting themselves in check
+2022-05-25 18:52:43,513 - INFO - ('black', 'King') moved from (4, 0) to (5, 1)
+2022-05-25 18:52:43,516 - INFO - (5, 1) white
+2022-05-25 18:52:43,517 - INFO - white Queen at (4, 1) has put enemy in check 
+2022-05-25 18:52:43,517 - INFO - white Pawn at (6, 0) has put enemy in check 
+2022-05-25 18:52:43,517 - INFO - check amount: 2, attacker: [<main.Queen object at 0x0000010A7EE8B6A0>, <main.Pawn object at 0x0000010A7EE8BFA0>] 
+2022-05-25 18:52:43,517 - INFO - black tried putting themselves in check
+2022-05-25 18:52:44,255 - INFO - ('black', 'King') moved from (4, 0) to (5, 0)
+2022-05-25 18:52:44,258 - INFO - (5, 0) white
+2022-05-25 18:52:44,258 - INFO - white Queen at (4, 1) has put enemy in check 
+2022-05-25 18:52:44,258 - INFO - white Pawn at (6, 1) has put enemy in check 
+2022-05-25 18:52:44,258 - INFO - Friendly piece in the way at (6, 0, <main.Pawn object at 0x0000010A7EE8BC40>)
+2022-05-25 18:52:44,258 - INFO - white Knight at (7, 1) has put enemy in check 
+2022-05-25 18:52:44,258 - INFO - Friendly piece in the way at (6, 1, <main.Pawn object at 0x0000010A7EE8BFA0>)
+2022-05-25 18:52:44,258 - INFO - check amount: 3, attacker: [<main.Queen object at 0x0000010A7EE8BDC0>, <main.Pawn object at 0x0000010A7EE8BFA0>, <main.Knight object at 0x0000010A7EE89F40>] 
+2022-05-25 18:52:44,258 - INFO - black tried putting themselves in check
+2022-05-25 18:52:45,049 - INFO - ('black', 'King') moved from (4, 0) to (3, 1)
+2022-05-25 18:52:45,053 - INFO - (3, 1) white
+2022-05-25 18:52:45,053 - INFO - white Rook at (3, 6) has put enemy in check 
+2022-05-25 18:52:45,053 - INFO - white Queen at (4, 1) has put enemy in check 
+2022-05-25 18:52:45,053 - INFO - white Bishop at (7, 5) has put enemy in check 
+2022-05-25 18:52:45,053 - INFO - check amount: 3, attacker: [<main.Rook object at 0x0000010A7EE8BD00>, <main.Queen object at 0x0000010A7EE8F1F0>, <main.Bishop object at 0x0000010A7EE896D0>] 
+2022-05-25 18:52:45,053 - INFO - black tried putting themselves in check
+2022-05-25 18:52:45,861 - INFO - ('black', 'King') moved from (4, 0) to (3, 0)
+2022-05-25 18:52:45,867 - INFO - (3, 0) white
+2022-05-25 18:52:45,867 - INFO - Enemy piece in the way at (3, 1)
+2022-05-25 18:52:45,867 - INFO - white Queen at (4, 1) has put enemy in check 
+2022-05-25 18:52:45,867 - INFO - Friendly piece in the way at (6, 0, <main.Pawn object at 0x0000010A7EE8B6A0>)
+2022-05-25 18:52:45,867 - INFO - check amount: 1, attacker: [<main.Queen object at 0x0000010A76788430>] 
+2022-05-25 18:52:45,867 - INFO - black tried putting themselves in check
