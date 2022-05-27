@@ -1,207 +1,48 @@
-2022-05-25 18:52:17,578 - INFO - ('white', 'Pawn') moved from (6, 4) to (4, 4)
-2022-05-25 18:52:17,582 - INFO - (7, 3) black
-2022-05-25 18:52:17,582 - INFO - check amount: 0, attacker: [] 
-2022-05-25 18:52:17,582 - INFO - ('white', 'Pawn') moved from (6, 4) to (4, 4)
-2022-05-25 18:52:17,585 - INFO - (0, 3) white
-2022-05-25 18:52:17,585 - INFO - check amount: 0, attacker: [] 
-2022-05-25 18:52:18,384 - INFO - ('black', 'Pawn') moved from (1, 3) to (3, 3)
-2022-05-25 18:52:18,389 - INFO - (0, 3) white
-2022-05-25 18:52:18,389 - INFO - check amount: 0, attacker: [] 
-2022-05-25 18:52:18,389 - INFO - ('black', 'Pawn') moved from (1, 3) to (3, 3)
-2022-05-25 18:52:18,392 - INFO - (7, 3) black
-2022-05-25 18:52:18,392 - INFO - check amount: 0, attacker: [] 
-2022-05-25 18:52:18,984 - INFO - ('white', 'Pawn') moved from (4, 4) to (3, 4)
-2022-05-25 18:52:18,988 - INFO - (7, 3) black
-2022-05-25 18:52:18,989 - INFO - check amount: 0, attacker: [] 
-2022-05-25 18:52:18,989 - INFO - ('white', 'Pawn') moved from (4, 4) to (3, 4)
-2022-05-25 18:52:18,992 - INFO - (0, 3) white
-2022-05-25 18:52:18,993 - INFO - check amount: 0, attacker: [] 
-2022-05-25 18:52:19,689 - INFO - ('black', 'King') moved from (0, 3) to (1, 3)
-2022-05-25 18:52:19,693 - INFO - (1, 3) white
-2022-05-25 18:52:19,693 - INFO - check amount: 0, attacker: [] 
-2022-05-25 18:52:19,693 - INFO - ('black', 'King') moved from (0, 3) to (1, 3)
-2022-05-25 18:52:19,696 - INFO - (7, 3) black
-2022-05-25 18:52:19,696 - INFO - check amount: 0, attacker: [] 
-2022-05-25 18:52:20,452 - INFO - EN PASSANT
-2022-05-25 18:52:20,452 - CRITICAL - EN PASSANT
-2022-05-25 18:52:20,452 - INFO - ('white', 'Pawn') moved from (3, 4) and attacked Pawn at (2, 3)
-2022-05-25 18:52:20,455 - INFO - (7, 3) black
-2022-05-25 18:52:20,456 - INFO - check amount: 0, attacker: [] 
-2022-05-25 18:52:20,456 - INFO - EN PASSANT
-2022-05-25 18:52:20,456 - CRITICAL - EN PASSANT
-2022-05-25 18:52:20,456 - INFO - ('white', 'Pawn') moved from (3, 4) and attacked Pawn at (2, 3)
-2022-05-25 18:52:20,459 - INFO - (1, 3) white
-2022-05-25 18:52:20,459 - INFO - check amount: 0, attacker: [] 
-2022-05-25 18:52:20,979 - INFO - ('black', 'King') moved from (1, 3) to (2, 2)
-2022-05-25 18:52:20,983 - INFO - (2, 2) white
-2022-05-25 18:52:20,983 - INFO - check amount: 0, attacker: [] 
-2022-05-25 18:52:20,983 - INFO - ('black', 'King') moved from (1, 3) to (2, 2)
-2022-05-25 18:52:20,986 - INFO - (7, 3) black
-2022-05-25 18:52:20,986 - INFO - check amount: 0, attacker: [] 
-2022-05-25 18:52:22,053 - INFO - ('white', 'Pawn') moved from (6, 7) to (4, 7)
-2022-05-25 18:52:22,057 - INFO - (7, 3) black
-2022-05-25 18:52:22,057 - INFO - check amount: 0, attacker: [] 
-2022-05-25 18:52:22,057 - INFO - ('white', 'Pawn') moved from (6, 7) to (4, 7)
-2022-05-25 18:52:22,060 - INFO - (2, 2) white
-2022-05-25 18:52:22,060 - INFO - check amount: 0, attacker: [] 
-2022-05-25 18:52:22,884 - INFO - no piece found at 2, 1
-2022-05-25 18:52:23,858 - INFO - no piece found at 3, 2
-2022-05-25 18:52:24,482 - INFO - no piece found at 3, 2
-2022-05-25 18:52:25,753 - INFO - ('black', 'King') moved from (2, 2) to (3, 2)
-2022-05-25 18:52:25,757 - INFO - (3, 2) white
-2022-05-25 18:52:25,757 - INFO - check amount: 0, attacker: [] 
-2022-05-25 18:52:25,757 - INFO - ('black', 'King') moved from (2, 2) to (3, 2)
-2022-05-25 18:52:25,760 - INFO - (7, 3) black
-2022-05-25 18:52:25,760 - INFO - check amount: 0, attacker: [] 
-2022-05-25 18:52:27,477 - INFO - ('white', 'Rook') moved from (7, 7) to (5, 7)
-2022-05-25 18:52:27,481 - INFO - (7, 3) black
-2022-05-25 18:52:27,481 - INFO - check amount: 0, attacker: [] 
-2022-05-25 18:52:27,481 - INFO - ('white', 'Rook') moved from (7, 7) to (5, 7)
-2022-05-25 18:52:27,484 - INFO - (3, 2) white
-2022-05-25 18:52:27,484 - INFO - check amount: 0, attacker: [] 
-2022-05-25 18:52:28,197 - INFO - ('black', 'King') moved from (3, 2) to (4, 1)
-2022-05-25 18:52:28,201 - INFO - (4, 1) white
-2022-05-25 18:52:28,201 - INFO - Friendly piece in the way at (6, 3, <main.Pawn object at 0x0000010A7EE89C40>)
-2022-05-25 18:52:28,201 - INFO - check amount: 0, attacker: [] 
-2022-05-25 18:52:28,201 - INFO - ('black', 'King') moved from (3, 2) to (4, 1)
-2022-05-25 18:52:28,204 - INFO - (7, 3) black
-2022-05-25 18:52:28,204 - INFO - check amount: 0, attacker: [] 
-2022-05-25 18:52:29,010 - INFO - ('white', 'Rook') moved from (5, 7) to (5, 6)
-2022-05-25 18:52:29,014 - INFO - (7, 3) black
-2022-05-25 18:52:29,014 - INFO - check amount: 0, attacker: [] 
-2022-05-25 18:52:29,014 - INFO - ('white', 'Rook') moved from (5, 7) to (5, 6)
-2022-05-25 18:52:29,018 - INFO - (4, 1) white
-2022-05-25 18:52:29,018 - INFO - Friendly piece in the way at (6, 3, <main.Pawn object at 0x0000010A7EE89580>)
-2022-05-25 18:52:29,018 - INFO - check amount: 0, attacker: [] 
-2022-05-25 18:52:29,754 - INFO - ('black', 'King') moved from (4, 1) to (4, 0)
-2022-05-25 18:52:29,757 - INFO - (4, 0) white
-2022-05-25 18:52:29,757 - INFO - Friendly piece in the way at (6, 0, <main.Pawn object at 0x0000010A7EE8B460>)
-2022-05-25 18:52:29,757 - INFO - check amount: 0, attacker: [] 
-2022-05-25 18:52:29,757 - INFO - ('black', 'King') moved from (4, 1) to (4, 0)
-2022-05-25 18:52:29,760 - INFO - (7, 3) black
-2022-05-25 18:52:29,760 - INFO - check amount: 0, attacker: [] 
-2022-05-25 18:52:30,719 - INFO - ('white', 'Rook') moved from (5, 6) to (3, 6)
-2022-05-25 18:52:30,723 - INFO - (7, 3) black
-2022-05-25 18:52:30,723 - INFO - check amount: 0, attacker: [] 
-2022-05-25 18:52:30,724 - INFO - ('white', 'Rook') moved from (5, 6) to (3, 6)
-2022-05-25 18:52:30,727 - INFO - (4, 0) white
-2022-05-25 18:52:30,727 - INFO - Friendly piece in the way at (6, 0, <main.Pawn object at 0x0000010A7EE89460>)
-2022-05-25 18:52:30,727 - INFO - check amount: 0, attacker: [] 
-2022-05-25 18:52:31,519 - INFO - (4, 0) white
-2022-05-25 18:52:31,519 - INFO - Friendly piece in the way at (6, 0, <main.Pawn object at 0x0000010A7EE8B820>)
-2022-05-25 18:52:31,519 - INFO - check amount: 0, attacker: [] 
-2022-05-25 18:52:31,521 - INFO - (7, 3) black
-2022-05-25 18:52:31,522 - INFO - check amount: 0, attacker: [] 
-2022-05-25 18:52:32,506 - INFO - ('white', 'Queen') moved from (7, 4) to (5, 4)
-2022-05-25 18:52:32,509 - INFO - (7, 3) black
-2022-05-25 18:52:32,509 - INFO - check amount: 0, attacker: [] 
-2022-05-25 18:52:32,509 - INFO - ('white', 'Queen') moved from (7, 4) to (5, 4)
-2022-05-25 18:52:32,512 - INFO - (4, 0) white
-2022-05-25 18:52:32,512 - INFO - Friendly piece in the way at (6, 0, <main.Pawn object at 0x0000010A7EE89460>)
-2022-05-25 18:52:32,512 - INFO - check amount: 0, attacker: [] 
-2022-05-25 18:52:33,082 - INFO - (4, 0) white
-2022-05-25 18:52:33,083 - INFO - Friendly piece in the way at (6, 0, <main.Pawn object at 0x0000010A7EE8B1C0>)
-2022-05-25 18:52:33,083 - INFO - check amount: 0, attacker: [] 
-2022-05-25 18:52:33,086 - INFO - (7, 3) black
-2022-05-25 18:52:33,086 - INFO - check amount: 0, attacker: [] 
-2022-05-25 18:52:33,664 - INFO - ('white', 'Pawn') moved from (6, 2) to (5, 2)
-2022-05-25 18:52:33,667 - INFO - (7, 3) black
-2022-05-25 18:52:33,667 - INFO - check amount: 0, attacker: [] 
-2022-05-25 18:52:33,668 - INFO - ('white', 'Pawn') moved from (6, 2) to (5, 2)
-2022-05-25 18:52:33,670 - INFO - (4, 0) white
-2022-05-25 18:52:33,671 - INFO - Friendly piece in the way at (6, 0, <main.Pawn object at 0x0000010A7EE89460>)
-2022-05-25 18:52:33,671 - INFO - check amount: 0, attacker: [] 
-2022-05-25 18:52:34,774 - INFO - it is not white's turn
-2022-05-25 18:52:35,108 - INFO - (4, 0) white
-2022-05-25 18:52:35,108 - INFO - Friendly piece in the way at (6, 0, <main.Pawn object at 0x0000010A7EE8B6A0>)
-2022-05-25 18:52:35,108 - INFO - check amount: 0, attacker: [] 
-2022-05-25 18:52:35,111 - INFO - (7, 3) black
-2022-05-25 18:52:35,111 - INFO - check amount: 0, attacker: [] 
-2022-05-25 18:52:36,520 - INFO - ('white', 'Queen') moved from (5, 4) to (3, 2)
-2022-05-25 18:52:36,524 - INFO - (7, 3) black
-2022-05-25 18:52:36,524 - INFO - check amount: 0, attacker: [] 
-2022-05-25 18:52:36,524 - INFO - ('white', 'Queen') moved from (5, 4) to (3, 2)
-2022-05-25 18:52:36,527 - INFO - (4, 0) white
-2022-05-25 18:52:36,527 - INFO - Friendly piece in the way at (6, 0, <main.Pawn object at 0x0000010A7EE89460>)
-2022-05-25 18:52:36,527 - INFO - check amount: 0, attacker: [] 
-2022-05-25 18:52:37,322 - INFO - (4, 0) white
-2022-05-25 18:52:37,322 - INFO - Friendly piece in the way at (6, 0, <main.Pawn object at 0x0000010A7EE8B460>)
-2022-05-25 18:52:37,322 - INFO - check amount: 0, attacker: [] 
-2022-05-25 18:52:37,325 - INFO - (7, 3) black
-2022-05-25 18:52:37,325 - INFO - check amount: 0, attacker: [] 
-2022-05-25 18:52:37,991 - INFO - ('white', 'Queen') moved from (3, 2) to (4, 1)
-2022-05-25 18:52:37,994 - INFO - (7, 3) black
-2022-05-25 18:52:37,994 - INFO - check amount: 0, attacker: [] 
-2022-05-25 18:52:37,995 - INFO - ('white', 'Queen') moved from (3, 2) to (4, 1)
-2022-05-25 18:52:37,998 - INFO - (4, 0) white
-2022-05-25 18:52:37,998 - INFO - Friendly piece in the way at (6, 0, <main.Pawn object at 0x0000010A7EE89460>)
-2022-05-25 18:52:37,998 - INFO - white Queen at (4, 1) has put enemy in check 
-2022-05-25 18:52:37,998 - INFO - check amount: 1, attacker: [<main.Queen object at 0x0000010A7EE899D0>] 
-2022-05-25 18:52:37,998 - INFO - move_king
-2022-05-25 18:52:38,004 - INFO - (5, 1) white
-2022-05-25 18:52:38,005 - INFO - ('Queen', (4, 1)) Check
-2022-05-25 18:52:38,005 - INFO - check amount: 1, attacker: [<main.Queen object at 0x0000010A7EE899D0>] 
-2022-05-25 18:52:38,007 - INFO - (5, 0) white
-2022-05-25 18:52:38,008 - INFO - Friendly piece in the way at (6, 0, <main.Pawn object at 0x0000010A7EE89460>)
-2022-05-25 18:52:38,008 - INFO - ('Knight', (7, 1)) Check
-2022-05-25 18:52:38,008 - INFO - Friendly piece in the way at (6, 1, <main.Pawn object at 0x0000010A7EE894C0>)
-2022-05-25 18:52:38,008 - INFO - ('Queen', (4, 1)) Check
-2022-05-25 18:52:38,008 - INFO - check amount: 2, attacker: [<main.Knight object at 0x0000010A7EE897F0>, <main.Queen object at 0x0000010A7EE899D0>] 
-2022-05-25 18:52:38,011 - INFO - (4, 1) white
-2022-05-25 18:52:38,011 - INFO - Friendly piece in the way at (4, 1, <main.Queen object at 0x0000010A7EE899D0>)
-2022-05-25 18:52:38,011 - INFO - check amount: 1, attacker: [<main.Queen object at 0x0000010A7EE899D0>] 
-2022-05-25 18:52:38,014 - INFO - (3, 1) white
-2022-05-25 18:52:38,014 - INFO - ('Rook', (3, 6)) Check
-2022-05-25 18:52:38,014 - INFO - ('Bishop', (7, 5)) Check
-2022-05-25 18:52:38,015 - INFO - ('Queen', (4, 1)) Check
-2022-05-25 18:52:38,015 - INFO - check amount: 3, attacker: [<main.Rook object at 0x0000010A7EE89790>, <main.Bishop object at 0x0000010A7EE89910>, <main.Queen object at 0x0000010A7EE899D0>] 
-2022-05-25 18:52:38,018 - INFO - (3, 0) white
-2022-05-25 18:52:38,018 - INFO - Friendly piece in the way at (6, 0, <main.Pawn object at 0x0000010A7EE89460>)
-2022-05-25 18:52:38,018 - INFO - ('Rook', (3, 6)) Check
-2022-05-25 18:52:38,018 - INFO - ('Queen', (4, 1)) Check
-2022-05-25 18:52:38,018 - INFO - check amount: 2, attacker: [<main.Rook object at 0x0000010A7EE89790>, <main.Queen object at 0x0000010A7EE899D0>] 
-2022-05-25 18:52:38,018 - INFO - block
-2022-05-25 18:52:38,021 - INFO - Queen is attacking
-2022-05-25 18:52:38,021 - INFO - tile list: [] 
-2022-05-25 18:52:38,022 - INFO - attack_attacker
-2022-05-25 18:52:38,025 - INFO - (4, 1) black
-2022-05-25 18:52:38,025 - INFO - Friendly piece in the way at (1, 4, <main.Pawn object at 0x0000010A76788550>)
-2022-05-25 18:52:38,025 - INFO - black King at (4, 0) has put enemy in check 
-2022-05-25 18:52:38,025 - INFO - check amount: 1, attacker: [<main.King object at 0x0000010A7EE89370>] 
-2022-05-25 18:52:38,025 - INFO - [1, [<main.King object at 0x0000010A7EE89370>]]
-2022-05-25 18:52:38,025 - CRITICAL - 1
-2022-05-25 18:52:38,025 - CRITICAL - 0
-2022-05-25 18:52:42,709 - INFO - ('black', 'King') moved from (4, 0) and attacked Queen at (4, 1)
-2022-05-25 18:52:42,713 - INFO - (4, 1) white
-2022-05-25 18:52:42,713 - INFO - white Pawn at (5, 2) has put enemy in check 
-2022-05-25 18:52:42,713 - INFO - check amount: 1, attacker: [<main.Pawn object at 0x0000010A7EE8BFA0>] 
-2022-05-25 18:52:42,713 - INFO - black tried putting themselves in check
-2022-05-25 18:52:43,513 - INFO - ('black', 'King') moved from (4, 0) to (5, 1)
-2022-05-25 18:52:43,516 - INFO - (5, 1) white
-2022-05-25 18:52:43,517 - INFO - white Queen at (4, 1) has put enemy in check 
-2022-05-25 18:52:43,517 - INFO - white Pawn at (6, 0) has put enemy in check 
-2022-05-25 18:52:43,517 - INFO - check amount: 2, attacker: [<main.Queen object at 0x0000010A7EE8B6A0>, <main.Pawn object at 0x0000010A7EE8BFA0>] 
-2022-05-25 18:52:43,517 - INFO - black tried putting themselves in check
-2022-05-25 18:52:44,255 - INFO - ('black', 'King') moved from (4, 0) to (5, 0)
-2022-05-25 18:52:44,258 - INFO - (5, 0) white
-2022-05-25 18:52:44,258 - INFO - white Queen at (4, 1) has put enemy in check 
-2022-05-25 18:52:44,258 - INFO - white Pawn at (6, 1) has put enemy in check 
-2022-05-25 18:52:44,258 - INFO - Friendly piece in the way at (6, 0, <main.Pawn object at 0x0000010A7EE8BC40>)
-2022-05-25 18:52:44,258 - INFO - white Knight at (7, 1) has put enemy in check 
-2022-05-25 18:52:44,258 - INFO - Friendly piece in the way at (6, 1, <main.Pawn object at 0x0000010A7EE8BFA0>)
-2022-05-25 18:52:44,258 - INFO - check amount: 3, attacker: [<main.Queen object at 0x0000010A7EE8BDC0>, <main.Pawn object at 0x0000010A7EE8BFA0>, <main.Knight object at 0x0000010A7EE89F40>] 
-2022-05-25 18:52:44,258 - INFO - black tried putting themselves in check
-2022-05-25 18:52:45,049 - INFO - ('black', 'King') moved from (4, 0) to (3, 1)
-2022-05-25 18:52:45,053 - INFO - (3, 1) white
-2022-05-25 18:52:45,053 - INFO - white Rook at (3, 6) has put enemy in check 
-2022-05-25 18:52:45,053 - INFO - white Queen at (4, 1) has put enemy in check 
-2022-05-25 18:52:45,053 - INFO - white Bishop at (7, 5) has put enemy in check 
-2022-05-25 18:52:45,053 - INFO - check amount: 3, attacker: [<main.Rook object at 0x0000010A7EE8BD00>, <main.Queen object at 0x0000010A7EE8F1F0>, <main.Bishop object at 0x0000010A7EE896D0>] 
-2022-05-25 18:52:45,053 - INFO - black tried putting themselves in check
-2022-05-25 18:52:45,861 - INFO - ('black', 'King') moved from (4, 0) to (3, 0)
-2022-05-25 18:52:45,867 - INFO - (3, 0) white
-2022-05-25 18:52:45,867 - INFO - Enemy piece in the way at (3, 1)
-2022-05-25 18:52:45,867 - INFO - white Queen at (4, 1) has put enemy in check 
-2022-05-25 18:52:45,867 - INFO - Friendly piece in the way at (6, 0, <main.Pawn object at 0x0000010A7EE8B6A0>)
-2022-05-25 18:52:45,867 - INFO - check amount: 1, attacker: [<main.Queen object at 0x0000010A76788430>] 
-2022-05-25 18:52:45,867 - INFO - black tried putting themselves in check
+2022-05-27 13:52:47,825 - INFO - ('white', 'Pawn') moved from (6, 3) to (5, 3)
+2022-05-27 13:52:47,828 - INFO - (7, 3) black
+2022-05-27 13:52:47,828 - INFO - check amount: 0, attacker: [] 
+2022-05-27 13:52:47,828 - INFO - ('white', 'Pawn') moved from (6, 3) to (5, 3)
+2022-05-27 13:52:47,831 - INFO - (0, 3) white
+2022-05-27 13:52:47,831 - INFO - check amount: 0, attacker: [] 
+2022-05-27 13:52:49,165 - INFO - ('black', 'Pawn') moved from (1, 2) to (2, 2)
+2022-05-27 13:52:49,171 - INFO - (0, 3) white
+2022-05-27 13:52:49,171 - INFO - check amount: 0, attacker: [] 
+2022-05-27 13:52:49,172 - INFO - ('black', 'Pawn') moved from (1, 2) to (2, 2)
+2022-05-27 13:52:49,177 - INFO - (7, 3) black
+2022-05-27 13:52:49,178 - INFO - check amount: 0, attacker: [] 
+2022-05-27 13:52:50,629 - INFO - ('white', 'Queen') moved from (7, 4) to (4, 1)
+2022-05-27 13:52:50,632 - INFO - (7, 3) black
+2022-05-27 13:52:50,632 - INFO - check amount: 0, attacker: [] 
+2022-05-27 13:52:50,632 - INFO - ('white', 'Queen') moved from (7, 4) to (4, 1)
+2022-05-27 13:52:50,635 - INFO - (0, 3) white
+2022-05-27 13:52:50,635 - INFO - check amount: 0, attacker: [] 
+2022-05-27 13:52:51,487 - INFO - ('black', 'Pawn') moved from (1, 1) to (3, 1)
+2022-05-27 13:52:51,490 - INFO - (0, 3) white
+2022-05-27 13:52:51,491 - INFO - check amount: 0, attacker: [] 
+2022-05-27 13:52:51,491 - INFO - ('black', 'Pawn') moved from (1, 1) to (3, 1)
+2022-05-27 13:52:51,493 - INFO - (7, 3) black
+2022-05-27 13:52:51,493 - INFO - check amount: 0, attacker: [] 
+2022-05-27 13:52:52,255 - INFO - ('white', 'Queen') moved from (4, 1) to (3, 0)
+2022-05-27 13:52:52,258 - INFO - (7, 3) black
+2022-05-27 13:52:52,258 - INFO - check amount: 0, attacker: [] 
+2022-05-27 13:52:52,258 - INFO - ('white', 'Queen') moved from (4, 1) to (3, 0)
+2022-05-27 13:52:52,261 - INFO - (0, 3) white
+2022-05-27 13:52:52,261 - INFO - white Queen at (3, 0) has put enemy in check 
+2022-05-27 13:52:52,261 - INFO - check amount: 1, attacker: [<main.Queen object at 0x0000026E25E799D0>] 
+2022-05-27 13:52:52,261 - INFO - move_king
+2022-05-27 13:52:52,265 - INFO - (1, 2) white
+2022-05-27 13:52:52,265 - INFO - ('Queen', (3, 0)) Check
+2022-05-27 13:52:52,265 - INFO - check amount: 1, attacker: [<main.Queen object at 0x0000026E25E799D0>] 
+2022-05-27 13:52:52,266 - INFO - block
+2022-05-27 13:52:52,268 - INFO - Queen is attacking
+2022-05-27 13:52:52,268 - INFO - tile list: [[2, 1], [1, 2]] 
+2022-05-27 13:52:52,271 - INFO - [2, 1] black
+2022-05-27 13:52:52,271 - INFO - check amount: 0, attacker: [] 
+2022-05-27 13:52:52,274 - INFO - [1, 2] black
+2022-05-27 13:52:52,274 - INFO - ('King', (0, 3)) Check
+2022-05-27 13:52:52,274 - INFO - check amount: 1, attacker: [<main.King object at 0x0000026E25E79370>] 
+2022-05-27 13:52:52,274 - INFO - attack_attacker
+2022-05-27 13:52:52,276 - INFO - (3, 0) black
+2022-05-27 13:52:52,276 - INFO - Friendly piece in the way at (1, 0, <main.Pawn object at 0x0000026E25DD7730>)
+2022-05-27 13:52:52,276 - INFO - check amount: 0, attacker: [] 
+2022-05-27 13:52:52,276 - INFO - [0, []]

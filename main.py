@@ -563,12 +563,13 @@ def check_mate(checker, check_amount, attacker):
 
     def attack_attacker():
         logging.info("attack_attacker")
-        a = is_check(checkered, grid, king_position=attacker.position)
-        logging.info(f"{a}")
-        if isinstance(a[1][0], King):
-            a[0] -=1
-        if a[0]:
-            return True
+        is_check_result = is_check(checkered, grid, king_position=attacker.position)
+        logging.info(f"{is_check_result} is_check_result")
+        if is_check_result[0]:
+            if isinstance(is_check_result[1][0], King):
+                is_check_result[0] -=1
+            if is_check_result[0]:
+                return True
         else:
             return False
 
