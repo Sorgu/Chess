@@ -93,12 +93,22 @@ def main():
             writeText(cur_turn.capitalize() + " is in checkmate", 280, 680, 50)
         writeText(cur_turn.capitalize() + "'s turn", 160, 630, 50)
         writeText("Turn: " + str(turn_i), 500, 630, 50)
+        if promote:
+            pygame.draw.rect(win, (170, 170, 170), [0, (HEIGHT / 8) * 2, 75, 40])
+            writeText("Queen", WIDTH / 8 - 40, (HEIGHT / 8) * 2 + 15, 20)
+            pygame.draw.rect(win, (170, 170, 170), [(WIDTH / 8) * 2, (HEIGHT / 8) * 2, 75, 40])
+            writeText("Knight", (WIDTH / 8) * 3 - 40, (HEIGHT / 8) * 2 + 15, 20)
+            pygame.draw.rect(win, (170, 170, 170), [(WIDTH / 8) * 4, (HEIGHT / 8) * 2, 75, 40])
+            writeText("Rook", (WIDTH / 8) * 5 - 40, (HEIGHT / 8) * 2 + 15, 20)
+            pygame.draw.rect(win, (170, 170, 170), [(WIDTH / 8) * 6, (HEIGHT / 8) * 2, 75, 40])
+            writeText("Bishop", (WIDTH / 8) * 7 - 40, (HEIGHT / 8) * 2 + 15, 20)
         pygame.display.update()
 
     cur_turn = "white"
     turn_i = 0
     check = False
     checkmate = False
+    promote = False
     update_board_state()
 
 
@@ -112,14 +122,32 @@ def main():
                 row, col = get_mouse_pos(pygame.mouse.get_pos())
                 if row >= ROWS or col >= COLS:
                     continue
-                if len(stored_commands) == 2:
+                if promote:
+                    promote_result = False
+                    print(row, col)
+                    if row == 2 and col == 0:
+                        promote_result = chess.Queen
+                    elif row == 2 and col == 2:
+                        promote_result = chess.Knight
+                    elif row == 2 and col == 4:
+                        promote_result = chess.Rook
+                    elif row == 2 and col == 6:
+                        promote_result = chess.Bishop
+                    else:
+                        print("invalid selection")
+                    if promote_result:
+                        chess.promotion(promote_input[1], promote_input[2], promote_result)
+                        promote = False
+                        update_board_state()
+
+                elif len(stored_commands) == 2:
                     stored_commands.append(row)
                     stored_commands.append(col)
                     result = chess.move_piece(stored_commands, cur_turn, turn_i)
                     if not result:
                         print("invalid")
                     else:
-                        result, cur_turn, turn_i = result
+                        result, cur_turn, turn_i, promote_input = result
                         if result == "check":
                             print("CHECK")
                             check = True
@@ -129,6 +157,8 @@ def main():
                             check = False
                         else:
                             check = False
+                        if promote_input[0]:
+                            promote = True
                     stored_commands = []
 
                     update_board_state()

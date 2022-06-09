@@ -439,10 +439,18 @@ def change_turn(cur_turn, turn_i):
     turn_i += 1
     return turn, turn_i
 
+# function for the rule where if a pawn reaches the other side it can become another piece
+def promotion(color, position, piece_type):
+    x, y = position
+    grid[x][y].set_piece(piece_type(color, (x, y), grid))
+    logging.info(f"{color} has promoted pawn into {piece_type} at {x, y}")
+    return True
+
 # takes two coordinates from GUI.py and if it is a piece, it is moved from (x1, y1) to (x2, y2). After moving, it checks
 # if the enemy has been put in check or checkmate
 def move_piece(stored_commands, cur_turn, turn_i):
     x1, y1, x2, y2 = stored_commands
+    promote = [0, "", ()]
     check_amount = 0
     if not grid[x1][y1].check_for_piece():
         logging.info(f"no piece found at {x1}, {y1}")
@@ -458,20 +466,26 @@ def move_piece(stored_commands, cur_turn, turn_i):
             logging.info(f"{color} tried putting themselves in check")
             return False
         else:
+            clean_board(testing_grid)
             grid[x1][y1].piece.move(x2, y2)
+            if isinstance(grid[x2][y2].piece, Pawn):
+                if grid[x2][y2].piece.color == "white" and x2 == 0:
+                    promote = [1, "white", (x2, y2)]
+                elif grid[x2][y2].piece.color == "black" and x2 == 7:
+                    promote = [1, "black", (x2, y2)]
             cur_turn, turn_i = change_turn(cur_turn, turn_i)
             check_amount = is_check(color, grid)
-            clean_board(testing_grid)
+
     else:
         logging.info(f"Illegal move")
         return False
     if check_amount[0] == 0:
-        return [True, cur_turn, turn_i]
+        return [True, cur_turn, turn_i, promote]
 
     elif check_amount[0]:
         if not check_mate(color, *check_amount):
-            return ["check mate", cur_turn, turn_i]
-        return ["check", cur_turn, turn_i]
+            return ["check mate", cur_turn, turn_i, promote]
+        return ["check", cur_turn, turn_i, promote]
 
 
 #

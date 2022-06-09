@@ -1,48 +1,56 @@
-2022-05-27 13:52:47,825 - INFO - ('white', 'Pawn') moved from (6, 3) to (5, 3)
-2022-05-27 13:52:47,828 - INFO - (7, 3) black
-2022-05-27 13:52:47,828 - INFO - check amount: 0, attacker: [] 
-2022-05-27 13:52:47,828 - INFO - ('white', 'Pawn') moved from (6, 3) to (5, 3)
-2022-05-27 13:52:47,831 - INFO - (0, 3) white
-2022-05-27 13:52:47,831 - INFO - check amount: 0, attacker: [] 
-2022-05-27 13:52:49,165 - INFO - ('black', 'Pawn') moved from (1, 2) to (2, 2)
-2022-05-27 13:52:49,171 - INFO - (0, 3) white
-2022-05-27 13:52:49,171 - INFO - check amount: 0, attacker: [] 
-2022-05-27 13:52:49,172 - INFO - ('black', 'Pawn') moved from (1, 2) to (2, 2)
-2022-05-27 13:52:49,177 - INFO - (7, 3) black
-2022-05-27 13:52:49,178 - INFO - check amount: 0, attacker: [] 
-2022-05-27 13:52:50,629 - INFO - ('white', 'Queen') moved from (7, 4) to (4, 1)
-2022-05-27 13:52:50,632 - INFO - (7, 3) black
-2022-05-27 13:52:50,632 - INFO - check amount: 0, attacker: [] 
-2022-05-27 13:52:50,632 - INFO - ('white', 'Queen') moved from (7, 4) to (4, 1)
-2022-05-27 13:52:50,635 - INFO - (0, 3) white
-2022-05-27 13:52:50,635 - INFO - check amount: 0, attacker: [] 
-2022-05-27 13:52:51,487 - INFO - ('black', 'Pawn') moved from (1, 1) to (3, 1)
-2022-05-27 13:52:51,490 - INFO - (0, 3) white
-2022-05-27 13:52:51,491 - INFO - check amount: 0, attacker: [] 
-2022-05-27 13:52:51,491 - INFO - ('black', 'Pawn') moved from (1, 1) to (3, 1)
-2022-05-27 13:52:51,493 - INFO - (7, 3) black
-2022-05-27 13:52:51,493 - INFO - check amount: 0, attacker: [] 
-2022-05-27 13:52:52,255 - INFO - ('white', 'Queen') moved from (4, 1) to (3, 0)
-2022-05-27 13:52:52,258 - INFO - (7, 3) black
-2022-05-27 13:52:52,258 - INFO - check amount: 0, attacker: [] 
-2022-05-27 13:52:52,258 - INFO - ('white', 'Queen') moved from (4, 1) to (3, 0)
-2022-05-27 13:52:52,261 - INFO - (0, 3) white
-2022-05-27 13:52:52,261 - INFO - white Queen at (3, 0) has put enemy in check 
-2022-05-27 13:52:52,261 - INFO - check amount: 1, attacker: [<main.Queen object at 0x0000026E25E799D0>] 
-2022-05-27 13:52:52,261 - INFO - move_king
-2022-05-27 13:52:52,265 - INFO - (1, 2) white
-2022-05-27 13:52:52,265 - INFO - ('Queen', (3, 0)) Check
-2022-05-27 13:52:52,265 - INFO - check amount: 1, attacker: [<main.Queen object at 0x0000026E25E799D0>] 
-2022-05-27 13:52:52,266 - INFO - block
-2022-05-27 13:52:52,268 - INFO - Queen is attacking
-2022-05-27 13:52:52,268 - INFO - tile list: [[2, 1], [1, 2]] 
-2022-05-27 13:52:52,271 - INFO - [2, 1] black
-2022-05-27 13:52:52,271 - INFO - check amount: 0, attacker: [] 
-2022-05-27 13:52:52,274 - INFO - [1, 2] black
-2022-05-27 13:52:52,274 - INFO - ('King', (0, 3)) Check
-2022-05-27 13:52:52,274 - INFO - check amount: 1, attacker: [<main.King object at 0x0000026E25E79370>] 
-2022-05-27 13:52:52,274 - INFO - attack_attacker
-2022-05-27 13:52:52,276 - INFO - (3, 0) black
-2022-05-27 13:52:52,276 - INFO - Friendly piece in the way at (1, 0, <main.Pawn object at 0x0000026E25DD7730>)
-2022-05-27 13:52:52,276 - INFO - check amount: 0, attacker: [] 
-2022-05-27 13:52:52,276 - INFO - [0, []]
+2022-06-09 11:16:49,801 - INFO - ('white', 'Pawn') moved from (6, 6) to (4, 6)
+2022-06-09 11:16:49,804 - INFO - (7, 3) black
+2022-06-09 11:16:49,805 - INFO - check amount: 0, attacker: [] 
+2022-06-09 11:16:49,805 - INFO - ('white', 'Pawn') moved from (6, 6) to (4, 6)
+2022-06-09 11:16:49,807 - INFO - (0, 3) white
+2022-06-09 11:16:49,807 - INFO - check amount: 0, attacker: [] 
+2022-06-09 11:16:50,584 - INFO - ('black', 'Pawn') moved from (1, 7) to (3, 7)
+2022-06-09 11:16:50,587 - INFO - (0, 3) white
+2022-06-09 11:16:50,588 - INFO - check amount: 0, attacker: [] 
+2022-06-09 11:16:50,588 - INFO - ('black', 'Pawn') moved from (1, 7) to (3, 7)
+2022-06-09 11:16:50,591 - INFO - (7, 3) black
+2022-06-09 11:16:50,591 - INFO - check amount: 0, attacker: [] 
+2022-06-09 11:16:51,155 - INFO - ('white', 'Pawn') moved from (4, 6) and attacked Pawn at (3, 7)
+2022-06-09 11:16:51,158 - INFO - (7, 3) black
+2022-06-09 11:16:51,158 - INFO - check amount: 0, attacker: [] 
+2022-06-09 11:16:51,159 - INFO - ('white', 'Pawn') moved from (4, 6) and attacked Pawn at (3, 7)
+2022-06-09 11:16:51,161 - INFO - (0, 3) white
+2022-06-09 11:16:51,161 - INFO - check amount: 0, attacker: [] 
+2022-06-09 11:16:51,990 - INFO - Illegal move
+2022-06-09 11:16:53,053 - INFO - ('black', 'Knight') moved from (0, 6) to (2, 5)
+2022-06-09 11:16:53,056 - INFO - (0, 3) white
+2022-06-09 11:16:53,056 - INFO - check amount: 0, attacker: [] 
+2022-06-09 11:16:53,056 - INFO - ('black', 'Knight') moved from (0, 6) to (2, 5)
+2022-06-09 11:16:53,059 - INFO - (7, 3) black
+2022-06-09 11:16:53,059 - INFO - check amount: 0, attacker: [] 
+2022-06-09 11:16:53,766 - INFO - ('white', 'Pawn') moved from (3, 7) to (2, 7)
+2022-06-09 11:16:53,772 - INFO - (7, 3) black
+2022-06-09 11:16:53,772 - INFO - check amount: 0, attacker: [] 
+2022-06-09 11:16:53,772 - INFO - ('white', 'Pawn') moved from (3, 7) to (2, 7)
+2022-06-09 11:16:53,778 - INFO - (0, 3) white
+2022-06-09 11:16:53,778 - INFO - check amount: 0, attacker: [] 
+2022-06-09 11:16:54,293 - INFO - ('black', 'Rook') moved from (0, 7) to (0, 6)
+2022-06-09 11:16:54,296 - INFO - (0, 3) white
+2022-06-09 11:16:54,296 - INFO - check amount: 0, attacker: [] 
+2022-06-09 11:16:54,296 - INFO - ('black', 'Rook') moved from (0, 7) to (0, 6)
+2022-06-09 11:16:54,299 - INFO - (7, 3) black
+2022-06-09 11:16:54,299 - INFO - check amount: 0, attacker: [] 
+2022-06-09 11:16:54,856 - INFO - ('white', 'Pawn') moved from (2, 7) to (1, 7)
+2022-06-09 11:16:54,859 - INFO - (7, 3) black
+2022-06-09 11:16:54,860 - INFO - check amount: 0, attacker: [] 
+2022-06-09 11:16:54,860 - INFO - ('white', 'Pawn') moved from (2, 7) to (1, 7)
+2022-06-09 11:16:54,864 - INFO - (0, 3) white
+2022-06-09 11:16:54,865 - INFO - check amount: 0, attacker: [] 
+2022-06-09 11:16:55,642 - INFO - ('black', 'Knight') moved from (2, 5) to (3, 3)
+2022-06-09 11:16:55,645 - INFO - (0, 3) white
+2022-06-09 11:16:55,645 - INFO - check amount: 0, attacker: [] 
+2022-06-09 11:16:55,645 - INFO - ('black', 'Knight') moved from (2, 5) to (3, 3)
+2022-06-09 11:16:55,648 - INFO - (7, 3) black
+2022-06-09 11:16:55,648 - INFO - check amount: 0, attacker: [] 
+2022-06-09 11:16:56,616 - INFO - ('white', 'Pawn') moved from (1, 7) to (0, 7)
+2022-06-09 11:16:56,619 - INFO - (7, 3) black
+2022-06-09 11:16:56,619 - INFO - check amount: 0, attacker: [] 
+2022-06-09 11:16:56,619 - INFO - ('white', 'Pawn') moved from (1, 7) to (0, 7)
+2022-06-09 11:16:56,622 - INFO - (0, 3) white
+2022-06-09 11:16:56,622 - INFO - check amount: 0, attacker: [] 
+2022-06-09 11:17:02,844 - INFO - white has promoted pawn into <class 'main.Queen'> at (0, 7)
