@@ -445,17 +445,20 @@ def change_turn(cur_turn, turn_i):
 # function for the rule where if a pawn reaches the other side it can become another piece
 def promotion(color, position, piece_type):
     x, y = position
-    grid[x][y].set_piece(piece_type(color, (x, y), grid))
+    grid[x][y].set_piece(piece_type(color, (x, y), grid, has_moved=True))
     logging.info(f"{color} has promoted pawn into {piece_type} at {x, y}")
     return True
 
 #
-def castling(king, rook):
-    if king.__class__.__name__ == "King" and rook.__class__.__name__ == "Rook":
-        pass
-    else:
+def castling(king, rook, friendly_color):
+    if king.__class__.__name__ != "King" or rook.__class__.__name__ != "Rook":
         return False
-    friendly_color = "black" if king.color == "black" else "white"
+    elif king.has_moved == True or rook.has_moved == True:
+        logging.info("king or rook has moved before")
+        return False
+    elif king.color != friendly_color or rook.color != friendly_color:
+        logging.info("Wrong color")
+        return False
     enemy_color = "white" if king.color == "black" else "black"
     if king.has_moved or rook.has_moved:
         return False
@@ -503,7 +506,7 @@ def move_piece(stored_commands, cur_turn, turn_i):
         logging.info(f"it is not {color}'s turn")
         return False
     copy_board()
-    if castling(grid[x1][y1].piece, grid[x2][y2].piece):
+    if castling(grid[x1][y1].piece, grid[x2][y2].piece, color):
         logging.info("CASTLING")
         clean_board(testing_grid)
     elif testing_grid[x1][y1].piece.move(x2, y2):
