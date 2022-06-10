@@ -31,11 +31,12 @@ class Tile:
 
 # parent class for all pieces
 class Piece:
-    def __init__(self, color, position, self_grid, en_passant=False):
+    def __init__(self, color, position, self_grid, en_passant=False, has_moved=False):
         self.color = color
         self.position = position
         self.en_passant = en_passant
         self.grid = self_grid
+        self.has_moved = has_moved
     # checks if there is a piece in the coordinates provided and returns the appropriate command
     def check_for_pieces(self, z, w, current_step, total_steps, check_if_check):
         try:
@@ -91,6 +92,7 @@ class Piece:
         self.grid[x][y].set_piece(None)
         self.grid[z][w].set_piece(self)
         self.position = (z, w)
+        self.has_moved = True
         logging.info(
             f"{self.color, self.__class__.__name__} moved from {x, y} and attacked {attacked_piece} at {z, w}")
 
@@ -99,6 +101,7 @@ class Piece:
         self.grid[x][y].set_piece(None)
         self.grid[z][w].set_piece(self)
         self.position = (z, w)
+        self.has_moved = True
         logging.info(f"{self.color, self.__class__.__name__} moved from {x, y} to {z, w}")
 
     # calculates the tiles a piece needs to traverse and handles commands from check_for_pieces()
@@ -134,10 +137,10 @@ class Piece:
 
 # class for the pawn piece with rules on how it can move and which direction to move
 class Pawn(Piece):
-    def __init__(self, color, position, self_grid, en_passant=False):
+    def __init__(self, color, position, self_grid, en_passant=False, has_moved=False):
         self.en_passant = en_passant
         self.do_en_passant = False
-        super(Pawn, self).__init__(color, position, self_grid, en_passant)
+        super(Pawn, self).__init__(color, position, self_grid, en_passant, has_moved)
     def move(self, targetx, targety, check_if_check=False):
         self.attacking = False
         en_passant = False
@@ -446,12 +449,52 @@ def promotion(color, position, piece_type):
     logging.info(f"{color} has promoted pawn into {piece_type} at {x, y}")
     return True
 
+#
+def castling(king, rook):
+    if king.__class__.__name__ == "King" and rook.__class__.__name__ == "Rook":
+        pass
+    else:
+        return False
+    friendly_color = "black" if king.color == "black" else "white"
+    enemy_color = "white" if king.color == "black" else "black"
+    if king.has_moved or rook.has_moved:
+        return False
+    king_x, king_y = king.position
+    rook_x, rook_y = rook.position
+    between_list = []
+    if king_y > rook_y:
+        king_y2 = king_y - 2
+        rook_y2 = rook_y + 2
+    elif king_y < rook_y:
+        king_y2 = king_y + 2
+        rook_y2 = rook_y - 3
+    for each in range(max(king_y, king_y2) - min(king_y, king_y2) + 1):
+        if is_check(enemy_color, grid, king_position=(king_x, each + min(king_y, king_y2)))[0]:
+            logging.info(f"castling failed because {king_x, each + min(king_y, king_y2)} is under threat")
+            return False
+    if king_y > rook_y:
+        for each in range(2):
+            between_list.append((king_x, each + min(king_y, king_y2)))
+    elif king_y < rook_y:
+        for each in range(3):
+            between_list.append((king_x, each + min(king_y, king_y2) + 1))
+    for each in between_list:
+        each1, each2 = each
+        if grid[each1][each2].check_for_piece():
+            logging.info("castling failed because of pieces in the way")
+            return False
+    king.do_move(king_x, king_y, king_x, king_y2)
+    rook.do_move(rook_x, rook_y, rook_x, rook_y2)
+    return True
+
+
+
 # takes two coordinates from GUI.py and if it is a piece, it is moved from (x1, y1) to (x2, y2). After moving, it checks
 # if the enemy has been put in check or checkmate
 def move_piece(stored_commands, cur_turn, turn_i):
     x1, y1, x2, y2 = stored_commands
     promote = [0, "", ()]
-    check_amount = 0
+    check_amount = [0, []]
     if not grid[x1][y1].check_for_piece():
         logging.info(f"no piece found at {x1}, {y1}")
         return False
@@ -460,7 +503,10 @@ def move_piece(stored_commands, cur_turn, turn_i):
         logging.info(f"it is not {color}'s turn")
         return False
     copy_board()
-    if testing_grid[x1][y1].piece.move(x2, y2):
+    if castling(grid[x1][y1].piece, grid[x2][y2].piece):
+        logging.info("CASTLING")
+        clean_board(testing_grid)
+    elif testing_grid[x1][y1].piece.move(x2, y2):
         other_color = "white" if color == "black" else "black"
         if is_check(other_color, testing_grid)[0] != 0:
             logging.info(f"{color} tried putting themselves in check")
@@ -473,12 +519,12 @@ def move_piece(stored_commands, cur_turn, turn_i):
                     promote = [1, "white", (x2, y2)]
                 elif grid[x2][y2].piece.color == "black" and x2 == 7:
                     promote = [1, "black", (x2, y2)]
-            cur_turn, turn_i = change_turn(cur_turn, turn_i)
             check_amount = is_check(color, grid)
 
     else:
         logging.info(f"Illegal move")
         return False
+    cur_turn, turn_i = change_turn(cur_turn, turn_i)
     if check_amount[0] == 0:
         return [True, cur_turn, turn_i, promote]
 
@@ -488,8 +534,8 @@ def move_piece(stored_commands, cur_turn, turn_i):
         return ["check", cur_turn, turn_i, promote]
 
 
-#
-def is_check(color, local_grid, king_position=None, mate_check=False, king=None):
+# checks if the king of the opposite color is in check
+def is_check(color, local_grid, king_position=None):
     king_pos, black_list_of_pieces, white_list_of_pieces = get_king_position(color, local_grid)
     attacker = []
     check_amount = 0
@@ -664,7 +710,7 @@ def copy_board():
     for i, row in enumerate(grid):
         for j, value in enumerate(row):
             if value.check_for_piece():
-                testing_grid[i][j].set_piece(value.piece.__class__(value.piece.color, value.piece.position, testing_grid, en_passant=value.piece.en_passant))
+                testing_grid[i][j].set_piece(value.piece.__class__(value.piece.color, value.piece.position, testing_grid, en_passant=value.piece.en_passant, has_moved=value.piece.has_moved))
 
 def clean_board(grid):
     for each in grid:
