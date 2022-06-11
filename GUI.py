@@ -51,7 +51,7 @@ def draw(win, field):
 
 def writeText(string, coordx, coordy, fontSize):
     #set the font to write with
-    font = pygame.font.Font('freesansbold.ttf', fontSize)
+    font = pygame.font.SysFont(None, fontSize)
     #(0, 0, 0) is black, to make black text
     print(string)
     text = font.render(str(string), True, (0, 0, 0))

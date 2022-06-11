@@ -638,24 +638,30 @@ def check_mate(checker, check_amount, attacker):
     attacker = attacker[0]
     checkered = "black" if checker == "white" else "white"
     def move_king():
+        copy_board()
         logging.info("move_king")
         for obj in gc.get_objects():
             if isinstance(obj, Piece):
-                if obj.grid == grid:
+                if obj.grid == testing_grid:
                     if isinstance(obj, King) and obj.color == checkered:
                         checked_king = obj
         checked_king_pos = checked_king.position
+        testing_grid[checked_king_pos[0]][checked_king_pos[1]].set_piece(None)
         for each in itertools.product((-1, 0, 1), repeat=2):
             x = checked_king_pos[0] - each[0]
             y = checked_king_pos[1] - each[1]
+            logging.info((x, y))
             if x > 7 or x < 0 or y > 7 or y < 0:
                 continue
-            if grid[x][y].check_for_piece():
-                if grid[x][y].piece.color == checkered:
+            if testing_grid[x][y].check_for_piece():
+                if testing_grid[x][y].piece.color == checkered:
                     continue
-            if not is_check(checker, grid, king_position=(x,y))[0]:
+            if not is_check(checker, testing_grid, king_position=(x,y))[0]:
+                logging.info(f"move_king can move to {x,y}")
+                clean_board(testing_grid)
                 return True
             continue
+        clean_board(testing_grid)
         return False
 
     def block():
