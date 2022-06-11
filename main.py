@@ -593,6 +593,7 @@ def move_piece_second_half(stored_commands, cur_turn, turn_i):
         other_color = "white" if color == "black" else "black"
         if is_check(other_color, testing_grid)[0] != 0:
             logging.info(f"{color} tried putting themselves in check")
+            clean_board(testing_grid)
             return False
         else:
             clean_board(testing_grid)
