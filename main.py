@@ -482,24 +482,24 @@ def castling(king, rook, friendly_color):
     between_list = []
     if king_y > rook_y:
         king_y2 = king_y - 2
-        rook_y2 = rook_y + 2
+        rook_y2 = rook_y + 3
     elif king_y < rook_y:
         king_y2 = king_y + 2
-        rook_y2 = rook_y - 3
+        rook_y2 = rook_y - 2
     for each in range(max(king_y, king_y2) - min(king_y, king_y2) + 1):
         if is_check(enemy_color, grid, king_position=(king_x, each + min(king_y, king_y2)))[0]:
             logging.info(f"castling failed because {king_x, each + min(king_y, king_y2)} is under threat")
             return False
     if king_y > rook_y:
-        for each in range(2):
-            between_list.append((king_x, each + min(king_y, king_y2)))
-    elif king_y < rook_y:
         for each in range(3):
+            between_list.append((king_x, each + min(king_y, king_y2) - 1))
+    elif king_y < rook_y:
+        for each in range(2):
             between_list.append((king_x, each + min(king_y, king_y2) + 1))
     for each in between_list:
         each1, each2 = each
         if grid[each1][each2].check_for_piece():
-            logging.info("castling failed because of pieces in the way")
+            logging.info(f"castling failed because of pieces in the way {between_list}")
             return False
     king.do_move(king_x, king_y, king_x, king_y2)
     rook.do_move(rook_x, rook_y, rook_x, rook_y2)
@@ -529,12 +529,15 @@ def threefold_repetition(cur_turn):
                 if isinstance(obj, Pawn):
                     if obj.en_passant and obj.color == other_color:
                         x, y = obj.position
-                        if grid[x][y - 1].check_for_piece:
-                            if isinstance(grid[x][y - 1].piece, Pawn) and grid[x][y - 1].piece.color != obj.color:
-                                en_passant = True
-                        if grid[x][y + 1].check_for_piece:
-                            if isinstance(grid[x][y + 1].piece, Pawn) and grid[x][y + 1].piece.color != obj.color:
-                                en_passant = True
+                        try:
+                            if grid[x][y - 1].check_for_piece:
+                                if isinstance(grid[x][y - 1].piece, Pawn) and grid[x][y - 1].piece.color != obj.color:
+                                    en_passant = True
+                            if grid[x][y + 1].check_for_piece:
+                                if isinstance(grid[x][y + 1].piece, Pawn) and grid[x][y + 1].piece.color != obj.color:
+                                    en_passant = True
+                        except IndexError:
+                            pass
                 piece_list.append((obj.color, obj.__class__.__name__, str(obj.position[0]), str(obj.position[1]), en_passant))
     if not king_black.has_moved:
         for each in black_rooks:
@@ -767,8 +770,8 @@ def populate_grid(grid):
     grid[0][6].set_piece(Knight("black", (0, 6), grid))
     grid[0][2].set_piece(Bishop("black", (0, 2), grid))
     grid[0][5].set_piece(Bishop("black", (0, 5), grid))
-    grid[0][3].set_piece(King("black", (0, 3), grid))
-    grid[0][4].set_piece(Queen("black", (0, 4), grid))
+    grid[0][4].set_piece(King("black", (0, 4), grid))
+    grid[0][3].set_piece(Queen("black", (0, 3), grid))
 
     for i, each in enumerate(grid[6]):
         each.set_piece(Pawn("white", (6, i), grid))
@@ -778,8 +781,8 @@ def populate_grid(grid):
     grid[7][6].set_piece(Knight("white", (7, 6), grid))
     grid[7][2].set_piece(Bishop("white", (7, 2), grid))
     grid[7][5].set_piece(Bishop("white", (7, 5), grid))
-    grid[7][3].set_piece(King("white", (7, 3), grid))
-    grid[7][4].set_piece(Queen("white", (7, 4), grid))
+    grid[7][4].set_piece(King("white", (7, 4), grid))
+    grid[7][3].set_piece(Queen("white", (7, 3), grid))
 
 def copy_board():
     for i, row in enumerate(grid):
