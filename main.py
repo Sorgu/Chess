@@ -7,6 +7,14 @@ import gc
 logging.basicConfig(level=logging.INFO, filename="log.log", filemode="w",
                     format="%(asctime)s - %(levelname)s - %(message)s")
 
+logger = logging.getLogger("Threefold_repetition")
+logger.setLevel(logging.INFO)
+ch = logging.FileHandler("Threefold_repetition.log", mode="w")
+ch.setLevel(logging.INFO)
+formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s")
+ch.setFormatter(formatter)
+logger.addHandler(ch)
+
 # class for the chess tiles that will contain chess pieces
 class Tile:
     def __init__(self):
@@ -221,7 +229,7 @@ class Pawn(Piece):
         chosen_direction = direction(targetx, targety, self.position[0], self.position[1])
         a = self.do_move_do(targetx, targety, chosen_direction, check_if_check)
         if en_passant:
-            self.en_passant = True
+            self.en_passant = 2
         else:
             self.en_passant = False
         if a:
@@ -432,7 +440,7 @@ def update_board():
     board_state = [[] for _ in range(8)]
     for i, row in enumerate(grid):
         for j, value in enumerate(row):
-            piece = grid[i][j].piece.__class__.__name__
+            piece = grid[i][j].piece
             board_state[i].append(piece)
     return board_state
 
@@ -448,6 +456,13 @@ def promotion(color, position, piece_type):
     grid[x][y].set_piece(piece_type(color, (x, y), grid, has_moved=True))
     logging.info(f"{color} has promoted pawn into {piece_type} at {x, y}")
     return True
+
+# Removes 1 from en_passant counter each turn if en_passant is true
+def en_passant_remover():
+    for obj in gc.get_objects():
+        if isinstance(obj, Pawn):
+            if obj.en_passant:
+                obj.en_passant -= 1
 
 #
 def castling(king, rook, friendly_color):
@@ -490,14 +505,76 @@ def castling(king, rook, friendly_color):
     rook.do_move(rook_x, rook_y, rook_x, rook_y2)
     return True
 
+def threefold_repetition(cur_turn):
+    piece_list = []
+    castling_oppertunities_black = 0
+    castling_oppertunities_white = 0
+    white_rooks = []
+    black_rooks = []
+    other_color = "black" if cur_turn == "white" else "white"
+    for obj in gc.get_objects():
+        en_passant = False
+        if isinstance(obj, Piece):
+            if obj.grid == grid:
+                if isinstance(obj, King):
+                    if obj.color == "black":
+                        king_black = obj
+                    elif obj.color == "white":
+                        king_white = obj
+                if isinstance(obj, Rook):
+                    if obj.color == "black":
+                        black_rooks.append(obj)
+                    elif obj.color == "white":
+                        white_rooks.append(obj)
+                if isinstance(obj, Pawn):
+                    if obj.en_passant and obj.color == other_color:
+                        x, y = obj.position
+                        if grid[x][y - 1].check_for_piece:
+                            if isinstance(grid[x][y - 1].piece, Pawn) and grid[x][y - 1].piece.color != obj.color:
+                                en_passant = True
+                        if grid[x][y + 1].check_for_piece:
+                            if isinstance(grid[x][y + 1].piece, Pawn) and grid[x][y + 1].piece.color != obj.color:
+                                en_passant = True
+                piece_list.append((obj.color, obj.__class__.__name__, str(obj.position[0]), str(obj.position[1]), en_passant))
+    if not king_black.has_moved:
+        for each in black_rooks:
+            if not each.has_moved:
+                castling_oppertunities_black += 1
+    if not king_white.has_moved:
+        for each in white_rooks:
+            if not each.has_moved:
+                castling_oppertunities_white += 1
+    piece_list.append((str(castling_oppertunities_black),))
+    piece_list.append((str(castling_oppertunities_white),))
+    piece_list.append((cur_turn,))
+    piece_list.sort()
+    logger.info(piece_list)
+    threefold_repetition_list.append(piece_list)
+    repetition_amount = threefold_repetition_list.count(piece_list)
+    if repetition_amount == 3 or repetition_amount == 4:
+        return "threefold"
+    elif repetition_amount > 4:
+        return "fivefold"
+    else:
+        return False
 
+def move_piece(stored_commands, cur_turn, turn_i):
+    result = move_piece_second_half(stored_commands, cur_turn, turn_i)
+    if not result:
+        return result
+    else:
+        print(result)
+        result.append(threefold_repetition(result[1]))
+        en_passant_remover()
+        return result
 
 # takes two coordinates from GUI.py and if it is a piece, it is moved from (x1, y1) to (x2, y2). After moving, it checks
 # if the enemy has been put in check or checkmate
-def move_piece(stored_commands, cur_turn, turn_i):
+def move_piece_second_half(stored_commands, cur_turn, turn_i):
     x1, y1, x2, y2 = stored_commands
     promote = [0, "", ()]
     check_amount = [0, []]
+    old_cur_turn = cur_turn
     if not grid[x1][y1].check_for_piece():
         logging.info(f"no piece found at {x1}, {y1}")
         return False
@@ -537,7 +614,7 @@ def move_piece(stored_commands, cur_turn, turn_i):
         return ["check", cur_turn, turn_i, promote]
 
 
-# checks if the king of the opposite color is in check
+# checks if the king of the opposite color(or the field parsed through king_position) is in check
 def is_check(color, local_grid, king_position=None):
     king_pos, black_list_of_pieces, white_list_of_pieces = get_king_position(color, local_grid)
     attacker = []
@@ -546,11 +623,6 @@ def is_check(color, local_grid, king_position=None):
         king_pos = king_position
     logging.info(f"{king_pos} {color}")
     color_list_of_pieces = black_list_of_pieces if color == "black" else white_list_of_pieces
-    #if mate_check:
-    #    if king.move(king_pos[0], king_pos[1], check_if_check=True):
-    #        return 0, attacker
-    #        check_amount += 1
-    #        attacker.append(each)
     for each in color_list_of_pieces:
         if each.move(king_pos[0], king_pos[1], check_if_check=True):
             check_amount += 1
@@ -578,7 +650,7 @@ def check_mate(checker, check_amount, attacker):
             if grid[x][y].check_for_piece():
                 if grid[x][y].piece.color == checkered:
                     continue
-            if not is_check(checker, grid, king_position=(x,y), mate_check=True)[0]:
+            if not is_check(checker, grid, king_position=(x,y))[0]:
                 return True
             continue
         return False
@@ -724,7 +796,5 @@ def clean_board(grid):
 grid = initialize_grid()
 populate_grid(grid)
 testing_grid = initialize_grid()
-copy_board()
-
-
-
+threefold_repetition_list = []
+threefold_repetition("white")

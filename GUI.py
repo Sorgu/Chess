@@ -1,6 +1,9 @@
+import ctypes
 import pygame
 import main as chess
 
+def Mbox(title, text, style):
+    return ctypes.windll.user32.MessageBoxW(0, text, title, style)
 #class Game_Piece:
 #    def __init__(self, image, position):
 #        self.image = image
@@ -17,6 +20,12 @@ bishop_pic = pygame.image.load("./pieces/bishop.png")
 knight_pic = pygame.image.load("./pieces/knight.png")
 queen_pic = pygame.image.load("./pieces/queen.png")
 king_pic = pygame.image.load("./pieces/king.png")
+white_pawn_pic = pygame.image.load("./pieces/white_pawn.png")
+white_rook_pic = pygame.image.load("./pieces/white_rook.png")
+white_bishop_pic = pygame.image.load("./pieces/white_bishop.png")
+white_knight_pic = pygame.image.load("./pieces/white_knight.png")
+white_queen_pic = pygame.image.load("./pieces/white_queen.png")
+white_king_pic = pygame.image.load("./pieces/white_king.png")
 BG_COLOR = "white"
 ROWS, COLS = 8, 8
 
@@ -72,20 +81,34 @@ def main():
         board_state = chess.update_board()
         for i, row in enumerate(board_state):
             for j, value in enumerate(row):
-                if value == "NoneType":
+                if value == None:
                     continue
-                if value == "Pawn":
-                    image = pawn_pic
-                elif value == "Rook":
-                    image = rook_pic
-                elif value == "Bishop":
-                    image = bishop_pic
-                elif value == "Knight":
-                    image = knight_pic
-                elif value == "Queen":
-                    image = queen_pic
-                elif value == "King":
-                    image = king_pic
+                if value.color == "black":
+                    if value.__class__.__name__ == "Pawn":
+                        image = pawn_pic
+                    elif value.__class__.__name__ == "Rook":
+                        image = rook_pic
+                    elif value.__class__.__name__ == "Bishop":
+                        image = bishop_pic
+                    elif value.__class__.__name__ == "Knight":
+                        image = knight_pic
+                    elif value.__class__.__name__ == "Queen":
+                        image = queen_pic
+                    elif value.__class__.__name__ == "King":
+                        image = king_pic
+                elif value.color == "white":
+                    if value.__class__.__name__ == "Pawn":
+                        image = white_pawn_pic
+                    elif value.__class__.__name__ == "Rook":
+                        image = white_rook_pic
+                    elif value.__class__.__name__ == "Bishop":
+                        image = white_bishop_pic
+                    elif value.__class__.__name__ == "Knight":
+                        image = white_knight_pic
+                    elif value.__class__.__name__ == "Queen":
+                        image = white_queen_pic
+                    elif value.__class__.__name__ == "King":
+                        image = white_king_pic
                 win.blit(image, (j * SIZE + 12, i * SIZE + 12))
         if check:
             writeText(cur_turn.capitalize() + " is in check", 220, 680, 50)
@@ -102,6 +125,9 @@ def main():
             writeText("Rook", (WIDTH / 8) * 5 - 40, (HEIGHT / 8) * 2 + 15, 20)
             pygame.draw.rect(win, (170, 170, 170), [(WIDTH / 8) * 6, (HEIGHT / 8) * 2, 75, 40])
             writeText("Bishop", (WIDTH / 8) * 7 - 40, (HEIGHT / 8) * 2 + 15, 20)
+        if force_draw:
+            writeText("Game result: Draw", 280, 680, 50)
+
         pygame.display.update()
 
     cur_turn = "white"
@@ -109,6 +135,8 @@ def main():
     check = False
     checkmate = False
     promote = False
+    draw_request = False
+    force_draw = False
     update_board_state()
 
 
@@ -118,6 +146,14 @@ def main():
             if event.type == pygame.QUIT:
                 run = False
                 break
+            if draw_request:
+                draw_result = Mbox("Threefold repetition", "Would any of the players like to draw?", 4)
+                if draw_result == 7:
+                    pass
+                elif draw_result == 6:
+                    force_draw = True
+                    update_board_state()
+                draw_request = False
             if event.type == pygame.MOUSEBUTTONDOWN:
                 row, col = get_mouse_pos(pygame.mouse.get_pos())
                 if row >= ROWS or col >= COLS:
@@ -140,6 +176,8 @@ def main():
                         promote = False
                         update_board_state()
 
+
+
                 elif len(stored_commands) == 2:
                     stored_commands.append(row)
                     stored_commands.append(col)
@@ -147,7 +185,7 @@ def main():
                     if not result:
                         print("invalid")
                     else:
-                        result, cur_turn, turn_i, promote_input = result
+                        result, cur_turn, turn_i, promote_input, threefold_result = result
                         if result == "check":
                             print("CHECK")
                             check = True
@@ -159,6 +197,10 @@ def main():
                             check = False
                         if promote_input[0]:
                             promote = True
+                        if threefold_result == "threefold":
+                            draw_request = True
+                        elif threefold_result == "fivefold":
+                            force_draw = True
                     stored_commands = []
 
                     update_board_state()
