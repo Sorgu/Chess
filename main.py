@@ -1,6 +1,5 @@
 import itertools
 import logging
-from pprint import *
 import gc
 
 
@@ -56,7 +55,6 @@ class Piece:
                     if current_step == total_steps:
                         if check_if_check:
                             if self.__class__.__name__ == "Pawn":
-                                print("HEREEE1")
                                 if self.attacking:
                                     pass
                                 else:
@@ -64,7 +62,6 @@ class Piece:
                             logging.info(f"{self.color} {self.__class__.__name__} at {self.position} has put enemy in check ")
                             return "Check"
                         elif self.__class__.__name__ == "Pawn":
-                            print("HEREEE2")
                             if self.attacking:
                                 pass
                             else:
@@ -79,7 +76,6 @@ class Piece:
                         return "Move"
                     elif check_if_check:
                         if self.__class__.__name__ == "Pawn":
-                            print("HEREEE3")
                             if self.attacking:
                                 pass
                             else:
@@ -265,6 +261,8 @@ class Rook(Piece):
 
 
         chosen_direction = direction(targetx, targety, self.position[0], self.position[1])
+        if not chosen_direction:
+            return False
         if self.do_move_do(targetx, targety, chosen_direction, check_if_check):
             return True
 
@@ -299,6 +297,8 @@ class Bishop(Piece):
                 return new_position
 
         chosen_direction = direction(targetx, targety, self.position[0], self.position[1])
+        if not chosen_direction:
+            return False
         if self.do_move_do(targetx, targety, chosen_direction, check_if_check):
             return True
 
@@ -389,6 +389,8 @@ class Queen(Piece):
                     return new_position
 
         chosen_direction = direction(targetx, targety, self.position[0], self.position[1])
+        if not chosen_direction:
+            return False
         if self.do_move_do(targetx, targety, chosen_direction, check_if_check):
             return True
 
@@ -432,6 +434,8 @@ class King(Piece):
                     return new_position
 
         chosen_direction = direction(targetx, targety, self.position[0], self.position[1])
+        if not chosen_direction:
+            return False
         if self.do_move_do(targetx, targety, chosen_direction, check_if_check):
             return True
 
@@ -464,7 +468,7 @@ def en_passant_remover():
             if obj.en_passant:
                 obj.en_passant -= 1
 
-#
+# Function to allow castling
 def castling(king, rook, friendly_color):
     if king.__class__.__name__ != "King" or rook.__class__.__name__ != "Rook":
         return False
@@ -505,6 +509,8 @@ def castling(king, rook, friendly_color):
     rook.do_move(rook_x, rook_y, rook_x, rook_y2)
     return True
 
+# Function for threefold repetition and fivefold repetition rules. Creates a list with values describing the game state
+# and stores it in threefold_repetition_list, and then returns how many times it is in the list.
 def threefold_repetition(cur_turn):
     piece_list = []
     castling_oppertunities_black = 0
@@ -571,25 +577,25 @@ def move_piece(stored_commands, cur_turn, turn_i):
         en_passant_remover()
         return result
 
-# takes two coordinates from GUI.py and if it is a piece, it is moved from (x1, y1) to (x2, y2). After moving, it checks
+# takes two coordinates from GUI.py and moves the piece at (x1, y1) to (x2, y2). After moving, it checks
 # if the enemy has been put in check or checkmate
 def move_piece_second_half(stored_commands, cur_turn, turn_i):
     x1, y1, x2, y2 = stored_commands
     promote = [0, "", ()]
     check_amount = [0, []]
     old_cur_turn = cur_turn
-    if not grid[x1][y1].check_for_piece():
+    if not grid[x1][y1].check_for_piece(): # Returns False if the first position is empty
         logging.info(f"no piece found at {x1}, {y1}")
         return False
     color = grid[x1][y1].piece.color
-    if color != cur_turn:
+    if color != cur_turn: # Returns False if it is not their turn
         logging.info(f"it is not {color}'s turn")
         return False
     copy_board()
-    if castling(grid[x1][y1].piece, grid[x2][y2].piece, color):
+    if castling(grid[x1][y1].piece, grid[x2][y2].piece, color): # Does castling if possible
         logging.info("CASTLING")
         clean_board(testing_grid)
-    elif testing_grid[x1][y1].piece.move(x2, y2):
+    elif testing_grid[x1][y1].piece.move(x2, y2): # Tests if the move is legal
         other_color = "white" if color == "black" else "black"
         if is_check(other_color, testing_grid)[0] != 0:
             logging.info(f"{color} tried putting themselves in check")
@@ -597,8 +603,8 @@ def move_piece_second_half(stored_commands, cur_turn, turn_i):
             return False
         else:
             clean_board(testing_grid)
-            grid[x1][y1].piece.move(x2, y2)
-            if isinstance(grid[x2][y2].piece, Pawn):
+            grid[x1][y1].piece.move(x2, y2) # Moves the piece
+            if isinstance(grid[x2][y2].piece, Pawn): # Checks for promotion
                 if grid[x2][y2].piece.color == "white" and x2 == 0:
                     promote = [1, "white", (x2, y2)]
                 elif grid[x2][y2].piece.color == "black" and x2 == 7:
@@ -612,7 +618,7 @@ def move_piece_second_half(stored_commands, cur_turn, turn_i):
     if check_amount[0] == 0:
         return [True, cur_turn, turn_i, promote]
 
-    elif check_amount[0]:
+    elif check_amount[0]: # Tests for check and checkmate
         if not check_mate(color, *check_amount):
             return ["check mate", cur_turn, turn_i, promote]
         return ["check", cur_turn, turn_i, promote]
@@ -634,10 +640,13 @@ def is_check(color, local_grid, king_position=None):
     logging.info(f"check amount: {check_amount}, attacker: {attacker} ")
     return [check_amount, attacker]
 
-# checker is the color of the piece putting the enemy in check, check_amount is the amount of pieces putting enemy in check
+# checker is the color of the piece putting the enemy in check, check_amount is the amount of pieces putting enemy in check.
+# This function uses three sub-functions to test if a player is in checkmate.
 def check_mate(checker, check_amount, attacker):
     attacker = attacker[0]
     checkered = "black" if checker == "white" else "white"
+
+    # tests if the king can move out of check
     def move_king():
         copy_board()
         logging.info("move_king")
@@ -665,6 +674,7 @@ def check_mate(checker, check_amount, attacker):
         clean_board(testing_grid)
         return False
 
+    # tests if any pieces can go between the king and attacker
     def block():
         logging.info("block")
         tile_list = []
@@ -706,6 +716,7 @@ def check_mate(checker, check_amount, attacker):
                     return True
         return False
 
+    # tests if any pieces can attack the piece putting friendly king in check
     def attack_attacker():
         logging.info("attack_attacker")
         is_check_result = is_check(checkered, grid, king_position=attacker.position)
@@ -719,24 +730,28 @@ def check_mate(checker, check_amount, attacker):
             return False
 
     if check_amount > 1:
-        if move_king():
+        mk = move_king()
+        if mk:
+            logging.info(f"{mk} CHECKMATE FUNCTION")
             return True
         else:
             return False
     elif check_amount == 1:
-        if move_king() or block() or attack_attacker():
-            logging.info(f"{move_king()}{block()}{attack_attacker()}CHECKMATE FUNCTION")
+        mk = move_king()
+        bl = block()
+        aa = attack_attacker()
+        if mk or bl or aa:
+            logging.info(f"{mk}{bl}{aa} CHECKMATE FUNCTION")
             return True
         else:
             return False
     return False
 
 
-
+# returns the king of the color in parameter along with a list of black pieces and a list of white pieces
 def get_king_position(color, local_grid):
     black_list_of_pieces = []
     white_list_of_pieces = []
-
     for obj in gc.get_objects():
         if isinstance(obj, Piece):
             if obj.grid == local_grid:
@@ -791,12 +806,14 @@ def populate_grid(grid):
     grid[7][4].set_piece(King("white", (7, 4), grid))
     grid[7][3].set_piece(Queen("white", (7, 3), grid))
 
+# copies all values from grid into testing_grid
 def copy_board():
     for i, row in enumerate(grid):
         for j, value in enumerate(row):
             if value.check_for_piece():
                 testing_grid[i][j].set_piece(value.piece.__class__(value.piece.color, value.piece.position, testing_grid, en_passant=value.piece.en_passant, has_moved=value.piece.has_moved))
 
+# deletes all values in the matrix provided
 def clean_board(grid):
     for each in grid:
         for every in each:
